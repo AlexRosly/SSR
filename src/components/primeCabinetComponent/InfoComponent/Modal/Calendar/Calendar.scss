@@ -1,0 +1,207 @@
+$color-text: #4c4c4c;
+$color-not-active-day: rgba(174, 175, 188, 0.5);
+$color-active-day: #6aff79;
+$color-hover-day: rgba(106, 255, 121, 0.5);
+
+%text-style-month {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: $color-text;
+  margin: 0;
+
+  ::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+%text-style-all-month {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 11px;
+  color: $color-text;
+}
+
+%text-style-week {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: $color-text;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+%text-style-day {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: $color-text;
+}
+
+%border-radius {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.react-calendar {
+  width: 170px;
+
+  &,
+  & *,
+  & *:before,
+  & *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: transparent;
+    // margin: 0;
+    border: 0;
+    outline: none;
+
+    &.myClassName {
+      background-color: $color-active-day;
+      @extend%border-radius;
+    }
+
+    &.notOurService {
+      background-color: transparent;
+      outline: 0.5px solid #006bbe;
+
+      @extend%border-radius;
+    }
+
+    &.isOurService {
+      background-color: transparent;
+      outline: 0.5px solid #ff6000;
+      @extend%border-radius;
+    }
+
+    &.isAlreadyBooking {
+      background: #c4c4c4;
+      outline: 0.5px solid transparent;
+      @extend%border-radius;
+    }
+
+    &:enabled {
+      &:hover {
+        cursor: pointer;
+        background-color: $color-hover-day;
+        @extend%border-radius;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+
+    &__label__divider {
+      visibility: hidden;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @extend%text-style-month;
+
+      &:disabled img {
+        color: $color-not-active-day;
+        visibility: hidden;
+      }
+
+      &:enabled {
+        padding: 8px;
+
+        &:hover,
+        &:focus {
+          background: rgba(208, 208, 208, 0.35);
+          border-radius: 5px;
+        }
+
+        &:active {
+          background: rgba(208, 208, 208, 0.5);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  &__month-view {
+    &__weekdays {
+      @extend%text-style-week;
+
+      &__weekday {
+        padding: 3px 0px;
+        text-align: center;
+        height: 13px;
+        flex: 0 0 16px !important;
+        margin-right: 4px;
+        margin-left: 4px;
+      }
+    }
+
+    &__weekNumbers {
+      .react-calendar__tile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend%text-style-week;
+      }
+    }
+
+    &__days {
+      
+      &__day {
+
+        @extend%text-style-day;
+        margin: 4px;
+        flex: 0 0 16px !important;
+
+        &--neighboringMonth {
+          visibility: hidden;
+          color: $color-not-active-day;
+        }
+      }
+    }
+  }
+
+  &__year-view,
+  &__decade-view,
+  &__century-view {
+    .react-calendar__tile {
+      padding: 10px 2px;
+      @extend%text-style-all-month;
+    }
+  }
+
+  &__tile {
+    max-width: 100%;
+    padding: 1px 0;
+    text-align: center;
+
+    &:disabled {
+      font-weight: 400;
+      color: $color-not-active-day;
+      @extend%border-radius;
+    }
+  }
+}
+
+.day {
+  pointer-events: none;
+}

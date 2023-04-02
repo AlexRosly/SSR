@@ -1,0 +1,45 @@
+@import '../Assents/variables.scss';
+
+.reviews__section {
+  width: 316px;
+}
+
+.reviews__bg {
+  display: flex;
+  align-items: flex-end;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 14px;
+  padding-left: 18px;
+}
+
+.reviews {
+  font-family: $text_font_family;
+  font-weight: $normal_font_weigth;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #ffffff;
+}
+
+.reviews__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 99px;
+  background: #ffffff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.reviews__messages {
+  font-family: PT Mono;
+  font-weight: $normal_font_weigth;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #4c4c4c;
+}

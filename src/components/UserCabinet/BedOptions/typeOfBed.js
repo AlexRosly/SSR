@@ -1,0 +1,73 @@
+export const typeOfBed = [
+  {
+    id: 1,
+    iconId: 'icon-1x1',
+    title: 'Спальня с одной односпальной кроватью',
+    descriptionInResponseData: { single: 1, double: 0 },
+    type: 'hotel',
+  },
+  {
+    id: 2,
+    iconId: 'icon-1x2',
+    title: 'Спальня с двумя односпальными кроватями',
+    descriptionInResponseData: { single: 2, double: 0 },
+    type: 'hotel',
+  },
+  {
+    id: 3,
+    iconId: 'icon-1x3',
+    title: 'Спальня с тремя  односпальными кроватями',
+    descriptionInResponseData: { single: 3, double: 0 },
+    type: 'hotel',
+  },
+  {
+    id: 4,
+    iconId: 'icon-2x1',
+    title: 'Спальня с одной двуспальной кроватью',
+    descriptionInResponseData: { single: 0, double: 1 },
+    type: 'hotel',
+  },
+  {
+    id: 5,
+    iconId: 'icon-2x2',
+    title: 'Спальня с двумя двуспальными кроватями',
+    descriptionInResponseData: { single: 0, double: 2 },
+    type: 'hotel',
+  },
+  {
+    id: 6,
+    iconId: 'icon-2x3',
+    title: 'Спальня с тремя двуспальными кроватями',
+    descriptionInResponseData: { single: 0, double: 3 },
+    type: 'hotel',
+  },
+  {
+    id: 7,
+    iconId: 'icon-1x1_2x2',
+    title: 'Спальня с двумя двуспальными и одной односпальной кроватями',
+    descriptionInResponseData: { single: 1, double: 2 },
+    type: 'hotel',
+  },
+  {
+    id: 8,
+    iconId: 'icon-1x2_2x1',
+    title: 'Спальня с двумя односпальными и одной двуспальной кроватями',
+    descriptionInResponseData: { single: 2, double: 1 },
+    type: 'hotel',
+  },
+  {
+    id: 9,
+    iconId: 'icon-1x1_2x1',
+    title: 'Спальня с одной двуспальной и одной односпальной кроватью',
+    descriptionInResponseData: { single: 1, double: 1 },
+    type: 'hotel',
+  },
+
+  {
+    id: 10,
+    iconId: 'icon-hostel',
+    title: 'Свободные кровати в общей комнате',
+    descriptionInResponseData: {},
+    type: 'hostel',
+  },
+];

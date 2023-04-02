@@ -1,0 +1,9 @@
+@import 'styles/common/variables';
+@import '../../Parts/optionButton';
+
+.currencyOptionButton {
+  @extend %option-button;
+
+  width: 172px;
+  height: 31px;
+}

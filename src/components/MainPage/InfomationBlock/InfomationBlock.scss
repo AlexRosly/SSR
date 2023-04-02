@@ -1,0 +1,96 @@
+@import "../Assents/variables.scss";
+
+.info-section {
+  margin-top: 22px;
+  padding: 48px 86px 106px 83px;
+  width: 616px;
+  height: 489px;
+  background: rgba(229, 229, 229, 0.58);
+  border: 1.04839px solid rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+}
+
+.info__title {
+  margin-bottom: 9px;
+  font-family: $text_font_family;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+
+  letter-spacing: 0.01em;
+
+  color: #4c4c4c;
+}
+
+.info__indent {
+  font-family: $text_font_family;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: $ligth_font_weigth;
+}
+
+.info__highlight {
+  font-weight: 900;
+
+  &--orange {
+    color: $second_text_color;
+    text-transform: uppercase;
+  }
+  &--blue {
+    margin-left: 5px;
+    margin-right: 6px;
+    color: $title_color;
+    text-transform: uppercase;
+  }
+}
+
+.info__list {
+  margin-top: 30px;
+}
+
+.info__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+
+.info__text {
+  margin-right: 53px;
+  width: 319px;
+
+  font-family: $text_font_family;
+  font-weight: $ligth_font_weigth;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+
+  color: #4c4c4c;
+}
+
+.arow-icon {
+  position: absolute;
+  top: -50%;
+  right: -5%;
+  width: 75.59px;
+  height: 73.18px;
+}
+
+.people-icon {
+  position: absolute;
+  top: -20%;
+  right: -5%;
+  width: 75.59px;
+  height: 73.18px;
+}
+
+.circle-icon {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 75.59px;
+  height: 73.18px;
+}

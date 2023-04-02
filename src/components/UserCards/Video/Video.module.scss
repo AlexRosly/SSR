@@ -1,0 +1,35 @@
+.videoContainer {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 1px transparent;
+  border-radius: 5px;
+}
+.link {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  cursor: pointer;
+  color: tomato;
+}
+.linkArrow {
+  width: 24px;
+  height: 27px;
+  fill: #c4c4c4;
+  fill-opacity: 0.5;
+}
+.videoFrame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+}
+.videoFrame img {
+  display: flex;
+}

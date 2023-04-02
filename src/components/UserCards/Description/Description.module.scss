@@ -1,0 +1,80 @@
+@import 'styles/common/variables';
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 20px;
+  }
+}
+.btn {
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  border: transparent;
+  background-color: #fff;
+}
+.link,
+.activeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 8px;
+  width: 33px;
+  height: 33px;
+}
+.link:hover {
+  background-color: rgba(229, 229, 229, 0.58);
+}
+.activeLink:hover {
+  background-color: white;
+}
+.activeLink {
+  background-color: rgba(229, 229, 229, 0.58);
+}
+.locationContainer {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+.location {
+  margin-right: 10px;
+  fill: #006bbe;
+  cursor: pointer;
+}
+.location:hover {
+  fill: #0090ff;
+}
+.location:active {
+  fill: #006bbe;
+}
+.title {
+  width: 175px;
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #656565;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.desc {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #656565;
+  max-width: 309px;
+  margin-right: 30px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.36;
+}

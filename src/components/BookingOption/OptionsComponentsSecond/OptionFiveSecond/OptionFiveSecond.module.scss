@@ -1,0 +1,217 @@
+.booking_block_content_wrap {
+  position: absolute;
+  overflow: auto;
+  left: 0;
+  z-index: 1000;
+  background: rgba(76, 76, 76, 0.28);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  .booking_block_content {
+    margin: 100px auto;
+    width: 320px;
+    background: #fff;
+    .booking_block_content_header {
+      display: flex;
+      justify-content: space-between;
+      .content_header_back {
+        margin: 2px 0 0 4px;
+        width: 52px;
+        height: 52px;
+        padding: 17px 12px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .content_header_back:hover {
+        background: #ededed;
+      }
+      .content_header_close {
+        margin: 2px 4px 0 0px;
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+        padding: 15px 15px;
+      }
+      .content_header_close:hover {
+        background: #ededed;
+      }
+      .content_header_close:active {
+        background: rgba(76, 76, 76, 0.33);
+      }
+    }
+  }
+}
+.booking_block_content_main {
+  margin-bottom: 20px;
+}
+.content_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 30px 50px 30px;
+  .content_main_txt {
+    font-size: 13px;
+    color: #787878;
+    font-weight: 700;
+  }
+  .content_main_counter {
+    display: flex;
+    align-items: center;
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 16.5px;
+
+    .content_main_counter_minus {
+      background-image: url(../../img/minus.png);
+      margin-right: 10px;
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+    }
+    .content_main_counter_minus:hover {
+      background-image: url(../../img/minusHover.png);
+    }
+    .content_main_counter_minus:active {
+      background-image: url(../../img/minusActive.png);
+    }
+
+    .content_main_counter_plus {
+      background-image: url(../../img/plus.png);
+      margin-left: 10px;
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+    }
+    .content_main_counter_plus:hover {
+      background-image: url(../../img/plusHover.png);
+    }
+    .content_main_counter_plus:active {
+      background-image: url(../../img/plusActive.png);
+    }
+  }
+}
+.content_btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+.content_btn_arrow {
+  cursor: pointer;
+}
+.content_main_text {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 5px;
+  .content_main_text_one {
+    color: #4c4c4c;
+  }
+  .content_main_text_two {
+    margin-top: 5px;
+    color: #787878;
+  }
+}
+
+.content_main_input_wrap {
+  margin: 20px 100px;
+}
+.content_main_input {
+  cursor: pointer;
+
+  .content_main_without_img_main {
+    width: 120px;
+    height: 120px;
+    background-image: url(../../img/mainPhoto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    border: 3px solid rgb(198 196 196);
+  }
+  .content_main_without_img_main:hover {
+    background-image: url(../../img/mainPhoto.png);
+    border: 3px solid #707070;
+  }
+  .content_main_without_img_main:active {
+    background-image: url(../../img//mainPhoto.png);
+    border: 3px solid rgb(76, 76, 76, 0.9);
+  }
+  img {
+    width: 120px;
+    height: 120px;
+  }
+  input {
+    display: none;
+  }
+}
+
+.content_main_images {
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: 90px 90px;
+  grid-gap: 30px;
+}
+.booking_block_content_ready {
+  margin: 30px 100px;
+  button {
+    width: 119px;
+    height: 37px;
+    border: none;
+    background: #0090ff;
+    color: #fff;
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: rgba(0, 144, 255, 0.5);
+  }
+  button:active {
+    background: #006bbe;
+  }
+}
+
+.content_main_input_images {
+  cursor: pointer;
+
+  .content_main_without_img {
+    width: 90px;
+    height: 90px;
+    background-image: url(../../img/Img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+  }
+  .content_main_without_img:hover {
+    background-image: url(../../img/ImgHover.png);
+  }
+  .content_main_without_img:active {
+    background-image: url(../../img/ImgActive.png);
+  }
+  img {
+    width: 90px;
+    height: 90px;
+  }
+  input {
+    display: none;
+  }
+}
+
+.photo {
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #4c4c4c;
+  margin-top: 10px;
+}

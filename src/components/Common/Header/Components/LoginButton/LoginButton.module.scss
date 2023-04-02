@@ -1,0 +1,42 @@
+@import 'styles/common/variables';
+
+.loginButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 69px;
+	height: 21px;
+
+	font-weight: 700;
+	font-size: 0.6875rem;
+	line-height: 1.36;
+	font-family: $font-segoe;
+	color: $colors-white;
+	text-align: center;
+	text-decoration: none;
+	background-color: $colors-brand;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+
+	@media screen and (min-width: $tablet) {
+		width: 119px;
+		height: 37px;
+		font-size: 0.9375rem;
+		line-height: 1.3;
+	}
+
+	&:hover {
+		background-color: $colors-link-active;
+	}
+
+	&:focus {
+		background-color: $colors-text-accent;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		transition: 110ms $cubic;
+		transition-property: background-color;
+	}
+}

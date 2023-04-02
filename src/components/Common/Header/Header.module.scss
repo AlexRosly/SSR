@@ -1,0 +1,17 @@
+@import 'styles/common/variables';
+
+.header {
+  position: relative;
+  z-index: 1;
+
+  height: 100%;
+  max-height: 38px;
+  padding: 4px 0 3px;
+
+  background-color: $colors-white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+
+  @media screen and (min-width: $tablet) {
+    max-height: 52px;
+  }
+}

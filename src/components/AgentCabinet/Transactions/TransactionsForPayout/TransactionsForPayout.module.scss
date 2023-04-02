@@ -1,0 +1,174 @@
+@import 'styles/common/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.table {
+  flex-grow: 1;
+  min-height: 154px;
+  background-color: $colors-white;
+  border: none;
+  border-radius: 9px;
+}
+
+.tableHead {
+  height: 60px;
+  text-align: left;
+}
+
+.tableHeadRow {
+}
+
+.tableColHeading {
+  padding-top: 16px;
+  padding-bottom: 12px;
+  // vertical-align: middle;
+
+  @extend %text-small-semibold;
+  color: $colors-city;
+
+  background-color: $colors-bg-button-cancel-delete-hover;
+
+  &:first-of-type {
+    padding-left: 32px;
+    border-top-left-radius: 8px;
+  }
+  &:nth-of-type(2) {
+    padding-left: 20px;
+  }
+  &:nth-of-type(3) {
+    padding-left: 15px;
+    border-right: 3px solid $border-table;
+  }
+
+  &:nth-of-type(4) {
+    padding-left: 38px;
+  }
+
+  &:last-of-type {
+    padding-left: 12px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.tableBody {
+  @extend %text-small;
+  color: $colors-city;
+  text-align: center;
+  word-break: break-all;
+}
+
+.tableDataRowHeading {
+  min-width: 140px;
+  text-align: left;
+  padding: 8px 4px 0 14px;
+  border-right: 1px solid $border-table;
+}
+
+.tableData {
+  padding: 13px 8px 7px;
+  border-right: 1px solid $border-table;
+
+  &:nth-of-type(1) {
+    width: 160px;
+    word-break: normal;
+  }
+  &:nth-of-type(2) {
+    width: 103px;
+    border-right: 3px solid $border-table;
+  }
+  &:nth-of-type(3) {
+    width: 128px;
+  }
+  &:nth-of-type(4) {
+    width: 97px;
+  }
+
+  &:last-of-type {
+    border: none;
+  }
+}
+
+.roundCorners {
+  background: $colors-white;
+  border: 1px solid $border-bg-block-link;
+  border-radius: 9px;
+}
+
+.tableDataRow {
+  &:first-of-type {
+    > .tableDataRowHeading {
+      padding: 13px 4px 0 14px;
+    }
+
+    > .tableData {
+      padding: 13px 8px 7px;
+    }
+  }
+
+  &:last-of-type {
+    > .tableDataRowHeading {
+      padding: 7px 4px 19px 13px;
+    }
+
+    > .tableData {
+      padding: 7px 8px 19px;
+    }
+  }
+}
+
+.payoutBlock {
+  align-self: flex-end;
+  width: 195px;
+}
+
+.payoutTextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 71px;
+  padding: 12px 30px 10px;
+  text-align: left;
+
+  background-color: $colors-white;
+  border: 1px solid $border-bg-block-link;
+  border-radius: 5px;
+}
+
+.payoutText {
+  @extend %text-small-semibold;
+  color: $colors-city;
+}
+
+.payoutAmount {
+  @extend %text-small-semibold;
+  color: $colors-brand;
+}
+
+.orderPayoutButton {
+  min-width: 195px;
+  min-height: 37px;
+  padding: 8px 20px;
+
+  @extend %text-button;
+  color: $colors-white;
+  // text-align: center;
+
+  background-color: $colors-bg-button-payout;
+  border: 1px solid transparent;
+  border-radius: 2px;
+
+  &:hover:not(:disabled) {
+    background-color: $colors-bg-button-save-active;
+  }
+
+  &:active:not(:disabled) {
+    background-color: $colors-bg-button-payout-active;
+    border-color: white;
+  }
+}

@@ -1,0 +1,9 @@
+@import 'styles/common/variables';
+
+.picker {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

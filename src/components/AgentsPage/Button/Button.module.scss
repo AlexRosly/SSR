@@ -1,0 +1,42 @@
+@import 'styles/common/variables';
+
+%button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 180px;
+  max-height: 29px;
+  padding: 8px 21px;
+
+  font-family: $font-segoe;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.38;
+  color: $colors-white;
+  text-align: center;
+
+  background-color: $colors-brand-accent;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  outline: none;
+}
+
+.buttonPrimary {
+  @extend %button;
+
+  &:hover {
+    background-color: $colors-bg-button-hover;
+    border-color: $colors-white;
+  }
+
+  &:active {
+    color: $colors-white;
+    background-color: $colors-bg-button-active;
+  }
+}
+
+.buttonSecondary {
+  @extend %button;
+}

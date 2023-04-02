@@ -1,0 +1,45 @@
+.card__btn_free {
+  position: relative;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 49px;
+  height: 33px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #656565;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: rgba(229, 229, 229, 0.58);
+  }
+
+  &__grey {
+    @extend .card__btn_free;
+    background: rgba(120, 120, 120, 0.1);
+    width: 70px;
+    height: 46px;
+    margin-top: 0;
+
+    &:hover,
+    &:focus {
+      background: rgba(120, 120, 120, 0.1);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+}
+
+.card__btn_free:hover ~ div {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}

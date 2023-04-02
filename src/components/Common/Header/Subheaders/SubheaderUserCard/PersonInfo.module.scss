@@ -1,0 +1,22 @@
+@import 'styles/common/variables';
+
+.personWrapper {
+  text-align: start;
+}
+
+.userName {
+  @extend %text-small;
+  color: $colors-black;
+}
+
+.karmaNumber {
+  @extend %text-small;
+  font-weight: 700;
+  color: $colors-brand-accent;
+}
+
+.bookingKarma {
+  @extend %text-small;
+  font-weight: 400;
+  color: $border-table;
+}

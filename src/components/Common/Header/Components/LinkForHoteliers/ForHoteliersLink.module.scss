@@ -1,0 +1,48 @@
+@import 'styles/common/variables';
+
+.hotelierLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+
+  padding-bottom: 6px 9px;
+
+  width: 156px;
+  height: 34px;
+
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  color: $colors-text-primary;
+  text-align: center;
+  text-decoration: none;
+
+  border: 0.5px solid transparent;
+  border-radius: 5px;
+  outline: none;
+
+  &:hover {
+    color: $colors-black;
+    border-color: $colors-text-fourth;
+  }
+
+  &:focus {
+    color: $colors-text-fourth;
+    border-color: $colors-text-fourth;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: auto;
+  }
+}
+
+.hotelierIcon {
+  width: 13px;
+  height: 15px;
+
+  padding-bottom: 1px;
+  pointer-events: none;
+}

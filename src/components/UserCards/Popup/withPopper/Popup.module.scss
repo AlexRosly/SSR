@@ -1,0 +1,105 @@
+.popup_proposal_card {
+  position: absolute;
+  top: -98px;
+  left: -60px;
+  z-index: 15;
+  opacity: 0;
+  transition: opacity 0.5s;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: transparent;
+
+  &[data-popper-placement^='top'] #arrow {
+    bottom: -2px;
+  }
+
+  &[data-popper-placement^='bottom'] #arrow {
+    top: -2px;
+  }
+
+  &[data-popper-placement^='bottom'] {
+    top: -98px;
+    left: -60px;
+  }
+
+  &[data-popper-placement^='bottom'] #arrow::before {
+    background-color: #99c4ff;
+  }
+
+  &[data-popper-placement^='left'] #arrow {
+    right: -2px;
+  }
+
+  &[data-popper-placement^='right'] #arrow {
+    left: -2px;
+  }
+}
+
+.title {
+  margin-top: 18px;
+  margin-bottom: 5px;
+
+  font-family: 'Segoe UI';
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.popupInner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 206px;
+  height: 90px;
+
+  border-radius: 5px;
+
+  background: linear-gradient(0deg, rgb(255, 255, 255) 50%, rgba(153, 196, 255, 1) 50%);
+
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+.freeButtonActive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 55px;
+  padding: 5px 9px 3px 9px;
+
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid rgba(229, 229, 229, 0.58);
+  color: #656565;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 6px;
+  height: 5px;
+  background-color: white;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}

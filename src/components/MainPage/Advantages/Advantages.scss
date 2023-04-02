@@ -1,0 +1,55 @@
+@import "../Assents/variables.scss";
+
+.adv__block {
+  background: #fff;
+}
+
+.adv__image {
+  display: block;
+  max-width: 100%;
+  width: 616px;
+  height: auto;
+}
+
+.adv__section {
+  padding: 31px 0 31px 46px;
+  width: 616px;
+  height: 581px;
+  font-family: $text_font_family;
+}
+
+.adv__title {
+  margin-bottom: 21px;
+  font-weight: $ligth_font_weigth;
+  font-size: 19px;
+  line-height: 1.42;
+  color: $title_color;
+}
+
+.adv_highlight {
+  font-weight: $bold_font_weigth;
+  line-height: 24.31px;
+  text-transform: uppercase;
+
+  &--orange {
+    color: $second_text_color;
+  }
+}
+
+.adv_info {
+  margin-right: 46px;
+  font-weight: $normal_font_weigth;
+  font-size: 14px;
+  line-height: 18.62px;
+
+  color: #4c4c4c;
+}
+
+.adv__add-title {
+  margin-top: 18px;
+  font-weight: $light_bold_font_weight;
+}
+
+.adv__paragraf {
+  margin-top: 17px;
+}

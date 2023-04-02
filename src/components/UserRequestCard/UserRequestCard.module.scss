@@ -1,0 +1,874 @@
+%name-style {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 18px;
+  color: #ffffff;
+}
+%karma-style {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #ffffff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.45);
+}
+%number-style {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29.6543px;
+  line-height: 39px;
+  letter-spacing: -0.09em;
+  color: #ff6000;
+}
+%trip-label-text {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #000000;
+}
+%location-style-text {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+
+  color: #4c4c4c;
+}
+%date-style {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
+  color: #4c4c4c;
+}
+
+%money-style {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  color: #4c4c4c;
+}
+%animal-style-text {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #006c0b;
+}
+%day-style-text {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #4c4c4c;
+}
+%house_style {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #444444;
+}
+%buttons_style-text {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  color: #0090ff;
+  &:hover {
+    color: rgba(0, 144, 255, 0.75);
+  }
+  &:active {
+    color: rgba(0, 144, 255, 0.6);
+  }
+}
+/*for room component*/
+%room_title_text {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+/*for component karma*/
+
+%style_btn_text_number_karma {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.9907px;
+  line-height: 17px;
+  color: #ffffff;
+}
+/* for component user ask*/
+%text_block_info1 {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #ffffff;
+}
+%text_block_info2 {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+
+  color: #99c4ff;
+}
+/* for booking time block*/
+%text_style_booking_time {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 23px;
+
+  color: #6c6c6c;
+}
+
+.block_container_bookingKarma_open {
+  position: relative;
+  top: 58px;
+  left: -64px;
+  display: block;
+  z-index: 10;
+}
+.block_container_bookingKarma_close {
+  position: relative;
+  top: 58px;
+  left: -64px;
+  display: none;
+  z-index: 50;
+}
+.houses_block_open {
+  position: absolute;
+  left: 110px;
+  top: -10px;
+  display: block;
+  z-index: 120;
+}
+.houses_block_close {
+  opacity: 0;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  position: absolute;
+  left: 110px;
+  top: -10px;
+  z-index: 120;
+}
+.block_container_bookingTime_open {
+  position: absolute;
+  top: 145px;
+  right: 0px;
+  height: 281px;
+  display: block;
+  z-index: 120;
+}
+.block_container_bookingTime_close {
+  position: absolute;
+  display: none;
+}
+/*+++++++++++++==============*/
+// this container block position  margin-top only for test... ///
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 100px;
+}
+.blockAva {
+  position: relative;
+  display: flex;
+  width: 154px;
+  height: 152px;
+  border-radius: 15px 0px 0px 15px;
+  // z-index: 2;
+}
+
+.blockAva__name {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 70px;
+  max-height: 104px;
+  padding: 0px 5px 0px 0px;
+  @extend%name-style;
+  word-break: break-word;
+  white-space: pre-line;
+  hyphens: auto;
+  overflow: hidden;
+}
+.blockAva_karma_container_btn {
+  position: absolute;
+  top: 0px;
+  left: 64px;
+  width: 88px;
+  height: 41px;
+  cursor: pointer;
+  &:hover {
+    background: rgba(196, 196, 196, 0.22);
+    border-radius: 3px;
+  }
+}
+.blockAva__karma {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 45.96px;
+  height: 29.65px;
+  @extend%karma-style;
+}
+.blockAva__number {
+  position: absolute;
+  top: 0px;
+  left: 55px;
+  width: 32px;
+  height: 37px;
+  @extend%number-style;
+}
+.blockAva__trip {
+  position: absolute;
+  top: 128px;
+  left: 9px;
+}
+.trip_input_check {
+  width: 12.68px;
+  height: 14px;
+  background: #ffffff;
+  border: 1px solid #6e6e6e;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.trip_label {
+  position: absolute;
+  padding: 0px 0px 0px 4px;
+  top: 0px;
+  left: 15px;
+  width: 122px;
+  height: 14px;
+  background: rgba(196, 196, 196, 0.45);
+  border-radius: 2.20661px;
+  @extend%trip-label-text;
+}
+
+.container__detail {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 685px;
+  height: 152px;
+  background: #f4f4f4;
+  border-radius: 0px 15px 15px 0px;
+}
+.detail__block1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 166px;
+  margin: 8px 5px 10px 9px;
+}
+.detail__location_text {
+  height: 51px;
+  @extend%location-style-text;
+}
+.detail__location_text2 {
+  margin: 0px 0px 2px 0px;
+  height: 51px;
+  @extend%location-style-text;
+  font-size: 15px;
+  line-height: 19px;
+  word-break: break-all;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+.detail__date {
+  height: 25px;
+  width: 165px;
+  margin: 4px 0px 2px 23px;
+  // padding: 0px 0px 4px 0px;
+  display: flex;
+  align-items: center;
+  word-break: break-word;
+  white-space: pre-line;
+  @extend%date-style;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/userRequestCard/weekly-calendar 4.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 9px;
+    top: 58px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.detail__money {
+  width: 174px;
+  height: 29px;
+  margin: 4px 0px 9px 20px;
+  // padding: 5px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+
+  word-break: break-word;
+  white-space: pre-line;
+  @extend%money-style;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/userRequestCard/dolar.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 9px;
+    top: 88px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.detail__animal {
+  background-image: url(../../components/MainPage/Assents/icon/smallDog.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15.4px 13.4px;
+  border: 0.3px solid #787878;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 24.5px;
+  height: 23px;
+}
+.detail__block2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80px;
+  margin: 15px 0 8px 10px;
+  margin-right: 44px;
+}
+.detail__day {
+  min-height: 24px;
+  @extend%day-style-text;
+}
+.block_container_house {
+  display: block;
+}
+
+.detail__room_block3 {
+  width: 218px;
+  // max-height: 132px;
+  display: flex;
+  padding-top: 18px;
+
+  padding-left: 3px;
+  padding-right: 4px;
+  flex-direction: row;
+  grid-gap: 10px;
+  gap: 10px;
+  overflow-x: auto;
+  position: static;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  z-index: 20;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0090ff #f4f4f4;
+  cursor: pointer;
+  &::-webkit-scrollbar {
+    cursor: pointer;
+    width: 2px;
+    height: 3px;
+    height: 25px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #aeafbc;
+    border: 11px solid #f4f4f4;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #0090ff;
+    border: 11px solid #f4f4f4;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+.detail__buttons_block4 {
+  // position: absolute;
+  // top: 0px;
+  // left: 0px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0px 20px 10px 9px;
+  padding: 20px 0px 32px 9px;
+}
+.buttons_style {
+  width: 109px;
+  height: 33px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  border: none;
+
+  text-align: center;
+  @extend%buttons_style-text;
+}
+
+/* ===============================================
+ !!!!!!! next line style  for icon room component!!!
+=========================================================
+*/
+
+.room_icon_block {
+  // position: relative;
+  margin: 8px 8px;
+  display: grid;
+  @extend%room_title_text;
+  grid-template-columns: 100px;
+
+  justify-items: center;
+  align-content: center;
+  // height: 100px;
+  background: #ffffff;
+  box-shadow: 0px -4px 6px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
+  scroll-margin-left: 10px;
+  scroll-margin-right: 10px;
+  &:hover {
+    // border-color: #c8730c;
+    // border: solid rgb(212, 171, 250);
+    box-shadow: 0px -4px 6px 1px rgba(31, 13, 222, 0.292);
+  }
+  &:hover .room_icon_title {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+}
+.room_icon_title {
+  position: absolute;
+  bottom: 145px;
+  left: 365px;
+  z-index: 100;
+  width: 148px;
+  height: 65px;
+  padding: 0px 1px;
+  background: #000000;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  display: flex;
+  align-items: center;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+}
+
+// .room_icon_hover::after {
+//   content: attr(data-title);
+//   position: absolute;
+//   bottom: 145px;
+//   left: 80px;
+//   z-index: 100;
+//   width: 148px;
+//   height: 65px;
+//   padding: 0px 1px;
+//   overflow-y: visible;
+//   box-sizing: border-box;
+//   background: #000000;
+//   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+//   border-radius: 8px;
+//   -webkit-border-radius: 8px;
+//   -moz-border-radius: 8px;
+//   -ms-border-radius: 8px;
+//   -o-border-radius: 8px;
+//   transition: all 0.5s ease-in-out;
+//   transition-duration: 1s;
+//   transition-timing-function: ease-in-out 1s;
+//   @extend%room_title_text;
+//   -webkit-transition: all 0.5s ease-in-out;
+//   -moz-transition: all 0.5s ease-in-out;
+//   -ms-transition: all 0.5s ease-in-out;
+//   -o-transition: all 0.5s ease-in-out;
+// }
+// .room_icon_hover:hover:before {
+//   content: '';
+//   z-index: 100;
+//   position: absolute;
+//   bottom: 114px;
+//   left: 40%;
+//   border-style: solid;
+//   border-width: 6px 6px 0 6px;
+//   border-color: #000000 transparent;
+//   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+// }
+
+/* ===============================================
+ !!!!!!! next line style  for KARMA component!!!
+=========================================================
+*/
+.style_container_karma {
+  //display: flex;
+  //flex-direction: column;
+  width: 307px;
+  height: 249px;
+  background: #ffffff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.style_title_string_karma {
+  position: absolute;
+  left: 51px;
+  top: 17px;
+  width: 250px;
+  // height: 21px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #4c4c4c;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/userRequestCard/Vector-circle-time.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -33px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.style_number_title_karma {
+  position: absolute;
+  right: 67px;
+  top: 0px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #ff6000;
+}
+.block_container_ul_karma {
+  position: absolute;
+  left: 15px;
+  top: 55px;
+  width: 300px;
+}
+.style_block_li {
+  margin: 3px 0px;
+  height: 16px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+
+  color: #4c4c4c;
+}
+.style_number_string {
+  position: absolute;
+  right: 23px;
+
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+
+  color: #ff6000;
+}
+.style_btn_karma {
+  position: absolute;
+  left: 17px;
+  bottom: 13px;
+  width: 102px;
+  height: 25px;
+  cursor: pointer;
+  background: #006bbe;
+  border: none;
+  border-radius: 3px;
+  @extend%style_btn_text_number_karma;
+  &:hover {
+    background: #006bbe;
+  }
+  &:active {
+    background: rgba(0, 107, 190, 0.8);
+  }
+}
+/* ===============================================
+ !!!!!!! next line style  for UseaAsk component House block info component!!!
+=========================================================
+*/
+
+.houses_block {
+  // display: flex;
+  // flex-direction: column;
+  position: absolute;
+  left: 108px;
+  bottom: 47px;
+  z-index: 110;
+}
+
+.detail__houses_btn {
+  cursor: pointer;
+  width: 81px;
+  height: 33px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  border: none;
+  @extend%house_style;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/userRequestCard/Vector-house.png');
+    background-repeat: no-repeat;
+    position: relative;
+    left: 9px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: 0px 25px 0px 0px;
+    width: 21px;
+    height: 19px;
+  }
+  &:hover {
+    color: rgba(68, 68, 68, 0.7);
+  }
+  &:active {
+    color: rgba(68, 68, 68, 0.9);
+  }
+  &:hover::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../../assets/images/userRequestCard/Vector-house-hover.png');
+    background-repeat: no-repeat;
+    position: relative;
+    width: 21px;
+    height: 19px;
+  }
+  &:active::before {
+    content: '';
+    background-image: url('../../assets/images/userRequestCard/Vector-house-active.png');
+    background-repeat: no-repeat;
+    position: relative;
+    left: 9px;
+    right: 0px;
+    top: 5px;
+    bottom: 0px;
+    margin: 0px 15px 0px 0px;
+    width: 30px;
+    height: 30px;
+  }
+  &:hover ~ .houses_block_close {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s;
+    z-index: 120;
+  }
+}
+.houses_block_info1 {
+  width: 218px;
+  height: 56px;
+  background: #99c4ff;
+  border-radius: 5px 5px 0px 0px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  @extend%text_block_info1;
+}
+.houses_block_info2 {
+  width: 218px;
+  height: 56px;
+  border-radius: 0px 0px 5px 5px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5.72727px rgba(0, 0, 0, 0.25);
+
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -ms-border-radius: 0px 0px 5px 5px;
+  -o-border-radius: 0px 0px 5px 5px;
+  display: grid;
+  align-content: center;
+
+  text-align: center;
+  @extend%text_block_info2;
+}
+.houses_block_btn {
+  position: absolute;
+  left: 82px;
+  top: 42px;
+
+  width: 55px;
+  height: 28px;
+
+  background: #ffffff;
+  border: 0.3006px solid #656565;
+  border-radius: 3.006px;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/userRequestCard/Vector-house.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    bottom: 0px;
+    margin: 0px 0px 0px 0px;
+    width: 30px;
+    height: 30px;
+  }
+}
+/* ===============================================
+ !!!!!!! next line style  for Booking time select block-table component!!!
+=========================================================
+*/
+
+.container__booking_time {
+  width: 191px;
+  height: 281px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  z-index: 120;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 191px;
+    height: 5px;
+
+    background: #0090ff;
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+.booking_time_text_block {
+  margin: 10px 0px 5px 38px;
+  width: 153px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/userRequestCard/mail 1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.booking_time_text {
+  text-align: start;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 174.69%;
+
+  color: #4c4c4c;
+}
+.booking_time_text2 {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 174.69%;
+}
+.booking_time_block_ul {
+  position: relative;
+  width: 185px;
+}
+.booking_time_block_li {
+  height: 23px;
+  text-align: center;
+  @extend%text_style_booking_time;
+  cursor: pointer;
+  &:hover {
+    height: 23px;
+    background: rgba(216, 206, 206, 0.7);
+  }
+}
+.booking_time_active {
+  height: 23px;
+  text-align: center;
+  @extend%text_style_booking_time;
+  font-weight: 900;
+  cursor: pointer;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/userRequestCard/mail 1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  &:hover {
+    height: 23px;
+    background: rgba(216, 206, 206, 0.7);
+  }
+}
+.booking_time_disable {
+  text-align: center;
+  @extend%text_style_booking_time;
+  color: rgba(108, 108, 108, 0.33);
+}

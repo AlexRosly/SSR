@@ -1,0 +1,38 @@
+@import 'styles/common/breakpoints';
+
+.homeContainer {
+  margin: 0 auto;
+  padding: 8px 16px 16px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+
+  & footer {
+    margin: 0 auto;
+  }
+}
+
+.homeGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  justify-items: center;
+
+  @media screen and (min-width: $tablet) {
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  gap: 8px;
+
+  margin-bottom: 8px;
+}

@@ -1,0 +1,21 @@
+@import 'styles/common/breakpoints';
+
+.requestsBoxWrapper,
+.requestsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 12px;
+  }
+}
+
+.requestsBoxWrapper {
+  justify-content: flex-end;
+
+  @media screen and (min-width: $tablet) {
+    flex-grow: 1;
+  }
+}

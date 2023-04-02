@@ -1,0 +1,196 @@
+@import 'styles/common/variables';
+
+.diamond {
+  width: 33px;
+  height: 28px;
+
+  @media screen and (min-width: $tablet) {
+    width: 62px;
+    height: 52px;
+  }
+}
+
+.advantages {
+  max-width: 320px;
+  padding: 20px 19px 15px;
+  margin: 0 auto;
+
+  background-color: $colors-white;
+  border: 1px solid $border-bg-section;
+  border-radius: 3px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 600px;
+    min-height: 480px;
+    padding: 40px 38px 41px;
+  }
+}
+
+%advantagesList {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.advantagesList1 {
+  @extend %advantagesList;
+
+  grid-template-columns: 84px 77px 70px;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 150px 128px 121px;
+    gap: 56px;
+  }
+}
+
+.advantagesList2 {
+  @extend %advantagesList;
+
+  grid-template-columns: 85px 75px 79px;
+  gap: 15px;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 150px 150px 133px;
+    gap: 46px;
+  }
+}
+
+.advantageItem {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 0px 4px;
+}
+
+.advantageItemText {
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1.375;
+  font-family: $font-segoe;
+  color: $border-table;
+  text-align: justify;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+}
+
+.commissionDigit {
+  @extend .advantageItemText;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.33;
+  }
+}
+
+.registerObject {
+  position: relative;
+
+  margin: 11px 0 8px;
+  padding: 7px 2px 3px 8px;
+
+  background: $colors-bg-section;
+  border: 2px solid $border-input;
+  border-radius: 20px;
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    max-width: 525px;
+    min-height: 105px;
+    margin: 35px 0 46px;
+    padding: 16px 6px 10px 12px;
+  }
+}
+
+.registerObjectButton {
+  @extend %button-reset;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+
+  float: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 125px;
+  height: 21px;
+
+  font-weight: 900;
+  font-size: 8px;
+  line-height: 1.375;
+  font-family: $font-segoe;
+  color: $colors-white;
+  text-align: center;
+
+  background-color: $colors-brand-accent;
+  border: 1px solid $colors-brand-accent;
+  border-radius: 20px;
+
+  @media screen and (min-width: $tablet) {
+    width: 235px;
+    height: 38px;
+
+    font-size: 13px;
+    line-height: 1.39;
+
+    border-radius: 23px;
+  }
+
+  &:hover {
+    background-color: $colors-bg-button-hover;
+  }
+
+  &:active {
+    border-color: $colors-bg-section;
+    background-color: $colors-bg-button-active;
+  }
+}
+
+.registerObjectCallToAction {
+  max-width: 134px;
+  margin-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1.375;
+  font-family: $font-segoe;
+  color: $colors-city;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 270px;
+    margin-bottom: 24px;
+
+    font-size: 13px;
+    line-height: 1.31;
+  }
+}
+
+.registerObjectCallToActionSmall {
+  font-weight: 600;
+  font-size: 7px;
+  line-height: 1.29;
+  font-family: $font-segoe;
+  color: $colors-city;
+
+  white-space: nowrap;
+
+  @media screen and (max-width: $pre-tablet) {
+    margin-left: 3px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,96 @@
+// .popup__content {
+//   flex: 1 1 auto;
+//   align-self: stretch;
+//   padding: 20px 10px 20px 10px;
+//   font-family: "Segoe UI", sans-serif;
+
+//   @media (min-width: 768px) {
+//     padding: 60px 35px;
+//   }
+// }
+
+// .popup__textWrapper {
+//   font-family: "Segoe UI", sans-serif;
+//   font-weight: 600;
+
+//   color: #4c4c4c;
+// }
+
+// .popup__title {
+//   font-size: 20px;
+//   line-height: 1.33;
+// }
+
+// .popup__paragraf {
+//   font-size: 12px;
+//   line-height: 1.267;
+// }
+
+// .popup__message {
+//   position: relative;
+//   margin: 14px 0 0 21px;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 11px;
+//   line-height: 15px;
+
+//   color: #ff0000;
+// }
+
+// .popup__message::before {
+//   position: absolute;
+//   content: "";
+//   height: 4px;
+//   width: 4px;
+//   border-radius: 50%;
+//   left: -20px;
+//   top: 20%;
+//   background-color: #ff0000;
+// }
+
+// .popup__label {
+//   position: relative;
+// }
+
+// .popup__input {
+//   display: flex;
+//   align-items: center;
+//   padding: 20px 27px 8px 14px;
+
+//   width: 247px;
+//   height: 39px;
+//   box-sizing: border-box;
+//   border-radius: 5px;
+
+//   font-family: "Segoe UI", sans-serif;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 15px;
+//   line-height: 20px;
+//   outline: none;
+
+//   color: #aeafbc;
+//   border: 1px solid #a5a5a5;
+// }
+
+// .popup__inputText {
+//   position: absolute;
+//   top: 2px;
+//   left: 14px;
+//   width: 140px;
+//   font-weight: 600;
+//   font-size: 9px;
+//   line-height: 12px;
+//   color: #aeafbc;
+// }
+
+// .popup__attetion {
+//   margin: 0;
+//   margin-left: 23px;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 10px;
+//   line-height: 13px;
+
+//   color: #ff6000;
+// }

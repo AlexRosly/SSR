@@ -1,0 +1,76 @@
+@import "../Assents/variables.scss";
+
+.ddl__block {
+  position: absolute;
+  width: 335px;
+  height: 446px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4.27972px 1.06993px rgba(0, 0, 0, 0.27);
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.ddl__hidline {
+  height: 11px;
+  background: #0090ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ddl__icon {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  width: 14.4px;
+  height: 22.87px;
+}
+
+.ddl__list {
+  padding-left: 11px;
+  padding-right: 10px;
+  background: #ffffff;
+}
+
+.ddl__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 26px 13px 49px;
+  font-family: $text_font_family;
+  font-weight: $light_bold_font_weight;
+  font-size: 13px;
+  line-height: 17px;
+  cursor: pointer;
+  color: #626367;
+  fill: #aeafbc;
+
+  &:hover {
+    background: #e5e5e5;
+    border-radius: 10px;
+    fill: #006bbe;
+  }
+}
+
+.ddl__city {
+  margin-right: 14px;
+}
+
+.ddl__group {
+  display: block;
+}
+
+.ddl__region {
+  margin-right: 10px;
+  font-weight: $normal_font_weigth;
+  font-size: 9px;
+  line-height: 12px;
+  color: #8e8e8e;
+}
+
+.ddl__country {
+  margin-right: 10px;
+  font-weight: $normal_font_weigth;
+  font-size: 9px;
+  line-height: 12px;
+  color: #8e8e8e;
+}

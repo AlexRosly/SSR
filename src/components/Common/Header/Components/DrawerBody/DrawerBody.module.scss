@@ -1,0 +1,94 @@
+@import 'styles/common/variables';
+
+.drawerBody {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.drawerBodyWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.userCategory {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.depositIndicatorWrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 37px; // mockup  Figma 19. Headers - Drawer
+}
+
+.forUserCategoryIcon {
+  width: 16px;
+  height: 17px;
+  color: $border-table;
+}
+
+.forUserCategory {
+  font-family: $font-segoe;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $colors-white;
+}
+
+$footer-link-padding-left: 8px;
+
+.navMobile {
+  min-height: 400px;
+  padding-left: 37px - $footer-link-padding-left;
+}
+
+.depositIndicatorMobile {
+  position: absolute;
+  right: 0;
+  left: unset;
+}
+
+.depositIndicatorButtonMobile {
+  align-items: center;
+
+  width: 38px;
+  height: 38px;
+  background-color: $colors-white;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 3px rgb(0 144 255 / 93%);
+  }
+}
+
+.depositIndicatorOverlayMobile {
+  top: 104%;
+  left: unset;
+  right: -12px;
+
+  color: #dddddd;
+
+  & .price-ScoreBox {
+    color: $colors-white;
+  }
+
+  background-color: #282828;
+}
+
+.depositIndicatorButtonTooltipOverlay {
+  left: unset;
+  right: -10px;
+}
+
+.rentListDrawerWrapper,
+.userBookingOptionsListDrawer {
+  margin-bottom: 9px;
+}

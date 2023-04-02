@@ -1,0 +1,27 @@
+@import 'styles/common/variables';
+
+.exitBtn {
+  width: 119px;
+  height: 32px;
+
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+
+  background-color: #0090ff;
+  border: none;
+  border-radius: 3px;
+
+  @media screen and (min-width: $tablet) {
+    height: 37px;
+  }
+
+  &:hover {
+    background-color: #6dbffe;
+  }
+
+  &:active {
+    background-color: #006bbe;
+  }
+}

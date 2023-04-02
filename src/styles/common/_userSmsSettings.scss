@@ -1,0 +1,209 @@
+$color_menu_active_line: #0090ff;
+
+.userSmsSettings {
+  position: relative;
+  margin-left: 126px;
+  padding-top: 62px;
+  padding-left: 62px;
+  width: 889px;
+  height: 425px;
+  background-color: #fff;
+}
+
+.time-message {
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #a5a5a5;
+}
+
+.content {
+  margin-top: 42px;
+}
+
+.sms-message {
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #a5a5a5;
+}
+
+.sms-list {
+  margin-top: 37px;
+  margin-left: 62px;
+  font-family: Segoe UI;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.sms-item {
+  position: relative;
+
+  margin-bottom: 28px;
+  padding: 4px;
+  width: 155px;
+
+  background-color: #000000;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.sms-item:last-child {
+  width: 86px;
+}
+
+.sms-icon-house {
+  position: absolute;
+  width: 22px;
+  top: -63px;
+  left: -62px;
+}
+
+.sms-icon-envelope {
+  position: absolute;
+  width: 22px;
+  top: -61px;
+  left: -62px;
+}
+// drop-down list
+
+.sms-select {
+  position: absolute;
+  width: 111px;
+  border: none;
+  border-bottom: 1px solid $color_menu_active_line;
+  left: 35%;
+  top: 20%;
+  bottom: 74%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    background-image: url("../../assets/icons/Polygon_select_svg\ 1.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    left: 100px;
+    top: 10px;
+  }
+  &:hover::before {
+    animation: arrow 10ms forwards;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover .sms-select-window {
+    display: block;
+  }
+
+  @keyframes arrow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.sms-time {
+  position: absolute;
+  left: 8.58%;
+  right: 92.33%;
+  top: -4.98%;
+  bottom: 2.73%;
+  width: 85px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.8385px;
+  line-height: 23px;
+  color: #626367;
+}
+
+.sms-select-window {
+  position: absolute;
+  width: 117px;
+  height: 264px;
+  display: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 4.40199px 0.880398px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  left: -2.42%;
+  right: 90.33%;
+  top: 100%;
+  bottom: 2.73%;
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 117px;
+    height: 8px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #0090ff;
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+.sms-select-cont {
+  height: 264px;
+  margin: 6px 0px 0px 0px;
+  padding: 0px;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+
+  & .select-text-block-sms {
+    margin: 2.7px 0px 0px 0px;
+    text-align: center;
+    vertical-align: middle;
+    width: 117px;
+    height: 23px;
+    & :hover {
+      width: 117px;
+      height: 23px;
+      border-radius: 5px;
+      background: #ccc4c4;
+    }
+  }
+  .selected-time-sms {
+    width: 117px;
+    height: 23px;
+    border-radius: 5px;
+    background: #e6d4d4;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+  & .sms-time-select-text {
+    margin: 0px;
+    padding: 2px 0px 0px 0px;
+    height: 17px;
+    font-family: Segoe UI;
+    font-style: normal;
+
+    font-size: 13px;
+    line-height: 17px;
+    color: #171616;
+    &:focus {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 17px;
+      color: #4c4c4c;
+    }
+  }
+}

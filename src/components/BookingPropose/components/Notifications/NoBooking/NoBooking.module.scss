@@ -1,0 +1,49 @@
+.notification__wrapp {
+  margin-left: auto;
+  margin-right: 200px;
+
+  width: 501px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification__block {
+  display: flex;
+  padding-left: 45px;
+  padding-top: 11px;
+  width: 438px;
+  height: 69px;
+  border: 0.2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.notification__title {
+  width: 283px;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #535252;
+}
+
+.notification__text {
+  width: 262px;
+  font-family: 'Segoe UI';
+  font-weight: 350;
+  font-size: 11px;
+  line-height: 15px;
+
+  color: #535252;
+}
+
+.notification__icon {
+  margin-left: 44px;
+  width: 50px;
+  height: 42px;
+}

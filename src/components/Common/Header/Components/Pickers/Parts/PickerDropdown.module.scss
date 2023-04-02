@@ -1,0 +1,20 @@
+@import 'styles/common/variables';
+
+.pickerDropdown {
+  top: -6px;
+  left: -8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 6px 15px 13px 8px;
+
+  background-color: $colors-white;
+  box-shadow: $box-shadow-notification;
+  border-radius: 5px;
+
+  &.dark {
+    background-color: $colors-bg-drawer;
+  }
+}

@@ -1,0 +1,96 @@
+@import 'styles/common/variables';
+
+.ceoSpeech {
+  display: flex;
+
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  font-family: $font-segoe;
+
+  background: $colors-white;
+  // border: 1px solid $border-bg-section;
+  border-radius: 3px;
+
+  @media screen and (max-width: $pre-tablet) {
+    margin-bottom: 21px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &::before {
+      content: '';
+      min-width: 162px;
+      min-height: 875px;
+
+      background: url('../../../assets/images/pages/MainHotelier/block_5_bg.png');
+      border-radius: 3px 0px 0px 3px;
+    }
+  }
+}
+
+.ceoSpeechMain {
+  padding: 28px 32px 36px 32px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 17px 64px 16px 63px;
+  }
+}
+
+.titleAndFullName {
+  margin-left: 70px;
+  font-size: 9px;
+  font-weight: 400;
+  color: $colors-city;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 58px;
+  }
+}
+
+.ceoAvatar {
+  width: 220px;
+  height: 218px;
+  border-radius: 135px;
+
+  @media screen and (max-width: $pre-tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 269px;
+    height: 266px;
+  }
+}
+
+.yourPriceBooking {
+  font-weight: 500;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.block_five_left_content_text {
+  color: $colors-city;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 28px;
+}
+
+.block_five_left_content_text_p_footer {
+  font-weight: 700;
+}
+.block_five_left_content_text_p {
+  margin-top: 17px;
+}
+
+.logoFirstPart {
+  color: $colors-brand-accent;
+}
+
+.logoSecondPart {
+  color: $colors-brand;
+}

@@ -1,0 +1,20 @@
+@import 'styles/common/variables';
+@import './rent-list-shared';
+
+$p-v: 9px;
+
+.rentList {
+  @extend %rent-list;
+}
+
+.rentLink {
+  @extend %link;
+}
+
+.rentOptionItem {
+  @extend %rent-option-item;
+}
+
+.activeRentOptionIcon {
+  @extend %active-rent-option-icon;
+}

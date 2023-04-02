@@ -1,0 +1,13 @@
+.main__section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  width: 970px;
+}
+
+.main__container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 46px;
+}

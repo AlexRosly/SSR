@@ -1,0 +1,38 @@
+@import 'styles/common/variables';
+
+.selectUserType {
+  padding: 4px;
+  color: #eee;
+  background: none;
+  border: none;
+  outline: none;
+
+  &:hover {
+    box-shadow: $box-shadow-modal;
+  }
+
+  & option {
+    background-color: #282828;
+  }
+}
+
+.selectUserTypeAbsolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 122px;
+  padding: 4px;
+
+  background: none;
+  border: none;
+  outline: none;
+
+  &:hover {
+    box-shadow: $box-shadow-modal;
+  }
+
+  & .option {
+    background-color: lightgray;
+  }
+}

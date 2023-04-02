@@ -1,0 +1,207 @@
+.popup__content {
+  flex: 1 1 auto;
+  align-self: stretch;
+  padding: 20px 10px 20px 10px;
+  font-family: "Segoe UI", sans-serif;
+
+  @media (min-width: 768px) {
+    padding: 60px 35px;
+  }
+
+}
+
+.popup-phoneConfirmation__title {
+  padding-right: 15px;
+  margin-bottom: 5px;
+}
+
+.popup-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "Segoe UI", sans-serif;
+
+  span {
+    color: #ff6420;
+  }
+}
+
+.popup-phoneConfirmation__text {
+  max-width: 265px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 50px;
+}
+
+.popup-phoneConfirmation__form {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.popup__field {
+  position: relative;
+}
+
+.popup-phoneConfirmation__field {
+  margin-bottom: 5px;
+}
+
+.popup__input {
+  max-width: 265px;
+  width: 100%;
+  min-height: 39px;
+  border: 1px solid #A5A5A5;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-top: 12px;
+  color: transparent;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.popup__input {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    background-color: #fff;
+    color: #AEAFBC;
+    font-weight: 700;
+
+    +.popup__label {
+      font-size: 11px;
+      line-height: 12px;
+      // padding: 3px 7px 22px 7px;
+      animation: aninatLabel 0.7s ease;
+
+      &::after {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+
+/* removes arrows in input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.popup__label {
+  position: absolute;
+  max-width: 265px;
+  font-weight: 600;
+  color: #AEAFBC;
+  display: flex;
+  align-items: center;
+
+  @media (any-hover: hover) {
+    font-size: 11px;
+    line-height: 1.36;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 3px 36px 3px 7px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      right: 16px;
+      top: 50%;
+      transform: translate(0, -50%);
+      background-color: #0090FF;
+    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 11px;
+    line-height: 12px;
+    top: 0;
+    left: 0;
+    padding: 3px 7px 22px 7px;
+  }
+}
+
+@keyframes aninatLabel {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.popup-link {
+  color: #1387fb;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.popup__info, .popup__error {
+  display: inline-block;
+  max-width: 265px;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  line-height: 13px;
+  color: #FF6000;
+  margin-bottom: 13px;
+}
+
+.popup__error{
+  text-align: left;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 15px;
+  min-height: 41px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 3px;
+  max-width: 265px;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn-ready {
+  background: rgba(0, 144, 255, 0.5);
+  color: #fff;
+  border: none;
+
+  &:hover {
+  background: #0090FF;
+  }
+
+  &:active {
+    background: #006BBE;
+  }
+}
+
+.popup-phoneConfirmation__ready-btn {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

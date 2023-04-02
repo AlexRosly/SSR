@@ -1,0 +1,41 @@
+.notSendBlock {
+  max-width: 500px;
+  height: 126px;
+
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  color: #535252;
+
+  background-color: #fff;
+  border-radius: 2px;
+
+  &__wrapper {
+    border: 0.2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__wrapper-text {
+    max-width: 290px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__subtitle {
+    font-weight: 350;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}

@@ -1,0 +1,36 @@
+.freeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 49px;
+  height: 33px;
+  padding: 5px 9px 3px 9px;
+  border-radius: 5px;
+  color: #656565;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+  border: transparent;
+  background: white;
+}
+.freeButton:hover {
+  background: rgba(229, 229, 229, 0.58);
+}
+.freeButtonActive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 49px;
+  height: 33px;
+  padding: 5px 9px 3px 9px;
+  border-radius: 5px;
+  color: #656565;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+  border: transparent;
+  background: rgba(229, 229, 229, 0.58);
+  border: transparent;
+}

@@ -1,0 +1,45 @@
+@import 'styles/common/variables';
+
+.buttonsList {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  gap: 7px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    gap: 12px;
+  }
+}
+
+.buttonsItem {
+  position: relative;
+}
+
+.closeBlack {
+  width: 16px;
+  height: 16px;
+
+  color: $colors-black;
+}
+
+.friendsButton {
+  padding-bottom: 0;
+}
+
+.friends {
+  color: $border-table;
+}
+
+.envelope {
+  width: 22px;
+  height: 15px;
+  color: $border-table;
+}
+
+.radar {
+  color: $colors-city;
+}
+
+// .simpleHouseWithDoor {}

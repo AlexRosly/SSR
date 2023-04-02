@@ -1,0 +1,145 @@
+.optionsButton {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #656565;
+
+  width: 134px;
+  height: 30px;
+
+  background: #ffffff;
+  border: 1px solid #656565;
+  border-radius: 16px;
+  transition: all 0.5s;
+
+  cursor: pointer;
+
+  &_text {
+    width: 79px;
+  }
+
+  .icon_free_container {
+    display: flex;
+    width: 55px;
+    color: #656565;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &:hover {
+    transition-delay: 0.5s;
+    border: 1px solid rgba(101, 101, 101, 0.5);
+    color: rgba(101, 101, 101, 0.8);
+  }
+
+  &:hover .button_popover {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+
+  &:active {
+    transition-delay: 0.5s;
+    border: 1px solid rgba(101, 101, 101, 0.5);
+    color: rgba(101, 101, 101, 0.5);
+  }
+
+  &.accent {
+    font-weight: 700;
+    color: #ff6000;
+    border: 1px solid #ff6000;
+  }
+}
+
+.button {
+  width: 150px;
+  height: 35px;
+
+  background: #0090ff;
+  border: 1px solid #0090ff;
+  border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  cursor: pointer;
+
+  &:first-child {
+    margin-bottom: 28px;
+  }
+
+  &:hover {
+    background: rgba(0, 144, 255, 0.7);
+    border: 1px solid rgba(0, 144, 255, 0.7);
+  }
+
+  &:hover &_popover {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+
+  &:active {
+    background: rgba(0, 144, 255, 0.5);
+    border: 1px solid rgba(0, 144, 255, 0.5);
+  }
+
+  &_popover {
+    visibility: hidden;
+    opacity: 0;
+    transition: all, 0.5s;
+
+    width: 123px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    padding: 6px 9px;
+
+    background: #535252;
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    text-shadow: 0px 0px 5.20755px rgba(0, 0, 0, 0.25);
+
+    &__number {
+      flex-shrink: 0;
+      font-size: 17px;
+      line-height: 20px;
+    }
+
+    &__title {
+      display: block;
+      font-size: 12px;
+      line-height: 89.19%;
+    }
+
+    img {
+      width: 19px;
+      height: 15px;
+      margin-right: 5px;
+      margin-left: 8px;
+    }
+  }
+}

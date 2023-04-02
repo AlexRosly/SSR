@@ -1,0 +1,310 @@
+.modal__box_price {
+  padding: 28px 13px 19px 45px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.modal__error_message {
+  position: absolute;
+  font-family: 'Segoe UI';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #ff6a6a;
+  top: 7px;
+  left: 80px;
+}
+
+.modal__label_price {
+  cursor: pointer;
+  position: relative;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #6aff79;
+  margin-right: 9px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #6aff79;
+    border-radius: 1px;
+    top: 0;
+    left: -27px;
+  }
+}
+
+.modal__value_price {
+  width: 52px;
+  height: 18px;
+  background: #e3e3e3;
+  opacity: 0.55;
+  border: 0.5px solid #4c4c4c;
+  border-radius: 3px;
+  margin-left: 16px;
+  padding: 0px 5px;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.modal__value_price_error {
+  @extend .modal__value_price;
+  border: 0.5px solid #ff6a6a;
+}
+
+.modal__value_price_text {
+  position: absolute;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.375;
+  color: #6aff79;
+  bottom: -12px;
+  left: 63px;
+}
+
+.modal__value_text {
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #6aff79;
+  margin-right: 30px;
+}
+
+.modal__button_submit {
+  cursor: pointer;
+  background: #aef9b5;
+  border-radius: 20px;
+  font-family: 'Segoe UI';
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.3;
+  text-align: center;
+  color: rgba(120, 120, 120);
+  border: none;
+  width: 88px;
+  height: 32px;
+  padding: 2px 10px;
+}
+
+.modal__button_submit_have_price {
+  @extend .modal__button_submit;
+  background: #6aff79;
+  box-shadow: 0px 0px 5.53488px rgba(0, 0, 0, 0.25);
+  color: #787878;
+  &:hover {
+    color: rgba(120, 120, 120, 0.6);
+  }
+  &:active {
+    color: rgba(120, 120, 120, 0.4);
+  }
+}
+
+.modal__button_submit_have_error {
+  border: 0.5px solid #ff6a6a;
+}
+
+.modal__button_submit_change_price {
+  background: #aef9b5;
+  box-shadow: 0px 0px 5.53488px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.3;
+  color: #787878;
+  &:hover {
+    color: rgba(120, 120, 120, 0.6);
+  }
+  &:active {
+    color: rgba(120, 120, 120, 0.4);
+  }
+}
+
+.modal__box_bed {
+  padding: 5px;
+  background: #ebedfe;
+  border: none;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal__label_price_all {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #4c4c4c;
+  &:hover .modal__checkbox {
+    border: 3px solid #4c4c4c;
+  }
+}
+
+input[type='checkbox'] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.modal__checkbox {
+  transition: border 0.1s linear;
+  display: inline-block;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: 0.5px solid #000000;
+  border-radius: 5px;
+  margin-right: 4px;
+  &:hover {
+    border: 3px solid #4c4c4c;
+    border-radius: 5px;
+  }
+}
+
+.modal__checkbox_active {
+  transition: opacity 0.1s linear;
+  border: 3px solid #4c4c4c;
+  border-radius: 5px;
+  position: relative;
+  padding: 6px;
+  &::before {
+    content: '';
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4c4c4c;
+  }
+}
+
+.modal__icon_bed {
+  display: inline-block;
+  width: 17px;
+  height: 15px;
+  fill: #787878;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.modal__box_button_plus {
+  margin-left: 35px;
+  position: relative;
+}
+
+.modal__button_plus {
+  z-index: 2;
+  position: absolute;
+  cursor: pointer;
+  background: #ebedfe;
+  border: none;
+  padding: 5.3px;
+  border-radius: 3px;
+  &:hover .modal__icon_plus {
+    fill: rgba(120, 120, 120, 0.8);
+  }
+  &:active .modal__icon_plus {
+    fill: rgba(120, 120, 120, 0.5);
+  }
+}
+
+.modal__icon_plus {
+  display: block;
+  width: 8.28px;
+  height: 8.28px;
+  fill: #787878;
+}
+
+.modal__calendar_box {
+  padding: 10px 69px 0 75px;
+  overflow: hidden;
+  position: relative;
+  height: 211px;
+}
+
+.modal__error_message_calendar {
+  @extend .modal__error_message;
+  top: 27px;
+  left: 22px;
+}
+
+.modal__box_button {
+  padding: 11px 30px 29px;
+}
+
+.modal__button_clear {
+  cursor: pointer;
+  min-width: 260px;
+  min-height: 44px;
+  border: 0.5px solid transparent;
+  background: #ebedfe;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #787878;
+  &:hover {
+    border: 0.5px solid #787878;
+  }
+  &:active {
+    border: 0.5px solid #787878;
+    color: rgba(120, 120, 120, 0.6);
+  }
+}
+
+.modal__box_checkbox {
+  padding: 0 58px 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & .modal__label_price_all {
+    cursor: default;
+  }
+  & .modal__label_price_all:not(:last-child) {
+    cursor: default;
+    margin-bottom: 6px;
+  }
+  & .modal__label_price_all::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 0.5px solid #ff6000;
+    border-radius: 1px;
+    top: 0;
+    left: -27px;
+  }
+
+  & .modal__label_price_all:nth-child(2)::before {
+    border: 0.5px solid #006bbe;
+  }
+
+  & .modal__label_price_all:nth-child(3)::before {
+    background: #c4c4c4;
+    border: 0.5px solid transparent;
+  }
+}

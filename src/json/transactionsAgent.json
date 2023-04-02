@@ -1,0 +1,20 @@
+[
+  {
+    "transaction_id": "qwertyytrewqw0",
+    "agent_id": "jghb78765rtgy",
+    "payment_date": "22/03/2020",
+    "paid_date": "27/05/2022",
+    "referral_payment": "2232",
+    "earnings": "178.56",
+    "currency": "USD"
+  },
+  {
+    "transaction_id": "qwertyytrewqw1",
+    "agent_id": "756fbgv798ubb",
+    "payment_date": "22/03/2020",
+    "paid_date": "",
+    "referral_payment": "5788",
+    "earnings": "463.04",
+    "currency": "USD"
+  }
+]

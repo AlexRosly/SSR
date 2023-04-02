@@ -1,0 +1,97 @@
+@import 'styles/common/variables';
+
+.headerButton {
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 31px;
+  height: 31px;
+  padding: 2px;
+
+  background: none;
+  border: 0;
+  border-radius: 2px;
+  outline: none;
+
+  &:hover {
+    background: rgba(196, 196, 196, 0.3);
+  }
+
+  &:focus {
+    box-shadow: 1px 2px 3px 2px #3212;
+  }
+}
+
+.headerIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.headerButtonWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tooltipOverlay {
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 70px;
+  width: fit-content;
+  height: 21px;
+  max-width: 190px;
+  padding: 0 6px;
+
+  white-space: nowrap;
+
+  visibility: hidden;
+  background-color: #282828;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s 0.21s $cubic;
+  transition-property: opacity, visibility;
+
+  .headerButton:hover + & {
+    &.delay {
+      transition-delay: 0.7s;
+    }
+
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.buttonTooltip {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.5;
+  font-family: $font-segoe;
+  color: $colors-white;
+}
+
+.unreadMsgs {
+  position: absolute;
+  top: 5px;
+  left: 16px;
+
+  padding: 0 4px;
+
+  font-size: 8px;
+  line-height: 1.5;
+  font-family: $font-segoe;
+  color: $colors-white;
+
+  background: #ff6000;
+  border: 0.5px solid #ffffff;
+  border-radius: 50%;
+}

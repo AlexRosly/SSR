@@ -1,0 +1,81 @@
+@import 'styles/common/variables';
+
+.nav {
+  position: absolute;
+
+  z-index: 1;
+
+  @media screen and (max-width: $pre-tablet) {
+    top: 50px;
+    left: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    left: -40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 40px;
+  }
+}
+
+.navButton {
+  padding: 4px 20px;
+
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: $colors-brand;
+
+  background: none;
+  border: none;
+  appearance: none;
+  outline: none;
+
+  &:hover {
+    box-shadow: $box-shadow-modal;
+  }
+}
+
+.navList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  width: 220px;
+  padding: 8px 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  background-color: darken(white, 2);
+  border-radius: 4px;
+}
+
+.navLink {
+  padding: 4px 8px;
+
+  font-family: $font-segoe;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  text-decoration: none;
+  // cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: 110ms $cubic;
+    transition-property: color;
+  }
+}
+
+.navHeader {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #282828ed;
+}

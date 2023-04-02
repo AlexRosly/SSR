@@ -1,0 +1,2192 @@
+$color_text_page: #4c4c4c;
+$color_text_sms_block: #ffffff;
+$color_menu_text_navbar: #4c4c4c;
+$color_menu_active_line: #0090ff;
+$color_menu_line: #bcbcbc;
+$color_menu_active_text_navbar: #282222;
+$color_text_input: #a5a5a5;
+$color_text_label: #a5a5a5;
+$color_btn: #0090ff;
+
+%input_style {
+  outline: none;
+  background: #ffffff;
+  border: 1.8px solid $color_text_input;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+%send_btn_style {
+  background: $color_btn;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 0;
+  &:hover {
+    background: $color_btn;
+    border-radius: 3px;
+  }
+  &:active {
+    background: #006bbe;
+    border-radius: 3px;
+  }
+}
+%text_label_code {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+}
+%text_label_style {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color_text_label;
+}
+%edit_btn_style {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 0;
+  background-color: inherit;
+  &:hover {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(76, 76, 76, 0.1);
+    border-radius: 3px;
+    border: 0;
+  }
+  &:active {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(76, 76, 76, 0.03);
+    border-radius: 3px;
+    border: 0;
+  }
+}
+%text_input_style {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color_text_input;
+}
+%text_block_info {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  color: $color_text_page;
+}
+
+%text-table-info {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color_text_page;
+}
+/*================ TRISTA===============*/
+.btn_trista {
+  position: absolute;
+  width: 350px;
+  height: 100px;
+  top: 80%;
+  left: 40%;
+  font-size: 45px;
+  font-weight: bold;
+  color: #ff0000;
+  @extend %send_btn_style;
+  box-shadow: 10px 5px 5px red;
+}
+.play-trista {
+  position: absolute;
+  width: 380px;
+  height: 150px;
+  top: 80%;
+  left: 10%;
+  font-size: 45px;
+  font-weight: bold;
+  color: #ff0000;
+
+  box-shadow: 10px 5px 5px red;
+}
+.main-container {
+  display: none;
+}
+/*  ===================================
+!!!!!!!        NAVBAR MENU     !!!!!!!!!!!
+=============================================
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+.container-navbar {
+  position: absolute;
+  width: 1200px;
+  height: 52px;
+  left: -2px;
+  top: 1px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.menu-container1 {
+  width: 889px;
+  margin-top: 75px;
+  margin-left: 126px;
+  border-bottom: 1px solid #bcbcbc;
+}
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 61px;
+  width: 100%;
+}
+
+.menu__list-text {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: pointer;
+  color: $color_menu_text_navbar;
+  text-align: center;
+}
+.width1 {
+  padding: 23px 23px;
+  width: 211px;
+  /*   &::before {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4%;
+    right: 0%;
+    top: 37%;
+    bottom: 0%;
+  }
+  &:focus::before {
+    color: #006bbe;
+  } */
+}
+.width2 {
+  padding: 23px 2px;
+  width: 129px;
+
+  /*  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/finance.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 5%;
+    right: 0%;
+    top: 37%;
+    bottom: 0%;
+  } */
+}
+.width3 {
+  padding: 23px 2px;
+  width: 184px;
+
+  /*  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/Star.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4%;
+    right: 0%;
+    top: 38%;
+    bottom: 0%;
+  } */
+}
+.width4 {
+  padding: 22px 2px 5px 2px;
+  width: 167px;
+  /*  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/settingSMS.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4%;
+    right: 0%;
+    top: 37%;
+    bottom: 0%;
+  } */
+}
+.width5 {
+  padding: 23px 2px;
+  width: 198px;
+  /* &::before {
+    content: '';
+    background-image: url('../../assets/images/header/HistoryHeader.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 6%;
+    right: 0%;
+    top: 39%;
+    bottom: 0%;
+  } */
+}
+
+.nav-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-block1 {
+  position: absolute;
+  width: 137px;
+  height: 20px;
+  left: 147px;
+  top: 88px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/settingAccount.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -18%;
+    right: 0%;
+    top: 10%;
+    bottom: 0%;
+  }
+}
+
+.nav-block2 {
+  position: absolute;
+  width: 105px;
+  height: 20px;
+  left: 333px;
+  top: 88px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/finance.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -2%;
+    right: 0%;
+    top: 11%;
+    bottom: 0%;
+  }
+}
+
+.nav-block3 {
+  position: absolute;
+  width: 123px;
+  height: 20px;
+  left: 482px;
+  top: 88px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/Star.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -18%;
+    right: 0%;
+    top: 14%;
+    bottom: 0%;
+  }
+}
+
+.nav-block4 {
+  position: absolute;
+  width: 203px;
+  height: 20px;
+  left: 664px;
+  top: 88px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/settingSMS.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -13%;
+    right: 0%;
+    top: 12%;
+    bottom: 0%;
+  }
+}
+
+.nav-block5 {
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  left: 933px;
+  top: 88px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/HistoryHeader.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -17%;
+    right: 0%;
+    top: 14%;
+    bottom: 0%;
+  }
+}
+// .nav-block6 {
+//   position: absolute;
+//   width: 40px;
+//   height: 30px;
+//   left: 1110px;
+//   top: 80px;
+// }
+// .nav__close {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 40px;
+//   height: 40px;
+//   background-color: transparent;
+//   transition: background-color 0.3s ease 0s;
+//   border: none;
+//   top: 10px;
+//   right: 10px;
+//   border-radius: 3px;
+//   cursor: pointer;
+
+//   @media (min-width: 768px) {
+//     top: -8px;
+//     right: -100px;
+//   }
+
+//   &:hover {
+//     background: rgba(76, 76, 76, 0.1);
+//   }
+
+//   &:active {
+//     background: rgba(76, 76, 76, 0.6);
+//   }
+
+//   &::before,
+//   &::after {
+//     position: absolute;
+//     content: '';
+//     width: 24px;
+//     height: 2px;
+//     background-color: #4c4c4c;
+//     transform: rotate(45deg);
+//     border-radius: 4px;
+//   }
+
+//   &::before {
+//     transform: rotate(45deg);
+//   }
+
+//   &::after {
+//     transform: rotate(-45deg);
+//   }
+// }
+.active_line {
+  position: absolute;
+  bottom: -9px;
+  height: 27px;
+  width: 140%;
+  border-bottom: 2px solid $color_menu_active_line;
+  transition: 0.3s;
+  z-index: 9;
+}
+.active_text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: $color_menu_active_text_navbar;
+}
+.menu__line {
+  position: absolute;
+  width: 958px;
+  height: 0px;
+  left: 120px;
+  top: 115px;
+  border: 1px solid $color_menu_line;
+  z-index: 1;
+}
+/*  ============================================
+!!!!!!! NEXT line for  account setting!!!!!!!!!
+=================================================
+*/
+
+.account-setting-container {
+  margin-left: 126px;
+  padding-top: 63px;
+  padding-left: 73px;
+  width: 889px;
+  height: 425px;
+  background-color: #fff;
+}
+.page_account-name {
+  position: absolute;
+  width: 406px;
+  height: 40px;
+  left: 272px;
+  top: 146px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  color: $color_text_page;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/icons/accountSettingSideMenu.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -25%;
+    right: 103.92%;
+    top: -9.33%;
+    bottom: 3.42%;
+  }
+}
+.container__block-input {
+  position: absolute;
+  left: -75px;
+  top: 50px;
+}
+
+.container__block-codelog {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.container__block-codeEm {
+  position: relative;
+  top: 71px;
+  left: 0px;
+}
+.container__block-codeNone {
+  position: relative;
+  display: none;
+}
+.container__block-login {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.container__block-email {
+  position: relative;
+  left: 0px;
+  top: 4px;
+}
+.container__block__code {
+  position: relative;
+  left: 0px;
+  top: 75px;
+}
+.container__block-info {
+  position: relative;
+  left: -273px;
+  top: -131px;
+}
+
+.block-input-login {
+  position: absolute;
+  width: 265px;
+  height: 39px;
+  left: 273px;
+  top: 201px;
+  text-align: center;
+  padding: 5px 0px 0px 8px;
+
+  @extend %input_style;
+}
+
+.block-input-email {
+  position: absolute;
+  width: 265px;
+  height: 39px;
+  left: 272px;
+  top: 268px;
+  text-align: center;
+  padding: 5px 0px 0px 8px;
+  @extend %input_style;
+}
+
+.block-input-codelog {
+  position: absolute;
+  width: 144px;
+  height: 25px;
+  left: 280px;
+  top: 283px;
+  text-align: center;
+  outline: none;
+  background: #ffffff;
+  border: 1px solid #a5a5a5;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.text-input {
+  @extend %text_input_style;
+  &::placeholder {
+    @extend %text_input_style;
+  }
+}
+
+.text-label-login {
+  position: absolute;
+  width: 241px;
+  height: 14px;
+  left: 284px;
+  top: 201px;
+
+  @extend %text_label_style;
+  z-index: 2;
+}
+.text-label-codelog {
+  position: absolute;
+  width: 212px;
+  height: 27px;
+  left: 279px;
+  top: 247px;
+  color: #4c4c4c;
+  @extend %text_label_code;
+}
+
+.text-label-codelog-time {
+  position: absolute;
+  width: 91px;
+  height: 26px;
+  left: 440px;
+  top: 282px;
+  color: #ff6000;
+  @extend %text_label_code;
+}
+.text-label-codeErr {
+  position: absolute;
+  width: 212px;
+  height: 27px;
+  left: 279px;
+  top: 247px;
+  color: #ff0000;
+  @extend %text_label_code;
+}
+.text-label-fieldLogErr {
+  position: absolute;
+  width: 252px;
+  height: 27px;
+  left: 279px;
+  top: 248px;
+  color: #ff0000;
+  @extend %text_label_code;
+}
+
+.text-label-email {
+  position: absolute;
+  width: 400px;
+  height: 15px;
+  left: 284px;
+  top: 268px;
+  z-index: 2;
+  @extend %text_label_style;
+}
+.text__btn {
+  position: absolute;
+  width: 83.57px;
+  height: 20.89px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.send-btn-login {
+  position: absolute;
+  width: 153px;
+  height: 39px;
+  left: 582px;
+  top: 201px;
+  z-index: 0;
+  @extend %send_btn_style;
+}
+.send-btn-code {
+  position: absolute;
+  width: 153px;
+  height: 39px;
+  left: 582px;
+  top: 272px;
+  z-index: 0;
+  @extend %send_btn_style;
+}
+.send-btn-email {
+  position: absolute;
+  width: 153px;
+  height: 39px;
+  left: 582px;
+  top: 268px;
+  z-index: 0;
+  @extend %send_btn_style;
+}
+.edit-btn-login {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 600px;
+  top: 200px;
+  z-index: 1;
+  @extend %edit_btn_style;
+}
+.edit-btn-email {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 600px;
+  top: 268px;
+  @extend %edit_btn_style;
+}
+
+.text__id {
+  position: absolute;
+  width: 92px;
+  height: 16px;
+  left: 273px;
+  top: 363px;
+  font-size: 12px;
+  line-height: 16px;
+  @extend %text_block_info;
+}
+
+.text__registaration {
+  position: absolute;
+  width: 197px;
+  height: 17px;
+  left: 272px;
+  top: 380px;
+  font-size: 13px;
+  line-height: 17px;
+  @extend %text_block_info;
+}
+
+.deleteBtn1 {
+  margin-top: 288px;
+  margin-bottom: 32px;
+  padding: 14px 21px 13px 24px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background: #a5a5a5;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 22.5px;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background: #000000;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+  }
+  &:focus {
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 22.5px;
+  }
+}
+/* block btn delete account  */
+
+.container__block-delete {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+.block-delete-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 262px;
+  height: 75px;
+  left: 260px;
+  bottom: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10.3889px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.block-delete-btn {
+  position: absolute;
+  width: 262px;
+  height: 75px;
+  left: 535px;
+  bottom: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10.3889px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.text-delete-info {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #ff6000;
+}
+.text-delete-btn {
+  position: absolute;
+  width: 124.89px;
+  height: 28.39px;
+  left: 17px;
+  bottom: 20px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ff6000;
+}
+
+.text-delete-timer {
+  position: absolute;
+  width: 19.74px;
+  height: 29.49px;
+  left: 135px;
+  bottom: 19px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ff6000;
+}
+.text-btn-cancel {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #0090ff;
+  &::after {
+    content: '';
+    background-image: url('../../assets/icons/Vector\ arrow\ back.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 76%;
+    right: -77.08%;
+    top: 35.67%;
+    bottom: 3.42%;
+  }
+}
+.block-cancel-btn-account {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0px 16px 0px;
+  width: 99px;
+  height: 75px;
+  left: 164px;
+  top: 0px;
+  cursor: pointer;
+  background: rgba(76, 76, 76, 0.11);
+  backdrop-filter: blur(15px);
+  border: 0;
+  border-radius: 3px;
+  &:hover {
+    background: rgba(76, 76, 76, 0.28);
+    backdrop-filter: blur(15px);
+  }
+  &:active {
+    background: rgba(76, 76, 76, 0.11);
+    backdrop-filter: blur(15px);
+  }
+}
+
+/* ===============================================
+ !!!!!!! next line style for page Finance!!!
+=========================================================
+*/
+
+.toggle-active {
+  position: absolute;
+  left: 130px;
+  top: 225px;
+  color: #00ff19;
+}
+.toggle-nonactive {
+  position: absolute;
+  left: 130px;
+  top: 225px;
+  color: #ff6a6a;
+}
+.page_finance-name {
+  position: absolute;
+  width: 406px;
+  height: 40px;
+  left: 272px;
+  top: 146px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  color: $color_text_page;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/icons/VectorFinaceSideMenu.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -25%;
+    right: 103.92%;
+    top: -9.33%;
+    bottom: 3.42%;
+  }
+}
+
+.container-account-active {
+  position: absolute;
+  // display: flex;
+  // flex-direction: column;
+  // align-content: space-between;
+  width: 181px;
+  height: 333px;
+  left: 25px;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  color: #4c4c4c;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  top: 60px;
+  padding: 5px 19px 11px 15px;
+  z-index: 1;
+  margin: 155px 246px -216px 248px;
+}
+.account-block {
+  position: absolute;
+  left: 6px;
+  top: 0px;
+}
+.block__active {
+  position: absolute;
+  width: 95px;
+  height: 13px;
+  left: 45px;
+  top: 18px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100.09%;
+  text-align: center;
+  color: #00ff19;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/sidemenu/finance/Вверх.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -37%;
+    right: 78.92%;
+    top: -74.33%;
+    bottom: 0.42%;
+  }
+}
+.block__notactive {
+  position: absolute;
+  width: 113px;
+  height: 13px;
+  left: 45px;
+  top: 18px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100.09%;
+  text-align: center;
+
+  color: #ff6a6a;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/sidemenu/finance/Вниз.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -31%;
+    right: 78.92%;
+    top: -18.33%;
+    bottom: -89.42%;
+  }
+}
+.block__text {
+  position: absolute;
+  left: 0px;
+  top: 389px;
+
+  & .text__element {
+    position: absolute;
+    width: 133px;
+    height: 30px;
+    left: 15px;
+    top: 316px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #4c4c4c;
+  }
+  & .text__small {
+    position: absolute;
+    width: 133px;
+    height: 60px;
+    left: 15px;
+    top: 340px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 12px;
+
+    color: #4c4c4c;
+  }
+  & .text__distance-1 {
+    position: absolute;
+    left: 0px;
+    bottom: 664px;
+  }
+  & .text__distance-2 {
+    position: absolute;
+    left: 0px;
+    bottom: 627px;
+  }
+  & .text__distance-3 {
+    position: absolute;
+    left: 0px;
+    bottom: 574px;
+  }
+  & .text__distance-4 {
+    position: absolute;
+    left: 0px;
+    bottom: 560px;
+  }
+  & .text__distance-dislike {
+    position: absolute;
+    left: 0px;
+    bottom: 560px;
+  }
+}
+
+.block__text-score {
+  position: absolute;
+  width: 136px;
+  height: 15px;
+  left: 15px;
+  top: 249px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  color: #ff6a6a;
+}
+
+.block__text-deposit {
+  position: absolute;
+  width: 136px;
+  height: 15px;
+  left: 15px;
+  top: 262px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  color: #00ff19;
+}
+.text-score__money {
+  margin: 0px;
+  padding: 0px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  position: absolute;
+  width: 136px;
+  height: 15px;
+  left: 85px;
+  top: 0px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #4c4c4c;
+}
+.text-usd {
+  margin: 0px;
+  padding: opx;
+  position: absolute;
+  width: 136px;
+  height: 15px;
+  left: 119px;
+  top: 0px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #4c4c4c;
+}
+.account-btn {
+  position: absolute;
+  width: 151px;
+  height: 30px;
+  left: 15px;
+  top: 288px;
+  background: #ffffff;
+  border: 1px solid #656565;
+  box-sizing: border-box;
+  border-radius: 3px;
+  &:hover {
+    border: 1px solid #d0d0d0;
+    color: #d0d0d0;
+  }
+  &:active {
+    border: 1px solid #000000;
+    color: #000000;
+  }
+}
+.account-text-btn {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #656565;
+}
+
+.container-account-notactive {
+  position: absolute;
+  // display: flex;
+  // flex-direction: column;
+  // align-content: space-between;
+  width: 181px;
+  height: 333px;
+  top: 60px;
+  left: -166px;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  color: #4c4c4c;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 5px 19px 11px 15px;
+  margin: 155px 449px -480px 439px;
+}
+
+/*=================finance table=====*/
+.container-finance-table {
+  position: absolute;
+  width: 471px;
+  height: 415px;
+  left: 270px;
+  top: 570px;
+
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.table__deposit1-block {
+  position: absolute;
+  left: 0px;
+  top: 21px;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/sidemenu/finance/Vector1.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    right: -49px;
+    top: 0px;
+    bottom: -37px;
+    z-index: 10;
+  }
+}
+
+.table__deposit2-block {
+  position: absolute;
+  left: 0px;
+  top: 69px;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/sidemenu/finance/Vector1.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    right: -49px;
+    top: 0px;
+    bottom: -37px;
+    z-index: 10;
+  }
+}
+.table__expenditure1-block {
+  position: absolute;
+  left: 0px;
+  top: 128px;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/sidemenu/finance/Vector2.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    right: -49px;
+    top: 0px;
+    bottom: -37px;
+    z-index: 10;
+  }
+}
+.table__expenditure2-block {
+  position: absolute;
+  left: 0px;
+  top: 200px;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/sidemenu/finance/Vector2.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    right: -49px;
+    top: 0px;
+    bottom: -37px;
+    z-index: 10;
+  }
+}
+.table__block-name {
+  position: absolute;
+}
+.block-name__text {
+  position: absolute;
+  width: 96px;
+  height: 13px;
+  left: 48px;
+  top: 0px;
+
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 10px;
+  line-height: 13px;
+
+  color: #4c4c4c;
+}
+.table__block-date {
+  position: absolute;
+}
+.block-date__text {
+  position: absolute;
+  width: 48px;
+  height: 13px;
+  left: 161px;
+  top: 0px;
+
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+
+  color: #4c4c4c;
+}
+.table__block-option {
+  position: absolute;
+}
+
+.block-option__text {
+  position: absolute;
+  width: 31px;
+  height: 15px;
+  left: 250px;
+  top: 0px;
+
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #4c4c4c;
+}
+
+.table__block-money {
+  position: absolute;
+}
+.block-money__text {
+  position: absolute;
+  width: 78px;
+  height: 15px;
+  left: 400px;
+  top: 0px;
+
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #4c4c4c;
+}
+.table__block-info-expenditure1 {
+  position: absolute;
+  right: 266px;
+  bottom: 702px;
+}
+
+.table__block-info-expenditure2 {
+  position: absolute;
+  right: 266px;
+  bottom: 702px;
+}
+.block-info__text-commision {
+  position: absolute;
+  width: 130px;
+  height: 12px;
+  left: 502px;
+  top: 678px;
+  @extend %text-table-info;
+}
+.block-info__text-name {
+  position: absolute;
+  width: 116px;
+  height: 13px;
+  left: 502px;
+  top: 689px;
+  @extend %text-table-info;
+}
+.block-info__text-option {
+  position: absolute;
+  width: 71px;
+  height: 13px;
+  left: 502px;
+  top: 701px;
+
+  @extend %text-table-info;
+}
+.block-info__text-date {
+  position: absolute;
+  width: 123px;
+  height: 13px;
+  left: 502px;
+  top: 714px;
+
+  @extend %text-table-info;
+}
+.block-info__text-money {
+  position: absolute;
+  width: 123px;
+  height: 13px;
+  left: 502px;
+  top: 727px;
+  @extend %text-table-info;
+}
+.hr1 {
+  position: absolute;
+  width: 402px;
+  height: 0px;
+  left: 49px;
+  top: 51px;
+
+  border: 1px solid #cfcfcf;
+  transform: rotate(-0.16deg);
+}
+.hr2 {
+  position: absolute;
+  width: 402px;
+  height: 0px;
+  left: 49px;
+  top: 98px;
+
+  border: 1px solid #cfcfcf;
+  transform: rotate(-0.16deg);
+}
+.hr3 {
+  position: absolute;
+  width: 402px;
+  height: 0px;
+  left: 49px;
+  top: 170px;
+
+  border: 1px solid #cfcfcf;
+  transform: rotate(-0.16deg);
+}
+.hr4 {
+  position: absolute;
+  width: 402px;
+  height: 0px;
+  left: 49px;
+  top: 240px;
+
+  border: 1px solid #cfcfcf;
+  transform: rotate(-0.16deg);
+}
+
+/*========currence block==========*/
+.container-currency {
+  position: absolute;
+  width: 250px;
+  left: 474px;
+  top: 215px;
+}
+.currency__text {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 23px;
+
+  color: #4c4c4c;
+}
+.currency__block {
+  position: absolute;
+  left: 150px;
+  top: 24px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #006bbe;
+}
+.color-oject {
+  // font-family: Segoe UI;
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 12px;
+  // line-height: 16px;
+  // text-align: center;
+  display: flex;
+  justify-content: space-around;
+  color: #0090ff;
+}
+
+/*  ================================================
+
+==============next line for feedback rating  !!!!!!!!
+============================================
+*/
+
+.btn-open-block-rating {
+  position: absolute;
+  left: 181px;
+  top: 250px;
+}
+.main-container-ratting {
+  position: absolute;
+  left: 398px;
+  top: 220px;
+  width: 288px;
+  height: 348px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  cursor: pointer;
+  &::-webkit-scrollbar {
+    height: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    border-bottom: 1px solid #0090ff;
+    background: #ebedfe;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #0090ff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+}
+.block-rating-feedback {
+  position: absolute;
+  width: 62px;
+  height: 23px;
+  left: 71px;
+  top: 32px;
+
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16.9471px;
+  line-height: 23px;
+  color: #4c4c4c;
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/sidemenu/rating/Star 13.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -50px;
+    right: -49px;
+    top: -7px;
+    bottom: -37px;
+    z-index: 10;
+  }
+}
+.block-rating-feedback-number {
+  position: absolute;
+  width: 43.79px;
+  height: 26px;
+  left: 125px;
+  top: 0px;
+  bottom: 0px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5.47368px rgba(0, 0, 0, 0.25);
+  border-radius: 5.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Segoe UI;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 14px;
+
+  color: #0090ff;
+  -webkit-border-radius: 5.5px;
+  -moz-border-radius: 5.5px;
+  -ms-border-radius: 5.5px;
+  -o-border-radius: 5.5px;
+}
+.block-list-rating {
+  position: absolute;
+  left: 35px;
+  top: 89px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: #4c4c4c;
+}
+.list-guest-ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rating-text-direction {
+  margin: 0px 0px 17px 0px;
+}
+.guest-ratings-number {
+  margin: 0px 0px 0px 41px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: right;
+  color: #4c4c4c;
+}
+.block-name-place {
+  position: absolute;
+  width: 98px;
+  height: 14px;
+  left: 36px;
+  top: 275px;
+}
+.name-place-text {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #656565;
+}
+.name-place-text-big {
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #656565;
+}
+.btn-rating-feedback {
+  position: absolute;
+  width: 102px;
+  height: 25px;
+  left: 111px;
+  top: 0px;
+
+  background: #0090ff;
+  border-radius: 3px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+
+  color: #ffffff;
+  border: 0;
+  &:hover {
+    background: #0085eb;
+  }
+  &:active {
+    background: rgba(0, 144, 255, 0.8);
+  }
+}
+.btn-rating-feedback-number {
+  margin: 0px 0px 0px 17px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.class-border-rating {
+  border: 0.5px solid #4c4c4c;
+}
+.container-rating1 {
+  position: absolute;
+  width: 281px;
+  height: 328px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.container-rating2 {
+  position: absolute;
+  width: 281px;
+  height: 328px;
+  left: 298px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.container-rating3 {
+  position: absolute;
+  width: 281px;
+  height: 328px;
+  left: 596px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.container-rating4 {
+  position: absolute;
+  width: 281px;
+  height: 328px;
+  left: 894px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.container-rating5 {
+  position: absolute;
+  width: 281px;
+  height: 328px;
+  left: 1192px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.container-rating6 {
+  position: absolute;
+  width: 281px;
+  height: 328px;
+  left: 1490px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.container-rating7 {
+  position: absolute;
+  width: 281px;
+  height: 328px;
+  left: 1788px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.container-table-rating {
+  position: absolute;
+  width: 316px;
+  height: 520px;
+  left: 385px;
+  top: 490px;
+
+  background: #ffffff;
+  border: 1.04839px solid rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+}
+.position-btn-close {
+  position: absolute;
+  left: 272px;
+  top: 0px;
+}
+/* =================================================
+!!!!!!!! next line style for  page sms settings!!!!!!
+============================================================
+*/
+
+// .cont_page_sms {
+//   position: relative;
+// }
+.page_sms-name {
+  position: absolute;
+  width: 406px;
+  height: 40px;
+  left: 272px;
+  top: 146px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  color: $color_text_page;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/icons/logoSmsSettingSideMenu.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -25%;
+    right: 103.92%;
+    top: -9.33%;
+    bottom: 3.42%;
+  }
+}
+.page_sms-set {
+  position: absolute;
+  width: 240px;
+  height: 54px;
+  left: 272px;
+  top: 212px;
+
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color_text_page;
+  display: flex;
+  flex-direction: row;
+}
+
+.time {
+  position: absolute;
+  left: 8.58%;
+  right: 92.33%;
+  top: -4.98%;
+  bottom: 2.73%;
+  width: 85px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.8385px;
+  line-height: 23px;
+  color: #626367;
+}
+
+.page_select {
+  position: absolute;
+  width: 111px;
+  border: none;
+  border-bottom: 1px solid $color_menu_active_line;
+  left: 150.58%;
+  right: 90.33%;
+  top: 54.02%;
+  bottom: 2.73%;
+
+  &::before {
+    content: '';
+    background-image: url('../../assets/icons/Polygon_select_svg\ 1.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    left: 100px;
+    top: 10px;
+  }
+  &:hover::before {
+    animation: arrow 10ms forwards;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover .page-select-window {
+    display: block;
+  }
+
+  @keyframes arrow {
+    0% {
+      transform: rotate(0deg);
+    }
+    // 25% {
+    //   transform: rotate(45deg);
+    // }
+    // 50% {
+    //   transform: rotate(90deg);
+    // }
+    // 75% {
+    //   transform: rotate(135deg);
+    // }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.page-select-window {
+  position: absolute;
+  width: 117px;
+  height: 264px;
+  display: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 4.40199px 0.880398px rgba(0, 0, 0, 0.22);
+  border-radius: 5px 5px 1px 1px;
+  left: -2.42%;
+  right: 90.33%;
+  top: 100%;
+  bottom: 2.73%;
+  &::before {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 117px;
+    height: 8px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #0090ff;
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+.page-select-cont {
+  height: 264px;
+  margin: 6px 0px 0px 0px;
+  padding: 0px;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+
+  & .select-text-block {
+    margin: 2.7px 0px 0px 0px;
+    text-align: center;
+    vertical-align: middle;
+    width: 117px;
+    height: 23px;
+    & :hover {
+      width: 117px;
+      height: 23px;
+      border-radius: 5px;
+      background: #ccc4c4;
+    }
+  }
+  .selected-time {
+    width: 117px;
+    height: 23px;
+    border-radius: 5px;
+    background: #e6d4d4;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+  & .page-time-select-text {
+    margin: 0px;
+    padding: 2px 0px 0px 0px;
+    height: 17px;
+    font-family: Segoe UI;
+    font-style: normal;
+
+    font-size: 13px;
+    line-height: 17px;
+    color: #171616;
+    &:focus {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 17px;
+      color: #4c4c4c;
+    }
+  }
+}
+
+.page_sms-cont {
+  position: absolute;
+  width: 342px;
+  height: 20px;
+  left: 272px;
+  top: 298px;
+
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: $color_text_page;
+}
+
+.page_sms-cont_block {
+  position: relative;
+  left: 204px;
+  top: -322px;
+  bottom: -306px;
+}
+
+.page_sms-cont_list-1 {
+  position: absolute;
+  width: 121.82px;
+  height: 13px;
+  left: calc(50% - 121.82px / 2 - 263.47px);
+  top: 339.9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  color: $color_text_sms_block;
+
+  &.block-1 {
+    position: absolute;
+    width: 134px;
+    height: 23.48px;
+    left: calc(50% - 134px / 2 - 263px);
+    top: 336px;
+    border-radius: 5px;
+    background: #000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/Request.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -33%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+}
+
+.page_sms-cont_list-2 {
+  margin: 0px 0px 0px 0px;
+  position: absolute;
+  width: 135.95px;
+  height: 14px;
+  left: calc(50% - 135.95px / 2 - 257.39px);
+  top: 387.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  color: $color_text_sms_block;
+
+  &.block-2 {
+    position: absolute;
+    width: 147px;
+    height: 25.29px;
+    left: calc(50% - 147px / 2 - 258.5px);
+    top: 383px;
+    border-radius: 5px;
+    background: #000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/Friends.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -28%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+}
+.page_sms-cont_list-3 {
+  position: absolute;
+  width: 70px;
+  height: 15.6px;
+  left: calc(50% - 70px / 2 - 290px);
+  top: 431.9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  color: $color_text_sms_block;
+
+  &.block-3 {
+    position: absolute;
+    width: 76px;
+    height: 23.48px;
+    left: calc(50% - 76px / 2 - 293px);
+    top: 428px;
+    border-radius: 5px;
+    background: #000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/Message.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -55%;
+    right: 0%;
+    top: 15%;
+    bottom: 0%;
+  }
+}
+
+.page_sms-cont_list-4 {
+  position: absolute;
+  width: 137px;
+  height: 14px;
+  left: calc(50% - 137px / 2 - 256.5px);
+  top: 480.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  vertical-align: middle;
+  color: $color_text_sms_block;
+
+  &.block-4 {
+    position: absolute;
+    width: 136px;
+    height: 25.29px;
+    left: calc(50% - 136px / 2 - 263px);
+    top: 476px;
+    border-radius: 5px;
+    background: #000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+  &::before {
+    content: '';
+    background-image: url('../../assets/images/header/Disable.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -31%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+}
+
+/* =================================================
+!!!!!!!! next line style for UserMenu !!!!!!
+============================================================
+*/
+
+.menu-container {
+  width: 889px;
+  margin-top: 75px;
+  margin-left: 126px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.menu__list-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 61px;
+  width: 100%;
+}
+
+.nav-block7 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 211px;
+}
+
+.nav-block8 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 269px;
+}
+
+.nav-block9 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+}
+
+.nav-block10 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 239px;
+}
+
+.menu__list-link7 {
+  padding: 20px 24px 21px 26.24px;
+  cursor: pointer;
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #787878;
+
+  &:hover {
+    background-color: rgba(0, 107, 190, 0.05);
+    backdrop-filter: blur(15px);
+  }
+}
+
+.menu__list-link8 {
+  display: none;
+  padding: 20px 20.19px 21px 22px;
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #787878;
+
+  &:hover {
+    background-color: rgba(0, 107, 190, 0.05);
+    backdrop-filter: blur(15px);
+  }
+}
+
+.menu__list-link9 {
+  display: none;
+  padding: 20px 25.2px 21px 20px;
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #787878;
+
+  &:hover {
+    background-color: rgba(0, 107, 190, 0.05);
+    backdrop-filter: blur(15px);
+  }
+}
+
+.menu__list-link10 {
+  display: none;
+  padding: 20px 24.77px 21px 25px;
+  font-family: Segoe UI;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #787878;
+
+  &:hover {
+    background-color: rgba(0, 107, 190, 0.05);
+    backdrop-filter: blur(15px);
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 14px;
+  margin-right: 8px;
+  fill: #787878;
+}
+
+.active-link {
+  color: #006bbe;
+  background-color: rgba(0, 107, 190, 0.05);
+  backdrop-filter: blur(15px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #006bbe;
+    opacity: 1;
+  }
+
+  & .icon {
+    fill: #006bbe;
+  }
+}
+
+
+.vector-sky {
+  width: 8px;
+  height: 6px;
+
+  color: #006bbe;
+}

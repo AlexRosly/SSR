@@ -1,0 +1,130 @@
+.usersCard__section {
+  margin-left: 31px;
+  position: relative;
+  width: 238px;
+  height: 336px;
+  padding-top: 21px;
+
+  background: #ffffff;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-family: 'Segoe UI';
+
+  border-top: 8px solid rgba(0, 144, 255, 0.6);
+}
+
+.usersCard__link {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+}
+
+.usersCard__icon-gear {
+  width: 19px;
+  height: 19px;
+}
+
+.usersCard__thumb {
+  width: 155px;
+  height: 155px;
+
+  margin: 0 auto;
+}
+
+.usersCard__image {
+  width: 100%;
+  height: 100%;
+}
+
+.usersCard__title {
+  margin-top: 7.5px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.usersCard__infoBlock {
+  margin-top: 30px;
+  padding-right: 11px;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    padding-right: 8px;
+    justify-content: space-between;
+    height: 34px;
+    border-radius: 3px;
+
+    &:first-child {
+      margin-bottom: 4px;
+      cursor: pointer;
+      &:hover {
+        background: rgba(196, 196, 196, 0.35);
+      }
+
+      &.active {
+        background: rgba(196, 196, 196, 0.35);
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 17px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  &__icon-weekly {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #787878;
+  }
+
+  &__number {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.09em;
+
+    color: #ff6000;
+  }
+
+  &__date {
+    margin-left: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #4c4c4c;
+    flex-shrink: 0;
+  }
+}
+
+.karma__container_open {
+  display: block;
+  position: absolute;
+  //   top: 38px;
+  //   left: -26px;
+  z-index: 50;
+  cursor: default;
+}
+.karma__container_close {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+}

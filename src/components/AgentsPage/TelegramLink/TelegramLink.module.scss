@@ -1,0 +1,46 @@
+@import 'styles/common/variables';
+// .iconTelegram {}
+
+.section {
+  display: flex;
+  gap: 24px;
+  padding: 16px 50px 18px 24px;
+  margin-bottom: 28px;
+
+  font-family: $font-segoe;
+  background-color: $colors-white;
+  border: 1px solid $border-bg-block-link;
+  border-radius: 5px;
+}
+
+.linkWrapperWithActionWord {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.linkWrapper {
+  @extend .linkWrapperWithActionWord;
+  margin-top: 6px;
+}
+
+.callToAction {
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: $colors-text-accent;
+  text-align: center;
+}
+
+.actionWord {
+  font-size: 40px;
+}
+
+.telegramLink {
+  display: block;
+  font-weight: 600;
+  color: $colors-black;
+  text-decoration: none;
+}

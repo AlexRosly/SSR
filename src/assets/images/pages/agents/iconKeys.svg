@@ -1,0 +1,12 @@
+<svg width="59" height="106" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 59 106">
+  <path fill="#14D8C4" d="M0 19.5a19.5 19.5 0 1 1 39 0 19.5 19.5 0 0 1-39 0Z"/>
+  <path fill="#14D8C4" d="M23.54 34.3H9.42v29.59h14.12v-29.6Z"/>
+  <rect width="13.01" height="13.01" x="13.89" y="45.78" fill="#14D8C4" rx="4" transform="rotate(-45 13.9 45.78)"/>
+  <rect width="13.01" height="13.01" x="13.89" y="60.55" fill="#14D8C4" rx="4" transform="rotate(-45 13.9 60.55)"/>
+  <rect width="14.3" height="14.05" x="9.14" y="63.84" fill="#14D8C4" rx="4" transform="rotate(-45 9.14 63.84)"/>
+  <path fill="#FD4304" d="M19.52 51.69a19.5 19.5 0 1 1 39 0 19.5 19.5 0 0 1-39 0Z" style="mix-blend-mode:darken"/>
+  <path fill="#FD4304" d="M43.06 66.48H28.94v29.6h14.12v-29.6Z" style="mix-blend-mode:darken"/>
+  <path fill="#FD4304" d="m48.25 96.26-9.4 9.4a.26.26 0 0 1-.38 0l-9.46-9.45a.26.26 0 0 1 0-.37l9.41-9.42c.1-.1.27-.1.37 0l9.46 9.47c.1.1.1.26 0 .37Z" style="mix-blend-mode:darken"/>
+  <path fill="#FD4304" d="m50.85 93.66-8.86 8.86a.4.4 0 0 1-.56 0l-8.85-8.86a.4.4 0 0 1 0-.56l8.85-8.86a.4.4 0 0 1 .56 0l8.86 8.86a.4.4 0 0 1 0 .56Z" style="mix-blend-mode:darken"/>
+  <path fill="#FD4304" d="m51.52 78.2-8.85 8.85a.4.4 0 0 1-.57 0l-8.85-8.86a.4.4 0 0 1 0-.56l8.85-8.85a.4.4 0 0 1 .57 0l8.85 8.85a.4.4 0 0 1 0 .56Z" style="mix-blend-mode:darken"/>
+</svg>

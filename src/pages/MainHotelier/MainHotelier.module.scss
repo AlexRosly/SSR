@@ -1,0 +1,78 @@
+@import 'styles/common/variables';
+
+.mainHotelier {
+  @media screen and (max-width: $pre-tablet) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.mainHotelierContainer {
+  position: relative;
+
+  display: flex;
+
+  padding: 9px 0 25px;
+
+  background-color: $colors-bg-button-option;
+
+  @media screen and (max-width: $pre-desktop) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 18px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    gap: 29px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    gap: 48px;
+  }
+}
+
+.main {
+  position: relative;
+}
+
+.linksWrapper {
+  width: 316px;
+  // min-height: 486px;
+  // HotelierCatalog height is 486px
+  // Main Hotelier height is 453px - preferred to keep the same
+
+  background-color: $colors-white;
+  border: 1px solid $border-bg-block-link;
+  border-radius: 10px;
+}
+
+.smallGap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.reviewsTabletWrapper {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    display: flex;
+    justify-content: space-between;
+    gap: 38px;
+
+    margin-bottom: 28px;
+  }
+}
+
+.footerTablet {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    position: relative;
+    left: 332px;
+    top: unset;
+    align-self: flex-start;
+  }
+}

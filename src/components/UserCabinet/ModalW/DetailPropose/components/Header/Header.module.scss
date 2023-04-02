@@ -1,0 +1,42 @@
+.header {
+  background: #000000;
+  border-radius: 0px 0px 10px 10px;
+  height: 42px;
+  padding: 13px;
+  display: flex;
+  justify-content: flex-end;
+
+  &_btn {
+    display: flex;
+    align-items: center;
+
+    color: #dbd8d8;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+
+    cursor: pointer;
+
+    &_img {
+      background-image: url(../image/icon/close.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 6px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &_btn:hover {
+    color: #d3d0d0;
+    .header_btn_img {
+      background-image: url(../image/icon/close.svg);
+    }
+  }
+  &_btn:active {
+    color: #bebdbd;
+    .header_btn_img {
+      background-image: url(../image/icon/close.svg);
+    }
+  }
+}

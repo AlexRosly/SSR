@@ -1,0 +1,75 @@
+@import 'styles/common/variables';
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.formEdit {
+  @extend .form;
+  max-height: 39px;
+}
+
+.saveButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 92px;
+  height: 37px;
+  padding: 8px 16px;
+
+  @extend %text-button;
+  color: $colors-white;
+  text-align: center;
+
+  background-color: $border-input-focus;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  // outline: none;
+
+  &:disabled {
+    background-color: $colors-bg-button-save-disabled;
+  }
+
+  &:focus:not(:disabled),
+  &:hover:not(:disabled) {
+    background-color: $border-input-hover;
+  }
+
+  &:active:not(:disabled) {
+    background-color: $colors-bg-button-save-active;
+    border-color: white;
+  }
+}
+
+.editButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 49px;
+  height: 45px;
+
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  // outline: none;
+
+  &:hover {
+    background-color: $colors-bg-button-edit-hover;
+  }
+
+  &:active {
+    background-color: $colors-bg-button-edit-active;
+    border-color: white;
+  }
+}
+
+.editButtonAccountSettings {
+  @extend .editButton;
+  width: 42px;
+  height: 39px;
+}

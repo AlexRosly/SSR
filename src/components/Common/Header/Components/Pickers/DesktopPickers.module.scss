@@ -1,0 +1,22 @@
+@import 'styles/common/variables';
+
+$p-h: 12px;
+$button-border: 1px;
+$space: $p-h + $button-border;
+$pickers-gap: 32px - ($space * 2);
+
+.desktopPickers {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: $pickers-gap;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 35px;
+
+    &.userCatalog,
+    &.hotelierCatalog {
+      margin-right: 13px;
+    }
+  }
+}

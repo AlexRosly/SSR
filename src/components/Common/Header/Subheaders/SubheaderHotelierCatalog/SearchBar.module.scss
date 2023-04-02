@@ -1,0 +1,145 @@
+@import 'styles/common/variables';
+
+.searchBarWrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  @media screen and (max-width: $pre-desktop) {
+    margin: 0 auto;
+    max-width: 231px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 4px;
+  }
+}
+
+.searchBarForm {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.spinnerWrapper {
+  position: absolute;
+  left: 2px;
+}
+
+.searchBarLabel {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+%searchInput {
+  @extend %button-reset;
+  width: 229px;
+
+  padding: 0 13px 1px;
+
+  font-size: 13px;
+  line-height: 1;
+  font-family: $font-segoe;
+  color: $colors-search;
+  font-weight: 700;
+
+  background-color: $colors-bg-section;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: $box-shadow-search;
+  appearance: none;
+
+  &.dark {
+    color: $colors-white;
+    background-color: $border-table;
+
+    &::placeholder {
+      color: darken($colors-white, 21);
+    }
+  }
+
+  // &::-webkit-search-cancel-button {}
+
+  @media screen and (min-width: $tablet) {
+    width: 231px;
+    font-size: 1rem;
+
+    &::placeholder {
+      color: darken($colors-white, 21);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 294px;
+  }
+}
+
+.searchBarInput {
+  @extend %searchInput;
+}
+
+%textStyles {
+  padding-top: 3px;
+  padding-bottom: 4px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inputOverlay {
+  @extend %searchInput;
+  @extend %textStyles;
+
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.autocompleteList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 242px;
+  border-radius: 4px;
+}
+
+.autocompleteButton {
+  @extend %searchInput;
+  @extend %textStyles;
+
+  display: inline-block;
+  text-align: start;
+}
+
+.cityName {
+  margin-right: 5px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.stateName {
+  margin-right: 4px;
+}
+
+.stateName,
+.country {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1;
+}

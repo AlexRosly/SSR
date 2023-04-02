@@ -1,0 +1,12 @@
+@import 'styles/common/variables';
+@import './burger-button';
+
+.burgerButton {
+  @extend %burgerButton;
+
+  background-color: $colors-white;
+}
+
+.burgerIcon {
+  @extend %burgerIcon;
+}

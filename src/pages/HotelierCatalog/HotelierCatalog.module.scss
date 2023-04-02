@@ -1,0 +1,467 @@
+@import 'styles/common/variables';
+
+.hotelierCatalogContainer {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 48px;
+
+	padding: 10px 0 25px;
+	background-color: $colors-bg-button-option;
+
+	@media screen and (max-width: $pre-desktop) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	gap: 32px;
+
+	& footer {
+		margin-top: 0;
+	}
+}
+
+.betaHotelierCatalog {
+	top: 10px;
+
+	@media screen and (max-width: $pre-desktop) {
+		order: 1;
+	}
+}
+
+.location__content_right__feedback_header {
+	display: flex;
+	width: 315px;
+	height: 75px;
+	background: linear-gradient(
+		180deg,
+		rgba(196, 196, 196, 0) 0%,
+		rgba(96, 96, 96, 0.305) 50.83%,
+		rgba(56, 56, 56, 0.43) 71.67%,
+		rgba(0, 0, 0, 0.44) 100%
+	);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border: 1.04839px solid rgba(0, 0, 0, 0.18);
+}
+.location__content_right__feedback_head {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 6px;
+	margin-left: 12px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+
+	color: $colors-white;
+}
+.blockButton {
+	background: $colors-brand-accent;
+	box-sizing: border-box;
+	border-radius: 23px;
+	height: 22px;
+	width: 141px;
+	color: #fff;
+	text-align: center;
+	font-family: $font-segoe, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 7px;
+	line-height: 9px;
+	border: none;
+
+	@media screen and (min-width: $tablet) {
+		margin-right: 26px;
+
+		width: 204px;
+		height: 33px;
+		font-size: 13px;
+		line-height: 18px;
+	}
+}
+.blockButton:hover {
+	background: rgba(255, 96, 0, 0.9);
+}
+.blockButton:active {
+	background: rgba(255, 96, 0, 0.75);
+}
+.blockButton:focus {
+	outline: none;
+}
+.blockTwo {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 26px;
+	background: $colors-white;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	border-radius: 3px;
+	width: 600px;
+	height: 158px;
+	font-family: $font-segoe, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 19px;
+}
+.ypb {
+	float: left;
+	margin: 5px 0px 0px 10px;
+	width: 126px;
+	height: 73px;
+}
+
+.blockFoure {
+	display: flex;
+	flex-wrap: wrap;
+
+	max-width: 600px;
+	min-height: 134px;
+
+	padding-bottom: 12px;
+
+	font-size: 9px;
+	line-height: 12px;
+	font-family: $font-segoe, sans-serif;
+	color: $colors-city;
+
+	background-color: $colors-white;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	border-radius: 3px;
+
+	@media screen and (min-width: $tablet) {
+		padding-bottom: 22px;
+		min-height: 174px;
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	@media screen and (min-width: $pre-desktop) {
+		align-items: center;
+	}
+}
+
+.blockFoure p {
+	margin: 15px 0px 0px 0px;
+	font-size: 10px;
+	line-height: 13px;
+}
+
+.blockFoure_block {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	@media screen and (max-width: $pre-desktop) {
+		flex-direction: column;
+	}
+}
+
+#blockFoure_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	margin-top: 20px;
+
+	@media screen and (min-width: $tablet) {
+		width: 369px;
+	}
+}
+
+.blockFoure_block img {
+	margin: 0px 20px 0px 20px;
+}
+#registration {
+	margin-left: 90px;
+
+	@media screen and (min-width: $tablet) {
+		margin: 0px auto 0;
+	}
+}
+#registration:hover {
+	border: none;
+}
+
+.columnTwo {
+	background: $colors-white;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	border-radius: 10px;
+	width: 317px;
+}
+.columnTwo_header {
+	font-family: $font-segoe;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	color: #fff;
+}
+#vectorTwo {
+	margin: -1px 0px 0px -1px;
+}
+#vectorThree {
+	margin: -1px 0px 0px -3px;
+}
+.columnTwo_header p {
+	margin: -40px 0px 0px 12px;
+}
+.columnTwo_block {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 20px;
+}
+#review {
+	padding-top: 10px;
+}
+.columnTwo_footer {
+	display: flex;
+	justify-content: center;
+	font-family: $font-segoe;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #787878;
+}
+.columnTwo_footer p {
+	padding: 10px 10px 0px 0px;
+}
+.columnTwo_footer p:hover {
+	padding: 0px 10px 0px 0px;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.list_bl_location {
+	padding: 20px 0;
+}
+.list_location {
+	margin: 0.7px 28px 0.7px 38px;
+}
+.list_for_all {
+	list-style-type: none;
+	width: 240px;
+	height: 29px;
+	display: flex;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		border-radius: 10px;
+		width: 240px;
+		height: 29px;
+		background-color: $colors-bg-hover;
+	}
+}
+
+.seoActiveRentOption {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	max-width: 600px;
+	min-height: 158px;
+	padding: 0 40px;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 23px;
+	font-family: $font-segoe;
+	color: $colors-city;
+
+	background-color: rgba($colors-bg-hover, 0.58);
+	border-radius: 5px;
+}
+
+.link {
+	margin: 0px 5px;
+	padding: 0px 7px;
+	width: 240px;
+	line-height: 11px;
+	color: $colors-city;
+	text-decoration: none;
+	position: relative;
+	display: flex;
+
+	&:link {
+		font-family: $font-segoe;
+		font-style: normal;
+		font-size: 11px;
+		font-weight: 600;
+		color: $colors-city;
+	}
+
+	&:focus::before {
+		content: '';
+		background-image: url('../../assets/icons/Group\ 181.svg');
+		background-repeat: no-repeat;
+		position: absolute;
+		left: -30px;
+		top: -5px;
+		width: 23px;
+		height: 23px;
+	}
+}
+
+.text_active {
+	font-weight: 700;
+	color: $colors-city;
+	transition-duration: 0.5s;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: -5px;
+		left: -30px;
+
+		width: 23px;
+		height: 23px;
+
+		background-image: url('../../assets/icons/Group\ 181.svg');
+		background-repeat: no-repeat;
+	}
+}
+
+.columnTwo_message {
+	font-family: $font-segoe;
+	text-align: center;
+	margin: 40px 0;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	color: $colors-city;
+}
+
+.rentLinksWrapper {
+	margin-bottom: 18px;
+	width: 316px;
+	background: $colors-white;
+	border: 1px solid $border-bg-block-link;
+	border-radius: 10px;
+
+	@media screen and (min-width: $tablet) {
+		margin-left: 7px;
+	}
+
+	@media screen and (min-width: $pre-desktop) {
+		margin-left: 0px;
+	}
+}
+
+.cityName {
+	margin: 8px 0;
+	font-weight: 900;
+	font-size: 22px;
+}
+
+.averageRegistrationDuration {
+	@media screen and (min-width: $tablet) {
+		position: relative;
+		bottom: 30px;
+	}
+}
+
+.activeRentOptionDecorImg {
+	width: 93px;
+	height: 92px;
+}
+
+.blockFoure_general {
+	display: flex;
+	padding: 19px 21px 0px 26px;
+
+	@media screen and (min-width: $pre-desktop) {
+		padding: 35px 79px 0px 46px;
+	}
+}
+
+.blockImage {
+	display: flex;
+	align-items: flex-end;
+	margin-right: 15px;
+
+	@media screen and (min-width: $tablet) {
+		margin-right: 30px;
+	}
+}
+
+.blockImages {
+	width: 33px;
+	height: 28px;
+
+	@media screen and (min-width: $tablet) {
+		width: 62px;
+		height: 52px;
+	}
+}
+
+.blockFoure_texts {
+	margin-bottom: 6px;
+	width: 225px;
+
+	@media screen and (min-width: $tablet) {
+		margin-bottom: 8px;
+		width: 369px;
+	}
+
+	@media screen and (min-width: $pre-desktop) {
+		width: 383px;
+		height: 76px;
+	}
+}
+
+.registrationBlock {
+	display: flex;
+	flex-direction: column-reverse;
+
+	margin-left: 74px;
+
+	height: 35px;
+
+	@media screen and (min-width: $tablet) {
+		flex-direction: row;
+		align-items: flex-end;
+		margin-left: 138px;
+		height: 33px;
+	}
+}
+
+.registrationBlockText {
+	margin-top: 6px;
+	margin-right: 25px;
+	font-family: 'Segoe UI';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 7px;
+	line-height: 9px;
+
+	color: #4c4c4c;
+
+	@media screen and (min-width: $tablet) {
+		margin-top: 0;
+		font-size: 10px;
+		line-height: 13px;
+	}
+}
+.fifthBlock {
+	display: flex;
+	flex-direction: column-reverse;
+
+	@media screen and (min-width: $tablet) {
+		flex-direction: row;
+	}
+
+	@media screen and (min-width: $pre-desktop) {
+		flex-direction: column;
+	}
+}

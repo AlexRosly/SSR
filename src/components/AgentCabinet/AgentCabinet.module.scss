@@ -1,0 +1,33 @@
+@import 'styles/common/variables';
+
+.container {
+  max-width: $tablet;
+  margin: 22px auto 0;
+
+  @media screen and (min-width: $laptop) {
+    max-width: $laptop;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: space-between;
+  }
+
+  flex-wrap: wrap;
+  grid-gap: 30px;
+}
+
+.main {
+  width: $desktop-width-main;
+}
+
+.referralLinksWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 34px;
+}

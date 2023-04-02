@@ -1,0 +1,59 @@
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 16px;
+  padding-bottom: 7px;
+}
+
+.icon {
+  &_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 23px;
+  }
+
+  &_hotel {
+    width: 74px;
+    height: 58px;
+    margin-bottom: 15px;
+  }
+
+  &_vector {
+    cursor: pointer;
+    height: 23px;
+    width: 15px;
+    fill: rgba(0, 144, 255, 0.8);
+
+    &:hover {
+      fill: rgba(0, 144, 255, 0.6);
+    }
+    &:active {
+      fill: rgba(0, 144, 255, 0.4);
+    }
+  }
+}
+
+.location {
+  width: 292px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  color: #4c4c4c;
+
+  &_name {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &_address {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+.rating {
+  margin-top: 8px;
+}

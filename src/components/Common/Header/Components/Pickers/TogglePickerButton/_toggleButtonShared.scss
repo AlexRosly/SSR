@@ -1,0 +1,39 @@
+@import 'styles/common/variables';
+
+%toggle-button-shared {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+
+  min-width: 67px;
+  height: 25px;
+  padding: 4px 12px;
+
+  font-size: 15px;
+  line-height: 1.33;
+  font-family: $font-segoe;
+  color: $colors-brand;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  border: 0.5px solid transparent;
+  border-radius: 5px;
+
+  &.dark {
+    color: $colors-white;
+  }
+}
+
+%toggle-button-shared-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  overflow: hidden;
+
+  &.dark {
+    color: $colors-white;
+  }
+}

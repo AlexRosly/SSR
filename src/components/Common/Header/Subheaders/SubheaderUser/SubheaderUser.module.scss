@@ -1,0 +1,22 @@
+@import 'styles/common/variables';
+
+$user-button-padding: 7px;
+$flex-row-gap: 16px;
+$user-spacer-burger: 42px;
+
+.subheaderUser {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 26px;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    margin-right: calc($user-spacer-burger - $flex-row-gap - $user-button-padding);
+  }
+}
+
+.userIconButtons {
+  display: flex;
+  gap: 11px;
+}

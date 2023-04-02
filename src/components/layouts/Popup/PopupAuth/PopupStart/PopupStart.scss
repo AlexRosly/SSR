@@ -1,0 +1,254 @@
+.popup__content {
+  flex: 1 1 auto;
+  align-self: stretch;
+  padding: 20px 10px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+
+  @media (min-width: 768px) {
+    padding: 60px 35px;
+  }
+}
+.popup-link {
+  color: #1387fb;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.popup-phoneConfirmation__text {
+  max-width: 265px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 28px;
+  margin-left: 25px;
+}
+
+.popup-start__title {
+  padding-right: 15px;
+  margin-bottom: 24px;
+}
+
+.popup-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  font-family: 'Segoe UI', sans-serif;
+
+  span {
+    color: #ff6420;
+  }
+}
+
+.popup-start__form {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.popup__field {
+  position: relative;
+}
+
+.popup-start__field {
+  margin-bottom: 30px;
+}
+
+.popup__input {
+  box-sizing: border-box;
+  max-width: 265px;
+  width: 100%;
+  min-height: 39px;
+  border: 1px solid #a5a5a5;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-top: 10px;
+  color: transparent;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.popup__input {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    background-color: #fff;
+    color: #4c4c4c;
+    font-weight: 600;
+
+    + .popup__label {
+      font-size: 11px;
+      line-height: 12px;
+      padding: 3px 7px 22px 7px;
+      animation: aninatLabel 0.7s ease;
+
+      &::after {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.popup__label {
+  position: absolute;
+  max-width: 265px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  color: #aeafbc;
+  display: flex;
+  align-items: center;
+
+  @media (any-hover: hover) {
+    font-size: 11px;
+    line-height: calc(15 / 11 * 100%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 3px 36px 3px 7px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      right: 16px;
+      top: 50%;
+      transform: translate(0, -50%);
+      background-color: #0090ff;
+    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 11px;
+    line-height: 12px;
+    top: 0;
+    left: 0;
+    padding: 3px 7px 22px 7px;
+  }
+}
+
+@keyframes aninatLabel {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.btn {
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 15px;
+  min-height: 41px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 3px;
+  max-width: 265px;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background: #0090ff;
+  color: #fff;
+  border: none;
+}
+
+.btn-ready {
+  background: rgba(0, 144, 255, 0.5);
+  color: #fff;
+  border: none;
+
+  &:hover {
+    background: #0090ff;
+  }
+
+  &:active {
+    background: #006bbe;
+  }
+}
+
+.popup-start__ready-btn {
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+.btn-lost {
+  background-color: #ffffff;
+  border: 1px solid #0090ff;
+  color: #0090ff;
+
+  &:hover {
+    background-color: rgba(0, 144, 255, 0.5);
+    border: 1px solid rgba(0, 144, 255, 0.5);
+    color: #ffffff;
+  }
+
+  &:active {
+    background: #006bbe;
+    border: 1px solid #006bbe;
+    color: #ffffff;
+  }
+}
+
+.popup-start__lost-btn {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+#form-phone {
+  width: 205px;
+  font-family: 'Segoe UI', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  color: #4c4c4c;
+  position: relative;
+
+  .label-phone {
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+span.circle {
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 8px;
+  top: 20px;
+  bottom: 0;
+  border-radius: 50%;
+  background: #0090ff;
+}
+
+.popup__input:hover + .popup__label span.circle,
+.popup__input:active + .popup__label span.circle,
+.popup__input:focus + .popup__label span.circle {
+  display: none;
+}
+
+.active__hover {
+  font-size: 11px !important;
+  line-height: 12px !important;
+  padding: 3px 7px 22px 7px !important;
+}

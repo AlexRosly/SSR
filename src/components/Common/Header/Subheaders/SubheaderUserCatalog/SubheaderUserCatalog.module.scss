@@ -1,0 +1,26 @@
+@import '../CatalogsShared/catalogs-shared';
+@import '../../../../../pages/MainHotelier/RentList/rent-list-shared';
+
+.subheaderUserCatalog {
+  @extend %subheader-hotelier-catalog;
+}
+
+.bookingOption {
+  @extend %rent-option;
+}
+
+.bookingOptionList {
+  @extend %rent-list;
+}
+
+.bookingOptionItem {
+  @extend %rent-option-item;
+}
+
+.bookingOptionLink {
+  @extend %link;
+}
+
+.activeBookingOptionIcon {
+  @extend %active-rent-option-icon;
+}

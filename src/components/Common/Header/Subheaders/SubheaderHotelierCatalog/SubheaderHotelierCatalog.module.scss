@@ -1,0 +1,37 @@
+@import '../CatalogsShared/catalogs-shared';
+
+.subheaderHotelierCatalog {
+  @extend %subheader-hotelier-catalog;
+}
+
+.locationCard {
+  @extend %location-card;
+}
+
+.imageThumb {
+  @extend %image-thumb;
+}
+
+.locationImg {
+  @extend %location-img;
+}
+
+.textWrapper {
+  @extend %text-wrapper;
+}
+
+.cityAndCountry {
+  @extend %city-and-country;
+}
+
+.city {
+  @extend %city;
+}
+
+.country {
+  @extend %country;
+}
+
+.hotelierRentOption {
+  @extend %rent-option;
+}

@@ -1,0 +1,17 @@
+.send-block {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4c4c4c;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 0 0 25px 10px;
+}
+
+.send-block--active * {
+  fill: #6aff79;
+}

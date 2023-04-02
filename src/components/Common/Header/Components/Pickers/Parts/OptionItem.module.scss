@@ -1,0 +1,9 @@
+// @import 'styles/common/variables';
+@import './optionButton';
+
+.optionItem {
+}
+
+.optionButton {
+  @extend %option-button;
+}

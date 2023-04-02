@@ -1,0 +1,90 @@
+@import 'styles/common/variables';
+
+.section {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+
+  padding: 38px 36px 28px;
+
+  font-family: $font-segoe;
+
+  background: $colors-white;
+  border: 1px solid $border-bg-block-link;
+  border-radius: 5px;
+}
+
+.copyButton {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+
+  max-height: 49px;
+  padding: 13px 22px;
+  margin-bottom: 2px;
+
+  font-family: $font-segoe;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  color: $colors-city;
+  text-align: center;
+
+  background: $colors-bg-section;
+  border: 2px solid $border-bg-block;
+  border-radius: 20px;
+  // outline: none;
+
+  &:hover {
+    background-color: $colors-bg-button-copy-hover;
+    border-color: $border-button-copy;
+  }
+
+  &:active {
+    background-color: $colors-bg-button-copy-active;
+    border-color: $border-button-copy;
+  }
+}
+
+.iconPeople {
+  display: block;
+}
+
+.textSubAccent {
+  font-family: 'Roboto';
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.18;
+  color: $colors-brand;
+  text-align: center;
+}
+
+.relativeWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.notification {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+
+  min-width: 229px;
+  max-height: 27px;
+  padding: 6px 20px 5px;
+
+  font-family: $font-segoe;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: $colors-white;
+  text-align: center;
+
+  background-color: $colors-black;
+  box-shadow: $box-shadow-notification;
+  transform: translate(-50%, -4px);
+}

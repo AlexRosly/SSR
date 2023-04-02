@@ -1,0 +1,14 @@
+.mainWrapper {
+  margin: 22px auto 0;
+  padding-bottom: 64px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px;
+}
+
+.main {
+  max-width: 600px;
+}

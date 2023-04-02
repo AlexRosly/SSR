@@ -1,0 +1,86 @@
+.popup {
+  position: absolute;
+
+  left: 44%;
+  bottom: 47px;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: transparent;
+}
+
+.title {
+  // padding: 10px;
+  margin-top: 18px;
+  margin-bottom: 5px;
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.popupInner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 208px;
+  height: 100px;
+
+  border-radius: 5px;
+
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 50%,
+    rgba(153, 196, 255, 1) 50%
+  );
+  box-shadow:  0px 0px 6px rgba(0, 0, 0,.25);
+ 
+}
+
+.freeButtonActive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 55px;
+  padding: 5px 9px 3px 9px;
+
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid rgba(229, 229, 229, 0.58);
+  color: #656565;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+}
+
+.arrowDown {
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  z-index: 5;
+  transform: translateX(-50%);
+
+  display: block;
+  width: 6px;
+  height: 5px;
+  // background: url('../../images/down@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    & {
+      // background: url('../../images/down@2x.png');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

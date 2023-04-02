@@ -1,0 +1,144 @@
+@import 'styles/common/variables';
+
+.section {
+  margin-bottom: 51px;
+  background-color: $colors-white;
+  border-radius: 3px;
+}
+
+.agentSettings__header {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  padding: 17px 30px;
+  background-color: $colors-bg-agent-settings-header;
+}
+
+.agentSettings__content {
+  padding: 64px 50px 42px 78px;
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin-bottom: 52px;
+}
+
+.agentSettings__title {
+  @extend %text-title;
+  color: $colors-brand;
+}
+
+.label {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+
+  @extend %text-label-positioned;
+  color: $colors-text-fourth;
+
+  transition: color $transition;
+}
+
+.input {
+  max-width: 280px;
+  max-height: 39px;
+  flex-grow: 1;
+
+  padding: 11px 13px 11px 38px;
+
+  @extend %text-input;
+  color: $colors-city;
+
+  background-color: $colors-bg-input;
+  border: 2px solid $colors-text-fourth;
+  border-radius: 3px;
+  outline: none;
+
+  transition: border-color $transition;
+
+  &:disabled {
+    color: $colors-text-fourth;
+  }
+
+  &:hover:not(:disabled) {
+    border-color: $border-input-hover;
+  }
+
+  &:hover:not(:disabled):not(:focus) {
+    border-color: $border-input-hover;
+    cursor: pointer;
+  }
+
+  &:focus:not(:disabled) {
+    border-color: $border-input-focus;
+  }
+
+  &:focus ~ .label {
+    color: $border-input-focus;
+  }
+}
+
+.errorMessage {
+  position: absolute;
+  bottom: calc(100% + 3px);
+  left: 3px;
+  max-width: 202px;
+
+  @extend %text-thin-mid;
+  color: $colors-brand-accent;
+}
+
+.dateWrapper {
+  padding-left: 8px;
+
+  margin-bottom: 21px;
+}
+
+.agentId {
+  @extend %text-small-bold;
+  margin-bottom: 2px;
+  color: $colors-text-fourth;
+}
+
+.dateOfRegistration {
+  @extend %text-small-bold;
+  color: $colors-text-fourth;
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 165px;
+  min-height: 45px;
+  padding: 12px 20px;
+
+  @extend %text-button;
+  color: $colors-white;
+  text-align: center;
+
+  background-color: $colors-text-fourth;
+  border: 1px solid transparent;
+  border-radius: 22px;
+  outline: none;
+  box-shadow: $box-shadow-button-cancel;
+
+  &:hover {
+    background-color: $colors-bg-button-delete-account-hover;
+  }
+
+  &:active {
+    background-color: $colors-black;
+    border-color: white;
+  }
+}
+
+.deleteAccountWrapper {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  min-height: 75px;
+}

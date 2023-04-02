@@ -1,0 +1,26 @@
+@import 'styles/common/variables';
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 8px 28px 12px;
+  margin-bottom: 22px;
+
+  font-family: $font-segoe;
+
+  background-color: $colors-white;
+  border: 1px solid $border-bg-block-link;
+  border-radius: 5px;
+}
+
+// .iconHome {}
+
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.32;
+  color: $colors-city;
+  text-align: center;
+}

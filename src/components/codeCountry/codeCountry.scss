@@ -1,0 +1,322 @@
+$color-text-input-code-tel: #4c4c4c;
+$color-text-label: #aeafbc;
+$color_hover_background: #ebedfe;
+$color-border-hover: #0090ff;
+$color-border: #a5a5a5;
+%text-input-code-tel {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  color: $color-text-input-code-tel;
+}
+%text-label-code-input {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: $color-text-label;
+}
+%point {
+  content: "";
+  background-image: url("../../assets/images/search/Ellipse 2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 8px;
+  top: 20px;
+  bottom: 0px;
+}
+.point-input {
+  &::after {
+    @extend %point;
+    display: block;
+  }
+  &:link::after,
+  &:hover::after,
+  &:active::after,
+  &:focus::after,
+  &:focus-within::after,
+  &:visited::after {
+    @extend %point;
+    display: none;
+  }
+}
+.container-code-country {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__block {
+  display: flex;
+  flex-direction: row;
+}
+.block__code-input {
+  position: relative;
+  width: 80px;
+  height: 39px;
+  box-sizing: border-box;
+}
+.block__tel-input {
+  position: relative;
+  top: 175px;
+  left: 19px;
+  width: 265px;
+  height: 39px;
+  box-sizing: border-box;
+  border: 1px solid #a5a5a5;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.border-hover-input {
+  border: 1px solid $color-border;
+  border-radius: 3px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $color-border-hover;
+    border-radius: 3px;
+  }
+  &:active {
+    border: 1px solid $color-border;
+    border-radius: 3px;
+  }
+  &:focus {
+    border: 1px solid $color-border-hover;
+    border-radius: 3px;
+  }
+}
+.code-input {
+  width: 100%;
+  height: 100%;
+  padding: 11px 0px 0px 0px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  @extend %text-input-code-tel;
+  background-color: #ffffff;
+}
+
+.label-code-input {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #aeafbc;
+}
+
+.label-code-input {
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/*  ===================================
+!!!!!!!        modal MENU     !!!!!!!!!!!
+=============================================
+*/
+
+.modal__backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(76, 76, 76, 0.5);
+  z-index: 20;
+}
+
+.modal__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 383px;
+  height: 562px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: 0.3s ease-in-out 0s 1 normal none running animation-madalWindow;
+  box-sizing: border-box;
+  -webkit-animation: 0.3s ease-in-out 0s 1 normal none running
+    animation-madalWindow;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@keyframes animation-madalWindow {
+  0% {
+    transform: scale(0.95);
+  }
+  66% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.modal__body-block {
+  margin: 0px;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px 25px 18px;
+  height: 100%;
+}
+.modal__body-block-label {
+  display: flex;
+  justify-content: space-around;
+  margin: 18px 0px 0px 0px;
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  transition: background-color 0.3s ease 0s;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+  }
+  &:hover {
+    background: rgba(76, 76, 76, 0.1);
+  }
+  &:active {
+    background: rgba(76, 76, 76, 0.6);
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 2px;
+    background-color: #4c4c4c;
+    transform: rotate(45deg);
+    border-radius: 4px;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.modal__body-input {
+  position: absolute;
+  top: 70px;
+  left: 18px;
+  width: 335px;
+  height: 39px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  //margin: 16px 0px 0px 0px;
+  &::before {
+    content: "";
+    background-image: url("../../assets/images/search/search 90.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 20px;
+    top: 9px;
+  }
+}
+.modal__container-ul {
+  margin: 74px 0px 5px -18px;
+  width: 383px;
+  box-sizing: border-box;
+}
+.scroll-container {
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(183, 189, 198);
+    height: 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: inherit;
+  }
+  &::-webkit-scrollbar-track-piece:start {
+    margin-top: 10px;
+  }
+  &::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 10px;
+  }
+}
+
+.modal__body-container-ul {
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 7px 0px 0px;
+}
+.modal__body-ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 1px 0px;
+}
+.modal__body-li {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 16px 0px 19px;
+  height: 39px;
+  align-items: center;
+  // transition: all 0.2s ease-in-out;
+  @extend %text-input-code-tel;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  cursor: pointer;
+  &:hover {
+    height: 39px;
+    border-radius: 3px;
+    backdrop-filter: blur(15px);
+    background-color: $color_hover_background;
+  }
+}
+
+.label-modal-input {
+  width: 332px;
+  height: 24px;
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #4c4c4c;
+}

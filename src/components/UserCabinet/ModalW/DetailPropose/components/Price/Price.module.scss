@@ -1,0 +1,35 @@
+.container {
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #4c4c4c;
+
+  height: 86px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #4c4c4c;
+
+  img {
+    width: 28px;
+    height: 28px;
+    margin-right: 22px;
+  }
+}
+
+.price {
+  margin-bottom: 18px;
+}
+
+.date {
+  position: absolute;
+}

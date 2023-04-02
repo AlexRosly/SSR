@@ -1,0 +1,61 @@
+@import 'styles/common/variables';
+
+.section {
+  padding: 24px 24px 48px;
+  margin-bottom: 12px;
+
+  font-family: $font-segoe;
+
+  background: $colors-white;
+  border: 1px solid $border-bg-block-link;
+  border-radius: 5px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.descr {
+  @extend %text-small;
+  color: $colors-city;
+}
+
+.input {
+  flex-grow: 1;
+
+  max-width: 445px;
+  max-height: 49px;
+  padding: 12px 24px;
+
+  @extend %text-input-mid;
+  color: $colors-city;
+
+  background-color: $colors-bg-input;
+  border: 2px solid $border-input;
+  border-radius: 20px;
+  outline: none;
+
+  transition: $transition;
+  transition-property: border-color;
+
+  &:disabled {
+    color: $colors-text-fourth;
+  }
+
+  &:hover:not(:disabled) {
+    border-color: $border-input-hover;
+  }
+
+  &:hover:not(:disabled):not(:focus) {
+    border-color: $border-input-hover;
+    cursor: pointer;
+  }
+
+  &:focus:not(:disabled) {
+    border-color: $border-input-focus;
+  }
+}

@@ -1,0 +1,21 @@
+@import 'styles/common/variables';
+
+.commonContainer {
+  position: relative;
+
+  max-width: $mobile;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+    padding: 0 118px;
+  }
+}
+
+// padding: 0 ((1200px - 600px - 48px - 316px) / 2);

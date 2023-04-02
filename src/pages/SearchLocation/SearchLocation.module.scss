@@ -1,0 +1,43 @@
+.search_wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  //   background-color: rgba(76, 76, 76, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  //   transition: opacity 0.8s ease 0s;
+  background: rgba(76, 76, 76, 0.28);
+  backdrop-filter: blur(15px);
+}
+// .search_object {
+//   position: fixed;
+//   top: 5%;
+//   left: 43.8%;
+//   z-index: 11;
+//   width: 292px;
+//   height: 268px;
+//   background: #fff;
+// }
+.closeButton_wrap {
+  position: fixed;
+  left: 65vw;
+  top: 5px;
+  padding: 10px 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 11;
+  border-radius: 3px;
+}
+.closeButton_wrap:hover {
+  background: rgba(76, 76, 76, 0.1);
+}
+.closeButton_wrap:active {
+  background: rgba(76, 76, 76, 0.33);
+}
+.closeButton {
+  width: 20px;
+  height: 20px;
+}

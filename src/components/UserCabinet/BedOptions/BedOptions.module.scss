@@ -1,0 +1,146 @@
+.room_icon_block {
+	height: 100px;
+	min-width: 100px;
+	max-width: 100px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	background: #ffffff;
+	color: #787878;
+	box-shadow: 0px -4px 6px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+
+	font-family: 'Segoe UI';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 13px;
+
+	&:hover {
+		box-shadow: 0px -4px 6px 1px rgba(31, 13, 222, 0.292);
+	}
+	&:hover .room_icon_title {
+		visibility: visible;
+		opacity: 1;
+		transition-delay: 0.5s;
+	}
+}
+.room_icon_title {
+	font-family: 'Segoe UI';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	position: absolute;
+	// bottom: 145px;
+	// left: 365px;
+	z-index: 100;
+	width: 148px;
+	height: 65px;
+	padding: 0px 5px;
+	background: #000000;
+	color: #ffffff;
+	text-align: center;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+
+	opacity: 0;
+	transition: opacity 0.3s;
+	visibility: hidden;
+	transition-property: opacity, visibility;
+	display: flex;
+	align-items: center;
+}
+
+.hostel {
+	&_block {
+		height: 100px;
+		min-width: 100px;
+		max-width: 100px;
+		padding: 3px 6px;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+
+		background: #ffffff;
+		color: #787878;
+		box-shadow: 0px -4px 6px 1px rgba(0, 0, 0, 0.25);
+		border-radius: 4px;
+
+		font-family: 'Segoe UI';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 13px;
+
+		&:hover {
+			box-shadow: 0px -4px 6px 1px rgba(31, 13, 222, 0.292);
+		}
+		&:hover .room_icon_title {
+			visibility: visible;
+			opacity: 1;
+			transition-delay: 0.5s;
+		}
+	}
+
+	&__descr {
+		display: flex;
+		margin-bottom: 4px;
+
+		&_text {
+			width: 71px;
+			margin-right: 3px;
+			display: flex;
+			flex-wrap: nowrap;
+
+			span {
+				padding-left: 3px;
+			}
+		}
+
+		&_icon {
+			width: 14px;
+			height: 13px;
+			fill: #787878;
+			stroke: #787878;
+			margin-right: 6px;
+		}
+	}
+
+	&__bed {
+		&_container {
+			width: 100%;
+			margin-bottom: 1px;
+			padding-left: 7px;
+			padding-right: 13px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&_number {
+			font-weight: 400;
+			font-size: 25px;
+			line-height: 174.69%;
+		}
+
+		&_icon {
+			width: 39px;
+			height: 35px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 11px;
+		line-height: 15px;
+		text-align: center;
+	}
+}

@@ -1,0 +1,33 @@
+@import 'styles/common/variables';
+
+.containerScoreBoxThumbUp {
+  background: none;
+  border: none;
+  appearance: none;
+}
+
+%iconThumbUp {
+  width: 23px;
+  height: 22px;
+}
+
+.thumbUp {
+  @extend %iconThumbUp;
+  color: $colors-thumb-up;
+}
+
+.thumbDown {
+  @extend %iconThumbUp;
+  color: $colors-brand-accent;
+  transform: rotateX(180deg);
+}
+
+.arrowWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .arrow {
+    margin-bottom: -12px;
+  }
+}

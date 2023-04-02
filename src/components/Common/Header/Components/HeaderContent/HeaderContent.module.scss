@@ -1,0 +1,49 @@
+@import 'styles/common/variables';
+
+.positionRelative {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.positionAbsolute {
+  position: absolute;
+  z-index: 1;
+
+  @media screen and (max-width: $pre-tablet) {
+    left: calc(100% - 145px);
+    bottom: -3px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    left: calc(100% - 175px);
+    bottom: -5px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: calc(100% - 126px);
+    bottom: 28px;
+  }
+
+  display: flex;
+  align-items: center;
+}
+
+.flexRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+
+  @media screen and (max-width: $pre-desktop) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 86px;
+
+    &.userCatalog,
+    &.hotelierCatalog {
+      gap: 23px;
+    }
+  }
+}

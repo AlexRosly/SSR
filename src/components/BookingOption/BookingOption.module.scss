@@ -1,0 +1,46 @@
+.type_booking_block {
+  display: flex;
+  margin: 30px 0px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.type_booking_container {
+  background-image: url(./img/TypeBooking.png);
+  width: 195px;
+  height: 196px;
+  color: #fff;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.type_booking_container:hover {
+  background-image: url(./img/TypeBookingHover.png);
+}
+.type_booking_container_txt {
+  margin: 0px auto;
+  width: 100px;
+  text-align: center;
+}
+.booking_btn {
+  width: 206px;
+  height: 33px;
+  cursor: pointer;
+  border: none;
+  background: #0090ff;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  .booking_btn_img {
+    margin-right: 10px;
+  }
+}
+.booking_btn:hover {
+  background: rgba(0, 144, 255, 0.5);
+}
+.booking_btn:active {
+  background: #006bbe;
+}

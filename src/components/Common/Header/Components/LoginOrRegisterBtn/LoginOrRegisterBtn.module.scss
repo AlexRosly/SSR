@@ -1,0 +1,30 @@
+@import 'styles/common/variables';
+
+.loginOrRegisterBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 243px;
+  height: 24px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: 1.36;
+  font-family: $font-segoe;
+  color: $colors-white;
+  text-align: center;
+
+  background-color: #006bbe;
+  border: none;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: lighten(#006bbe, $amount: 3);
+  }
+
+  &:active {
+    background-color: darken(#006bbe, $amount: 3);
+  }
+}

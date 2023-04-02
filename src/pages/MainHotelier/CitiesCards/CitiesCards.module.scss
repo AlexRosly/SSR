@@ -1,0 +1,147 @@
+@import 'styles/common/variables';
+
+.citiesCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+
+  max-width: 600px;
+  min-height: 333px;
+
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 12px;
+
+    margin-bottom: 35px;
+  }
+}
+
+.cityCardLink {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: $font-segoe;
+  color: $colors-brand;
+  text-decoration: none;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: color 110ms $cubic;
+  }
+
+  &:hover {
+    color: $colors-link-hover;
+  }
+
+  &:active {
+    color: $colors-link-active;
+  }
+}
+
+.country {
+  padding-top: 7px;
+
+  font-weight: 400;
+  font-size: 11px;
+  font-family: $font-segoe;
+  color: $colors-brand;
+}
+
+.cityCardItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-column-gap: 13px;
+
+  max-width: 294px;
+  min-height: 164px;
+  padding: 8px 16px 8px;
+
+  background-color: $colors-white;
+  border: 1px solid $border-bg-section;
+  border-radius: 3px;
+}
+
+.block_four_items_4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.block_four_items_4_column {
+  position: relative;
+
+  margin-top: 5px;
+}
+.block_four_items_4_column_text {
+  margin-top: 4px;
+
+  font-weight: 600;
+  font-size: 10px;
+  font-family: $font-segoe;
+  color: #535252;
+}
+.block_four_items_4_column_img_place {
+  width: 42px;
+  height: 16px;
+
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 106.01%;
+  font-family: 'Segoe UI';
+  color: #4c4c4c;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  z-index: 4;
+  align-items: center;
+
+  text-align: center;
+  width: 163px;
+  height: 39px;
+  background: $colors-black;
+  color: $colors-white;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  top: -45px;
+  padding: 0 10px;
+  cursor: default;
+  opacity: 0;
+  transition: opacity 0.5s;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+}
+
+.overlay:after,
+.overlay:before {
+  content: '';
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  right: 147px;
+}
+.overlay:after {
+  border-top-color: $colors-black;
+  border-width: 5px;
+  margin-left: 0;
+}
+.imgs_wrap {
+  display: flex;
+  align-items: center;
+}
+.block_four_items_4_column .imgs_wrap:hover + .overlay {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+.block_four_items_1:hover {
+  color: rgba(0, 144, 255, 0.7);
+}
+.block_four_items_1:active {
+  color: rgba(0, 144, 255, 0.5);
+}

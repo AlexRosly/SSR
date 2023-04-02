@@ -1,0 +1,97 @@
+.booking_block_content_wrap {
+  position: absolute;
+  overflow: auto;
+  left: 0;
+  z-index: 1000;
+  background: rgba(76, 76, 76, 0.28);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  .booking_block_content {
+    margin: 100px auto;
+    width: 320px;
+    background: #fff;
+    .booking_block_content_header {
+      display: flex;
+      justify-content: space-between;
+      .content_header_back {
+        margin: 2px 0 0 4px;
+        width: 52px;
+        height: 52px;
+        padding: 17px 12px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .content_header_back:hover {
+        background: #ededed;
+      }
+      .content_header_close {
+        margin: 2px 4px 0 0px;
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+        padding: 15px 15px;
+      }
+      .content_header_close:hover {
+        background: #ededed;
+      }
+      .content_header_close:active {
+        background: rgba(76, 76, 76, 0.33);
+      }
+    }
+  }
+}
+.booking_block_content_main {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.content_main_text {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5px;
+  color: #787878;
+  line-height: 17.29px;
+  margin: 0 20px;
+}
+.content_main_input_wrap {
+  margin: 20px 20px;
+
+  textarea {
+    font-family: 'Segoe UI';
+    border: 1px solid #4c4c4c;
+    border-radius: 5px;
+    color: #4c4c4c;
+    width: 278px;
+    height: 454px;
+    line-height: 16px;
+    padding: 11px;
+    resize: none;
+  }
+  textarea::placeholder {
+    font-family: 'Segoe UI';
+    color: #aeafbc;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  textarea:hover,
+  textarea:focus,
+  textarea:active {
+    outline: none;
+    border: 1px solid #4c4c4c;
+    border-radius: 5px;
+  }
+}
+.content_btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+.content_btn_arrow {
+  cursor: pointer;
+}

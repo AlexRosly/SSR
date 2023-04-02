@@ -1,0 +1,68 @@
+@import 'styles/common/variables';
+
+.personContainer {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 163px;
+  }
+}
+
+%userCardButton {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+
+  background: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.mobileUserCard {
+  @extend %userCardButton;
+  padding: 5px 7px 7px 8px;
+
+  gap: 0;
+}
+
+.userCardButton {
+  @extend %userCardButton;
+
+  padding: 3px;
+
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid #d0d0d0;
+  }
+}
+
+.userSettingsWrapper {
+  position: absolute;
+  top: 96%;
+  @media screen and (max-width: $pre-tablet) {
+    right: -66px;
+  }
+  @media screen and (min-width: $tablet) {
+    left: 0;
+  }
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 163px;
+
+  background-color: $colors-white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.userCardContent {
+  display: flex;
+  gap: 6px;
+}

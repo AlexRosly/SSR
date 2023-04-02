@@ -1,0 +1,126 @@
+.booking_block_content_wrap {
+  position: absolute;
+  overflow: auto;
+  left: 0;
+  z-index: 1000;
+  background: rgba(76, 76, 76, 0.28);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  .booking_block_content {
+    margin: 100px auto;
+    width: 320px;
+    background: #fff;
+    .booking_block_content_header {
+      display: flex;
+      justify-content: flex-end;
+
+      .content_header_close {
+        margin: 2px 4px 0 0px;
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+        padding: 15px 15px;
+      }
+      .content_header_close:hover {
+        background: #ededed;
+      }
+      .content_header_close:active {
+        background: rgba(76, 76, 76, 0.33);
+      }
+    }
+  }
+}
+.booking_block_content_main {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.content_main_text {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 5px;
+  color: #4c4c4c;
+  line-height: 23px;
+  margin: 0 20px;
+}
+.content_main_input_wrap {
+  margin: 20px 17px;
+  .content_main_input {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    color: #787878;
+    .content_main_number {
+      font-family: 'Segoe UI', sans-serif;
+      border: 1px solid #4c4c4c;
+      border-radius: 5px;
+      width: 278px;
+      height: 44px;
+      padding-left: 10px;
+      padding-top: 12px;
+      font-size: 17px;
+    }
+    .content_main_inObj {
+      margin-top: 13px;
+      display: flex;
+      align-items: baseline;
+      .content_main_inObj_first {
+        margin-right: 25px;
+        font-size: 12px;
+      }
+      .content_main_inObj_second {
+        font-size: 17px;
+      }
+    }
+  }
+  .content_main_options {
+    margin-top: 44px;
+    margin-left: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    .content_main_options_header {
+      color: #4c4c4c;
+      font-size: 12px;
+    }
+    .content_main_options_main {
+      color: #787878;
+      font-size: 11px;
+      line-height: 15px;
+      ul {
+        list-style-type: disc;
+        margin-left: 5px;
+        margin-top: 7px;
+      }
+    }
+  }
+  .content_main_btn {
+    margin-top: 42px;
+    padding-bottom: 32px;
+    margin-left: 30px;
+    button {
+      cursor: pointer;
+      border: none;
+      width: 232px;
+      height: 33px;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      background: #0090ff;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      img {
+        margin-right: 7px;
+      }
+    }
+    button:hover {
+      background: rgba(0, 144, 255, 0.8);
+    }
+    button:active {
+      background: rgba(0, 144, 255, 0.5);
+    }
+  }
+}

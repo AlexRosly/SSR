@@ -1,0 +1,262 @@
+%previewBtn {
+  position: absolute;
+  list-style: none;
+  z-index: 10;
+  left: 1vw;
+  bottom: 40px;
+  padding: 8px 30px 15px 12px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.05);
+}
+%previewBtnArrow {
+  content: '';
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  // font-size: 200%;
+
+  background: url(./../../assets/images/network/BackGroundPreview.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.h-preview {
+  margin-top: 20px;
+
+  font-weight: 900;
+  font-size: 1.7rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ff6000;
+  text-align: center;
+
+  span {
+    color: #0090ff;
+  }
+}
+
+.preview-text {
+  display: flex;
+  flex-direction: column;
+
+  width: 315px;
+  margin: 32px auto 0;
+  padding: 17px 15px 15px 15px;
+
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Segoe UI', sans-serif;
+  color: #656565;
+
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  p {
+    margin-top: 10px;
+  }
+  p:first-child {
+    margin-top: 0px;
+  }
+}
+.network-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 300px;
+
+  text-align: center;
+  font-weight: 600;
+  color: #787878;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 10px;
+}
+.network-link {
+  cursor: pointer;
+  margin-top: 12px;
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #787878;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.7rem;
+  }
+}
+.network-img {
+  margin-bottom: 5px;
+  width: 40px;
+}
+// .network-img {
+//   margin-bottom: 5px;
+//   width: 48px;
+// }
+.reddit:hover {
+  filter: sepia(500%) hue-rotate(-10deg) saturate(1500%);
+}
+.telegram:hover {
+  filter: sepia(500%) hue-rotate(185deg) saturate(1500%);
+}
+.twitter:hover {
+  filter: sepia(500%) hue-rotate(185deg) saturate(1500%);
+}
+.linkedIn:hover {
+  filter: sepia(500%) hue-rotate(195deg) saturate(3600%);
+}
+.facebook:hover {
+  filter: sepia(500%) hue-rotate(192deg) saturate(3600%);
+}
+.youtube:hover {
+  filter: sepia(400%) hue-rotate(-30deg) saturate(2000%);
+}
+
+// .reddit:active {
+//   filter: sepia(500%) hue-rotate(-10deg) saturate(1500%);
+//   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15);
+// }
+// .telegram:active {
+//   filter: sepia(500%) hue-rotate(185deg) saturate(1500%);
+//   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15);
+// }
+// .twitter:active {
+//   filter: sepia(500%) hue-rotate(185deg) saturate(1500%);
+//   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15);
+// }
+// .linkedIn:active {
+//   filter: sepia(500%) hue-rotate(195deg) saturate(3600%);
+//   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15);
+// }
+// .facebook:active {
+//   filter: sepia(500%) hue-rotate(192deg) saturate(3600%);
+//   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15);
+// }
+// .youtube:active {
+//   filter: sepia(400%) hue-rotate(-30deg) saturate(2000%);
+//   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.15);
+// }
+
+.network-blog {
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #787878;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.7rem;
+  }
+  .blog-img {
+    margin: 28px 0px 10px 0px;
+    height: 70px;
+    width: 80px;
+    background-image: url(./../../assets/images/network/HomeIcon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .blog-img:hover {
+    background-image: url(./../../assets/images/network/HomeIconHover.png);
+  }
+  .blog-img:active {
+    background-image: url(./../../assets/images/network/HomeIconActive.png);
+  }
+}
+.preview-button {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  // position: relative;
+  .btn-object {
+    position: relative;
+    width: 313px;
+    margin: 0 auto;
+  }
+  button {
+    position: relative;
+    width: 313px;
+    height: 32px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    background-color: #0090ff;
+    margin: 0 auto;
+    margin-top: 13px;
+    border: none;
+  }
+
+  button:hover + .preview-btn {
+    opacity: 1;
+  }
+  button:hover {
+    background-color: #6dbffe;
+  }
+  button:active {
+    background-color: #006bbe;
+  }
+}
+.preview-btnK {
+  @extend %previewBtn;
+}
+.preview-btnK:after,
+.preview-btnK:before {
+  @extend %previewBtnArrow;
+}
+.preview-btnK:after {
+  border-top-color: #000;
+  border-width: 6px;
+  margin-left: 0;
+}
+.preview-btnW {
+  @extend %previewBtn;
+}
+.preview-btnW:after,
+.preview-btnW:before {
+  @extend %previewBtnArrow;
+}
+.preview-btnW:after {
+  border-top-color: #000;
+  border-width: 6px;
+  margin-left: 0;
+}
+.preview-btnN {
+  @extend %previewBtn;
+}
+.preview-btnN:after,
+.preview-btnN:before {
+  @extend %previewBtnArrow;
+}
+.preview-btnN:after {
+  border-top-color: #000;
+  border-width: 6px;
+  margin-left: 0;
+}
+.preview-footer {
+  // position: absolute;
+  margin-top: auto;
+  // top: 100%;
+
+  align-self: center;
+
+  min-height: 30px;
+
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4c4c4c;
+}

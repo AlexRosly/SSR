@@ -1,0 +1,240 @@
+.bedroom__section {
+  position: absolute;
+  top: 93%;
+  left: -1%;
+  border-radius: 5em/0.5em;
+
+  width: 238px;
+  height: 233px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+
+.bedroom__text {
+  margin-top: 5px;
+  margin-left: 22px;
+  margin-bottom: 9px;
+  font-family: "Segoe UI";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  color: #787878;
+}
+
+.bedroom__block {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 195.8px;
+  height: 130.9px;
+
+  background: #ffffff;
+  border: 1px solid #787878;
+  box-shadow: 0px 0px 5.5001px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+
+  &--active {
+    border: 3px solid rgba(0, 144, 255, 0.5);
+  }
+}
+
+.selected__bed {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 22px;
+
+  &--modif {
+    margin-top: 33px;
+  }
+}
+
+.bedroom__icon {
+  width: 30px;
+  height: 25px;
+  fill: #787878;
+
+  &--single {
+    width: 25px;
+    height: 23px;
+  }
+}
+
+.bedroom__btn__start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26.37px;
+    height: 26.37px;
+    border: 1px solid rgba(120, 120, 120, 0.1);
+    background: #ffffff;
+    border-radius: 50%;
+    fill: rgba(120, 120, 120, 0.1);
+
+    &--double{
+      margin-left: 32.9px;
+    }
+
+    &--single {
+      margin-left: 37px;
+    }
+  }
+
+.bedroom__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26.37px;
+  height: 26.37px;
+  border: 1px solid #787878;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #787878;
+
+  &--double {
+    margin-left: 32.9px;
+  }
+
+  &--single {
+    margin-left: 37px;
+  }
+
+  &:hover {
+    border: 0.5px solid #787878;
+    outline: 0.5px solid #787878;
+    fill: rgba(120, 120, 120, 0.5);
+  }
+
+  &:focus {
+    border: 0.1px solid rgba(120, 120, 120, 0.65);
+    fill: rgba(120, 120, 120, 0.5);
+  }
+}
+
+.icon__decrement {
+  width: 11.88px;
+  height: 11.88px;
+}
+
+.icon__increment {
+  width: 11.88px;
+  height: 11.88px;
+}
+
+.bedroom__counter {
+  margin-left: 12.01px;
+  margin-right: 12px;
+  width: 20px;
+  text-align: center;
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 16.5003px;
+  line-height: 22px;
+  color: #4c4c4c;
+}
+
+.confirmBtn {
+  margin-top: 12.94px;
+  margin-left: 61px;
+  padding: 8px 34px;
+  background: rgba(0, 144, 255, 0.5);
+  box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+
+  font-family: "Segoe UI";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.confirmBtn__eneble {
+  outline: none;
+  background: rgba(0, 144, 255, 0.75);
+  box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.25);
+}
+
+.confirmBtn__active:hover,
+.confirmBtn__active:focus {
+  background: #0090ff;
+  box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.25);
+}
+
+.doubleBed__overlay {
+  position: absolute;
+  display: flex;
+  padding: 4px 8px;
+  z-index: 4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 171px;
+  height: 32px;
+
+  background: #000000;
+  color: #ffffff;
+
+  border-radius: 3px;
+
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+
+  left: -74px;
+  top: 26px;
+  cursor: default;
+  opacity: 0;
+  transition: opacity 0.5s;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+}
+
+.doubleBed__hover:hover .doubleBed__overlay {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.singleBed__overlay {
+  position: absolute;
+  display: flex;
+  padding: 4px 8px;
+  z-index: 4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 171px;
+  height: 32px;
+
+  background: #000000;
+  color: #ffffff;
+
+  border-radius: 3px;
+
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+
+  left: -74px;
+  top: 86px;
+  cursor: default;
+  opacity: 0;
+  transition: opacity 0.5s;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+}
+
+.singleBed__hover:hover .singleBed__overlay {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}

@@ -1,0 +1,436 @@
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.propose__card {
+  position: relative;
+  width: 926px;
+  height: 141px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding-left: 6px;
+  padding-right: 13px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #4c4c4c;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.card__price_action {
+  display: flex;
+  flex-direction: column;
+  width: 78px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card__price {
+  margin-top: 14px;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #656565;
+}
+
+.card__btn_free {
+  position: relative;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 49px;
+  height: 33px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #656565;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba(229, 229, 229, 0.58);
+  }
+
+  &:hover ~ div {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+}
+
+.card__btn_apply {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+  margin-bottom: 6px;
+  width: 51px;
+  height: 43px;
+  border-radius: 2px;
+  cursor: pointer;
+
+  svg {
+    height: 22px;
+    width: 19.22px;
+    fill: transparent;
+    stroke: #787878;
+  }
+
+  &:hover {
+    background: #bebebe;
+    svg {
+      stroke: #0090ff;
+    }
+  }
+
+  &:active {
+    background: rgba(76, 76, 76, 0.2);
+
+    svg {
+      stroke: #0090ff;
+      fill: #0090ff;
+    }
+  }
+
+  &.card__btn_apply__active {
+    background: none;
+
+    svg {
+      stroke: #0090ff;
+      fill: #0090ff;
+    }
+  }
+
+  &:hover.card__btn_apply__active {
+    background: #bebebe;
+    svg {
+      stroke: #0090ff;
+      fill: none;
+    }
+  }
+}
+
+.card__photo {
+  position: relative;
+
+  margin-top: 14px;
+
+  .card__image {
+    max-width: 115px;
+    height: 115px;
+    border-radius: 2px;
+  }
+  .card__hotel_rating {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 43px;
+    height: 26px;
+    top: 10px;
+    right: 11px;
+    background: #ffffff;
+    box-shadow: 0px 0px 7.78947px rgba(0, 0, 0, 0.25);
+    border-radius: 5.47px;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #0090ff;
+  }
+}
+
+.location {
+  margin-left: 17px;
+  margin-top: 0;
+  padding-top: 9px;
+  max-width: 180px;
+  .location__header {
+    display: flex;
+    align-items: center;
+  }
+  .location__hotel_name {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #656565;
+  }
+  .location__hotel_name_xs {
+    font-size: 12px;
+    line-height: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .location__city {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #656565;
+    .city__name {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .city__name_xs {
+      font-size: 12px;
+      line-height: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .city__location_icon:checked .clicked {
+      filter: invert(25%) sepia(87%) saturate(1813%) hue-rotate(188deg) brightness(96%) contrast(101%);
+    }
+    .city__location_icon:hover {
+      filter: invert(51%) sepia(79%) saturate(4806%) hue-rotate(187deg) brightness(100%) contrast(109%);
+    }
+  }
+  .location__address {
+    margin-left: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #656565;
+  }
+}
+
+.booking {
+  padding-top: 30px;
+  padding-bottom: 11px;
+  margin-left: 25px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4c4c4c;
+
+  .booking__checkin,
+  .booking__checkout {
+    width: 146px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .checkin__title,
+  .checkout__title {
+    margin-left: 11px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .checkin__time,
+  .checkout__time {
+    margin-left: auto;
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .booking__appSize {
+    font-weight: 600;
+    font-size: 13px;
+
+    margin-top: 10px;
+    color: #4c4c4c;
+  }
+
+  &.wrap {
+    margin-left: 60px;
+    margin-right: 34px;
+  }
+}
+
+.bed__options {
+  width: 218px;
+  // max-height: 132px;
+  display: flex;
+  padding-top: 14px;
+  padding-left: 3px;
+  padding-right: 4px;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;
+
+  // Firefox
+  scrollbar-width: thin;
+  scrollbar-color: #0090ff #ffffff;
+
+  .bed__option {
+    min-width: 100px;
+    height: 100px;
+    background: #ffffff;
+    box-shadow: 0px -4px 6px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bed__options::-webkit-scrollbar {
+  cursor: pointer;
+  width: 2px;
+  height: 3px;
+  height: 25px;
+}
+
+.bed__options::-webkit-scrollbar-track {
+  background-color: #aeafbc;
+  border: 11px solid #fff;
+}
+
+.bed__options::-webkit-scrollbar-thumb {
+  background-color: #0090ff;
+  border: 11px solid #fff;
+  border-right: none;
+  border-left: none;
+}
+
+.bed__option_xs {
+  gap: 0 10px;
+
+  img:first-of-type {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  img {
+    max-width: 39px;
+    height: 32px;
+  }
+}
+
+.bed__option_l {
+  gap: 0 10px;
+
+  img {
+    max-width: 39px;
+    height: 32px;
+  }
+}
+
+.bed__option_xl {
+  img {
+    max-width: 52px;
+    height: 42px;
+  }
+}
+
+.card__video {
+  width: 107px;
+  height: 107px;
+  margin-top: 11px;
+  margin-left: 9px;
+  position: relative;
+  border-radius: 5px;
+
+  overflow: hidden;
+  .video__overlay {
+    position: absolute;
+    min-width: 107px;
+    min-height: 107px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  iframe {
+    border-radius: 5px;
+    position: absolute;
+    top: -39px;
+    bottom: 0px;
+    left: -45%;
+    right: 0;
+    width: 181%;
+    height: 174%;
+  }
+}
+
+.loading {
+  min-width: 100%;
+  min-height: 100%;
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+
+// @media (max-aspect-ratio: 16/9) {
+//   .card__video iframe {
+//     width: 24vh;
+//   }
+// }
+
+.card__disabled {
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 33px;
+
+  color: #ffffff;
+  background: rgba(76, 76, 76, 0.6);
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: default;
+}

@@ -1,0 +1,36 @@
+.card__wrapper {
+  width: 926px;
+  margin: 0 auto;
+
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.subCard {
+  display: flex;
+  font-family: 'Segoe UI';
+  font-style: normal;
+}
+
+.button_container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 178px;
+  height: 152px;
+  margin-right: 4px;
+
+  background-color: #dadcea;
+  border-radius: 0 0 17px 17px;
+}
+
+.wrapperWaitForPayment {
+  position: relative;
+}

@@ -1,0 +1,133 @@
+@import 'styles/common/variables';
+
+.verifyLoginModalContent {
+  position: relative;
+}
+
+.callToAction {
+  padding-left: 14px;
+  margin-bottom: 5px;
+  @extend %text-small-semibold;
+  color: $colors-city;
+}
+
+.verifyForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.verifyLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+
+  min-width: 235px;
+  min-height: 61px;
+}
+
+.verificationError {
+  @extend %text-small-semibold;
+  color: $colors-brand-accent;
+}
+
+.verifyInputWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.verifyInput {
+  max-width: 235px;
+  max-height: 39px;
+  flex-grow: 1;
+
+  padding: 12px;
+
+  @extend %text-input;
+  color: $colors-city;
+
+  background-color: $colors-bg-input;
+  border: 1px solid $colors-text-fourth;
+  border-radius: 5px;
+  outline: none;
+
+  transition: border-color $transition;
+
+  &:disabled {
+    color: $colors-text-fourth;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    border-color: $border-input-focus;
+  }
+
+  &:hover:not(:disabled):not(:focus) {
+    border-color: $border-input-focus;
+    cursor: pointer;
+  }
+}
+
+.dot {
+  position: absolute;
+  right: 17px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: $colors-brand;
+  border-radius: 50%;
+  opacity: 1;
+
+  transition: $transition;
+  transition-property: visibility, opacity;
+
+  .verifyInput:hover ~ &,
+  .verifyInput:focus ~ &,
+  .verifyInput:not(:placeholder-shown) ~ & {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.codeValidDuration {
+  display: flex;
+  align-items: center;
+
+  @extend %text-tiny;
+  color: $colors-brand-accent;
+  text-align: center;
+
+  margin-bottom: 39px;
+}
+
+.sendButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 234px;
+  height: 39px;
+  padding: 8px 20px;
+
+  @extend %text-button;
+  color: $colors-white;
+
+  background-color: $colors-brand;
+  border: 1px solid transparent;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $colors-text-accent;
+  }
+
+  &:active {
+    background-color: $colors-text-accent;
+    border-color: white;
+  }
+}

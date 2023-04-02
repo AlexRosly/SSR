@@ -1,0 +1,245 @@
+.UserCabinetRateBookingVariantBackdropBase {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+
+  backdrop-filter: blur(7.5px);
+  background-color: rgba(76, 76, 76, 0.28);
+
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.RateBookingVariantBackdropAfterOpen {
+  opacity: 1;
+}
+
+.RateBookingVariantBackdropBeforeClose {
+  opacity: 0;
+}
+
+.RateBookingVariantModal {
+  margin: auto;
+  outline: none;
+}
+
+.ContentWrapper {
+  position: relative;
+  min-width: 503px;
+  min-height: 312px;
+  padding: 20px 38px 36px 34px;
+  background-color: #ffffff;
+  border-radius: 5px 5px 10px 10px;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
+}
+
+.CloseButtonWrapper {
+  position: absolute;
+  top: -8px;
+  left: calc(100% + 20px);
+
+  outline: none;
+}
+
+.RateBookingVariantForm {
+  display: flex;
+  flex-direction: column;
+
+  outline: none;
+}
+
+.RateBookingVariantModalTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  margin-bottom: 22px;
+
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  font-family: 'Segoe UI';
+  color: #505050;
+}
+
+.StarIcon {
+  width: 37px;
+  height: 33px;
+  padding-bottom: 4px;
+}
+
+.RateBookingVariantModalRatingRows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.RatingRow {
+  display: grid;
+  grid-template-columns: 17% 76%;
+  align-items: center;
+  gap: 24px;
+}
+
+.RatingCategory {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  font-family: 'Segoe UI';
+  color: #4c4c4c;
+}
+
+.RatingButtonsList {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+}
+
+.ItemClassName {
+  position: relative;
+}
+
+.BookingVariantRatingInput {
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+}
+
+.BookingVariantRatingLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+  padding: 4px 6px;
+
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  font-family: 'Segoe UI';
+  color: #a5a5a5;
+
+  cursor: pointer;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 50%;
+
+  transition: 140ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color;
+
+  &:hover {
+    color: #ffffff;
+    background-color: rgba(0, 144, 255, 0.6);
+  }
+
+  &.BookingVariantRatingLabelActive,
+  &:active {
+    color: #ffffff;
+    background-color: #0090ff;
+  }
+
+  .BookingVariantRatingInput:focus + & {
+    outline: 1px solid black;
+  }
+}
+
+.SubmitButtonWrapper {
+  position: relative;
+
+  margin: 34px 150px 4px 126px;
+}
+
+.SubmitRatingButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 156px;
+  height: 36px;
+  padding: 4px 8px;
+  padding: 6px 24px;
+
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  font-family: 'Segoe UI';
+  color: #0090ff;
+
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 33px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+  transition: 210ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color;
+
+  &.SubmitRatingButtonValid {
+    color: #ffffff;
+    background-color: rgba(0, 144, 255, 0.6);
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #0090ff;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #006bbe;
+  }
+}
+
+.SubmitRatingButtonTooltip {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 14px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 124px;
+  min-height: 36px;
+  padding: 6px 9px 7px 7px;
+
+  background-color: #a5a5a5;
+  border-radius: 5px;
+  outline: none;
+
+  transform: translateY(-50%);
+
+  &.SubmitRatingButtonTooltipValid {
+    background-color: #535252;
+  }
+}
+
+.BookingKarmaTooltipNumber {
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.17;
+  font-family: 'Roboto';
+  color: #ffffff;
+  text-shadow: 0 0 5.20755px rgba(0, 0, 0, 0.25);
+}
+
+.BookingKarmaTooltipText {
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.91;
+  font-family: 'Segoe UI';
+  color: #ffffff;
+  text-align: start;
+  text-shadow: 0 0 5.20755px rgba(0, 0, 0, 0.25);
+}
+
+.BookingKarmaTooltipCarmaIcon {
+  margin-left: 8px;
+  margin-right: 6px;
+  padding-bottom: 2px;
+}

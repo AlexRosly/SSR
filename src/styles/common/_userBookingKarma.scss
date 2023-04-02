@@ -1,0 +1,70 @@
+$color_text_primery: #a5a5a5;
+$color_text_table: #a5a5a5;
+$color_background: #fff;
+
+.bookingKarmaCont {
+  margin-left: 126px;
+  padding-top: 57px;
+  padding-left: 58px;
+  width: 889px;
+  height: 426px;
+  background-color: $color_background;
+}
+
+.firstCell {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $color_text_primery;
+  text-align: start;
+}
+
+.tableCell {
+  padding-bottom: 6px;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: $color_text_primery;
+  text-align: start;
+}
+
+.number {
+  padding-left: 59px;
+  color: $color_text_table;
+}
+
+.numberFirst {
+  padding-left: 59px;
+
+  font-size: 33px;
+  line-height: 44px;
+  color: #ff6000;
+}
+
+.tableBtn {
+  margin-top: 35px;
+  width: 155px;
+  height: 38px;
+  background-color: $color_background;
+  border: 0.649535px solid #ceb6b6;
+  border-radius: 4.54674px;
+
+  font-size: 12.9907px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+  color: $color_text_primery;
+  cursor: pointer;
+}
+
+.tableBtn:hover,
+.tableBtn:focus {
+  background-color: #ebedfe;
+}
+
+.tableBtn:active {
+  color: #ffffff;
+  background-color: rgba(0, 144, 255, 0.5);
+}

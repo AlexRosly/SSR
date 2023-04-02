@@ -1,0 +1,85 @@
+@import './breakpoints';
+
+// palette
+$font-segoe: 'Segoe UI', sans-serif;
+$colors-brand: #0090ff; // 0, 144, 255
+$colors-text-accent: #006bbe;
+$colors-text-primary: #656565;
+$colors-brand-accent: #ff6000;
+$colors-text-fourth: #a5a5a5;
+$colors-white: #ffffff;
+$colors-black: #000000;
+$colors-bg-section: #f4f4f4;
+$colors-countdown: #ff001f;
+$colors-paid-date: #08b819;
+$colors-thumb-up: #6aff79;
+$colors-bg-hover: #e5e5e5;
+$colors-active: #3a3a3a;
+$colors-search: #626367;
+$colors-city: #4c4c4c;
+$colors-country: #949494;
+$colors-placeholder: #5f6368;
+
+// interactive
+$colors-link-hover: rgba($colors-brand, 0.7);
+$colors-link-active: rgba($colors-brand, 0.5);
+
+// border
+$colors-bg-drawer: #292828;
+$colors-bg-avatar: #c4c4c4;
+$border-bg-section: rgba(0, 0, 0, 0.18);
+$border-input: #d0d0d0;
+$colors-logo-active: rgba($colors-text-accent, 0.65);
+$border-input-hover: rgba($colors-text-accent, 0.5);
+$border-input-focus: rgba($colors-text-accent, 0.7);
+$border-bg-block: rgba($border-input, 0.5);
+$border-bg-block-link: #c9c9c9;
+$border-button-copy: #09dd1e;
+$border-table: #787878;
+
+// bg
+$colors-bg-button-option: #ebedfe;
+$colors-bg-button-hover: rgba(255, 96, 0, 0.9);
+$colors-bg-button-active: rgba(255, 96, 0, 0.75);
+$colors-bg-button-copy-hover: rgba(106, 255, 121, 0.32);
+$colors-bg-button-copy-active: rgba(106, 255, 121, 0.8);
+$colors-bg-input: rgba($colors-bg-section, 0.5);
+
+$colors-bg-button-edit: #dedede;
+$colors-bg-button-edit-hover: rgba($colors-bg-button-edit, 0.6);
+$colors-bg-button-edit-active: rgba($colors-bg-button-edit, 0.9);
+
+$colors-bg-agent-settings-header: rgba($colors-text-accent, 0.05);
+
+$colors-bg-button-payout: rgba($colors-text-accent, 0.33);
+$colors-bg-button-payout-active: rgba($colors-text-accent, 0.55);
+$colors-bg-button-save-disabled: rgba($colors-text-accent, 0.39);
+$colors-bg-button-save-active: rgba($colors-text-accent, 0.8);
+
+$colors-bg-button-delete-account-hover: rgba($colors-black, 0.6);
+$colors-bg-button-cancel-delete: rgba($colors-city, 0.2);
+$colors-bg-button-cancel-delete-hover: rgba($colors-city, 0.28);
+$colors-bg-button-cancel-delete-active: rgba($colors-city, 0.11);
+
+$black-transparent-quarter: rgba($colors-black, 0.25);
+
+// shadows
+$box-shadow-notification: 0 0 4px $black-transparent-quarter;
+$box-shadow-location: 0 4px 4px $black-transparent-quarter;
+$box-shadow-button-cancel: 0 0 5px 2px $black-transparent-quarter;
+$box-shadow-cancel-delete-card: 0 0 10px rgba($colors-black, 0.3);
+$box-shadow-modal: 0 2px 4px rgba($colors-black, 0.15);
+$box-shadow-search: 0px 0px 10px rgba($colors-black, 0.15);
+
+// transition
+$time: 210ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$transition: $time $cubic;
+@import './typography';
+
+%button-reset {
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}

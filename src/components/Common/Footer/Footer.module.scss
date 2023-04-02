@@ -1,0 +1,91 @@
+@import 'styles/common/variables';
+
+$footer-link-ph: 12px;
+$footer-link-pv: 0px;
+$footer-link-paddings: $footer-link-pv $footer-link-ph;
+
+$footer-list-pv: 29px - $footer-link-pv;
+$footer-list-pl: 42px - $footer-link-ph;
+
+.footer {
+	display: none;
+	contain: content;
+	position: sticky;
+	top: 30px;
+
+	max-width: 300px;
+
+	@media screen and (min-width: $tablet) {
+		max-width: 320px;
+		width: 320px;
+	}
+
+	@media screen and (min-width: $pre-desktop) {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	padding: $footer-list-pv 9px $footer-list-pv $footer-list-pl;
+
+	background-color: $colors-white;
+	border: 1px solid $border-bg-block-link;
+	border-radius: 10px;
+}
+
+.footerList {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.footerListDark {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.footerItem {
+	display: flex;
+}
+
+%footerLink {
+	font-size: 11px;
+	line-height: 1.5;
+	font-family: $font-segoe;
+	text-decoration: none;
+
+	border-radius: 10px;
+}
+
+.footerLink {
+	@extend %footerLink;
+
+	padding: $footer-link-paddings;
+
+	color: $colors-city;
+
+	@media (prefers-reduced-motion: no-preference) {
+		transition: 250ms $cubic;
+		transition-property: color, background-color;
+	}
+}
+
+.footerLinkDark {
+	@extend %footerLink;
+	padding: 0 8px;
+
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.8;
+	color: $colors-white;
+}
+
+.footerAllRightsReserved {
+	padding: $footer-link-paddings;
+
+	font-size: 10px;
+	line-height: 1.7;
+	font-family: $font-segoe;
+	color: $colors-city;
+}

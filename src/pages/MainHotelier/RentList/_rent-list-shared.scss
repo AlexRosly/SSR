@@ -1,0 +1,76 @@
+@import 'styles/common/variables';
+
+$p-v: 9px;
+
+%rent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  padding: (29px - $p-v) 28px (25px - $p-v) 48px; // Figma.6 HOTELIER_CATALOG mockup
+}
+
+%link {
+  position: relative;
+
+  flex-grow: 1;
+
+  padding: 9px 11px;
+
+  font-weight: 600;
+  font-size: 12px;
+  font-family: $font-segoe;
+  color: $colors-text-primary;
+  text-decoration: none;
+  border-radius: 10px;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    background-color: $colors-bg-hover;
+  }
+
+  &:hover {
+    color: $colors-text-accent;
+  }
+
+  &:focus {
+    color: $colors-brand;
+  }
+
+  &.dark {
+    color: $colors-white;
+  }
+
+  &.dark:focus,
+  &.dark:hover {
+    color: $colors-brand;
+    background-color: unset;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: 110ms $cubic;
+    transition-property: color, background-color;
+  }
+}
+
+%rent-option-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+%active-rent-option-icon {
+  position: absolute;
+  right: calc(100% - 3px);
+  z-index: 1;
+
+  width: 39px;
+  height: 39px;
+  padding: 8px;
+
+  &.dark {
+    background-color: $border-input;
+    border-radius: 50%;
+  }
+}

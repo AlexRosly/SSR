@@ -1,0 +1,80 @@
+[
+  {
+    "_id": 1,
+    "name": "Hilton",
+    "city": "New York",
+    "address": "Fifth Avenue at Central Park South, 10019, New York, USA",
+    "price": 750,
+    "rating": 4.22,
+    "dateFrom": "17 авг. 2022",
+    "dateTo": "21 авг. 2022",
+    "timeCheckIn": "15:00",
+    "timeCheckOut": "12:00",
+    "apartmentsSize": 70,
+    "bedOptions": [
+      {
+        "hostel": true,
+        "rooms": 1,
+        "price": "570 UAH",
+        "number": "UB77L",
+        "optionsroom": { "total": 15, "free": 8 }
+      },
+      {
+        "rooms": 1,
+        "price": "не установлена",
+        "number": "Bgh7L",
+        "optionsroom": [{ "singleBedroom": 1, "twoBedroom": 1, "key": 48 }]
+      },
+      {
+        "rooms": 1,
+        "price": "не установлена",
+        "number": "BIh7L",
+        "optionsroom": [{ "singleBedroom": 1, "twoBedroom": 0, "key": 109 }]
+      },
+      {
+        "rooms": 2,
+        "price": "770 UAH",
+        "number": "GH56Y",
+        "optionsroom": [
+          { "singleBedroom": 1, "twoBedroom": 0, "key": 1 },
+          { "singleBedroom": 1, "twoBedroom": 2, "key": 12 }
+        ]
+      },
+      {
+        "rooms": 3,
+        "price": "1200 UAH",
+        "number": "KL86Y",
+        "optionsroom": [
+          { "singleBedroom": 0, "twoBedroom": 2, "key": 3 },
+          { "singleBedroom": 1, "twoBedroom": 1, "key": 32 },
+          { "singleBedroom": 3, "twoBedroom": 0, "key": 14 }
+        ]
+      },
+      {
+        "rooms": 4,
+        "price": "1570 UAH",
+        "number": "AWESO",
+        "optionsroom": [
+          { "singleBedroom": 1, "twoBedroom": 0, "key": 145 },
+          { "singleBedroom": 1, "twoBedroom": 2, "key": 41 },
+          { "singleBedroom": 3, "twoBedroom": 0, "key": 31 },
+          { "singleBedroom": 0, "twoBedroom": 3, "key": 2 }
+        ]
+      },
+      {
+        "hostel": true,
+        "rooms": 1,
+        "price": "570 UAH",
+        "number": "BB77L",
+        "optionsroom": { "total": 7, "free": 4 }
+      }
+    ],
+    "photos": [
+      "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/60/77/607709244.jpeg",
+      "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/66/62/66628586.jpeg",
+      "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/35/10/351021548.jpeg"
+    ],
+    "video": "https://www.youtube.com/embed/kCt8K26yvgw",
+    "bookingNow": false
+  }
+]

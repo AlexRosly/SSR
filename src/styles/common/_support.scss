@@ -1,0 +1,217 @@
+$color-red: #ff6000;
+$color-white: #ffffff;
+$color-text: #656565;
+
+@mixin mediaAdaptive($size, $property, $value) {
+  @media (max-width: #{$size + px}) {
+    #{$property}: $value;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-height: 320px;
+  margin: 0 auto;
+  @media (min-width: 340px) {
+    padding: 0 8px;
+  }
+  background-color: $color-white;
+}
+
+.support {
+  width: 100%;
+  height: max-content;
+  background: $color-white;
+  padding-bottom: 10px;
+
+  &__img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  &__wrapper {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__links-wrapper {
+    margin: 17px 0 56px 0;
+    @include mediaAdaptive(506, 'margin-bottom', 25px);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(130px, 390px));
+    justify-content: center;
+    gap: 36px;
+    @include mediaAdaptive(768, 'gap', 29px);
+    @include mediaAdaptive(505, 'gap', 3%);
+
+    @media (min-width: 768px) and (max-width: 768px) {
+      grid-template-columns: repeat(2, 294px);
+    }
+
+    @media (min-width: 320px) and (max-width: 340px) {
+      grid-template-columns: repeat(2, 130px);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 23px;
+
+    @include mediaAdaptive(768, 'gap', 29px);
+    @include mediaAdaptive(505, 'gap', 17px);
+
+    @media (max-width: (665px)) {
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+
+    @media (min-width: 665px) and (max-width: 825px) {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    & .footer {
+      position: static;
+      margin: 0;
+    }
+  }
+}
+
+.img-logo {
+  margin: 0 auto;
+  padding: 0 32px;
+  max-width: 1200px;
+  height: 307px;
+  @include mediaAdaptive(500, height, 128px);
+  background-image: url('../../assets/images/support/city1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    max-width: 100%;
+
+    margin: 0;
+    background-color: $color-white;
+    border-radius: 20px;
+    padding: 10px 40px;
+  }
+}
+
+.link-telegram {
+  width: 100%;
+  height: 225px;
+  margin: 0;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $color-white;
+  border: 1px solid $color-red;
+  border-radius: 2px;
+
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+
+  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+
+  @media (min-width: 768px) and (max-width: 768px) {
+    height: 179px;
+  }
+
+  @media (max-width: 625px) {
+    height: 150px;
+  }
+
+  @media (max-width: 500px) {
+    height: 100px;
+  }
+
+  @media (min-width: 320px) and (max-width: 320px) {
+    height: 83px;
+  }
+
+  &:hover {
+    background-color: $color-red;
+    color: $color-white;
+  }
+
+  &:hover .icon-telegram::after {
+    content: '';
+    background-image: url('../../assets/images/support/telegram 2.png');
+  }
+
+  &:hover &__text {
+    color: $color-white;
+  }
+
+  &:hover &__url {
+    color: $color-white;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    @include mediaAdaptive(625, 'gap', 17px);
+  }
+
+  &__text,
+  &__url {
+    color: $color-text;
+  }
+
+  &__text {
+    font-size: 22px;
+    @include mediaAdaptive(625, 'font-size', 13px);
+  }
+
+  &__url {
+    font-size: 12px;
+    @include mediaAdaptive(500, 'opacity', 0);
+  }
+}
+
+.icon-telegram {
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url('../../assets/images/support/telegram 1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+
+    left: -25px;
+    width: 30px;
+    height: 30px;
+
+    @media (max-width: 500px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.no-sticky {
+  position: static;
+
+  & .footer {
+    padding: 0 2px;
+  }
+}

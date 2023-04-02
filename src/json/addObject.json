@@ -1,0 +1,37 @@
+{
+  "location": { "_id": "3", "city": "Киев", "country": "Украина", "district": "Подол", "state": "Киевская область" },
+
+  "objectType": { "_id": "12", "type": "Отель", "stars": 2 },
+
+  "objectName": "Hilton",
+
+  "address": {
+    "apartment": "qwe",
+    "city": "qwe",
+    "country": "qwe",
+    "email": "qwe",
+    "house": "qwe",
+    "mail": "qwe",
+    "phone": "qwe",
+    "state": "qwe",
+    "street": "qwe"
+  },
+
+  "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat expedita iusto consequatur! Eveniet ab laborum odio magni eius quidem aperiam deleniti sed quam ipsa rem, fugit eligendi, voluptatum facilis totam numquam eos sapiente minus mollitia vel nam quibusdam molestiae. Animi laudantium at debitis veritatis aperiam, tempora ipsum placeat praesentium necessitatibus eos dolorem recusandae cum officiis assumenda id vitae cupiditate iure, ex ipsa odit officia sit corporis deserunt. Quidem quod ea rerum nam obcaecati architecto voluptates autem modi odio fugiat perspiciatis, consequuntur illum commodi animi minus? Molestiae repudiandae eaque, doloremque magnam voluptate illo reprehenderit",
+
+  "photos": [{ "id": "0", "localUrl": "blob:http://localhost:3000/777dbeba-6c53-4008-89ac-0de2fa5a604c" }],
+
+  "time": {
+    "checkin": "00:54",
+    "checkout": "23:54"
+  },
+
+  "services": [
+    { "id": "0", "service": "Всё включено" },
+    { "id": "30", "service": "Детский бассейн" },
+    { "id": "37", "service": "Езда на лошади" },
+    { "id": "44", "service": "Минеральные ванны" }
+  ],
+
+  "payments": { "id": "0", "type": "cash", "icon": "cash", "text": "Оплата на месте", "inDevelopment": false }
+}

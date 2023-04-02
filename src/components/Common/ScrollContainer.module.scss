@@ -1,0 +1,13 @@
+.AppScrollContainer {
+  position: relative;
+
+  height: 100vh;
+
+  &.overflowYHidden {
+    overflow-y: hidden;
+  }
+
+  &.overflowYScroll {
+    overflow-y: scroll;
+  }
+}

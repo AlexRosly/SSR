@@ -1,0 +1,19 @@
+@import 'styles/common/variables';
+
+.hotelImageThumb {
+  display: flex;
+  align-items: flex-start;
+
+  width: 25px;
+  height: 25px;
+  margin-top: 1px;
+
+  background-color: $border-table;
+  border-radius: 3px;
+}
+
+.hotelImage {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}

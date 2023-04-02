@@ -1,0 +1,109 @@
+[
+  {
+    "_id": 1,
+    "name": "Plaza Hotel",
+    "city": "New York",
+    "address": "Fifth Avenue at Central Park South, 10019, New York, USA",
+    "price": 750,
+    "rating": 4.22,
+    "dateFrom": "17 авг. 2022",
+    "dateTo": "21 авг. 2022",
+    "timeCheckIn": "15:00",
+    "timeCheckOut": "12:00",
+    "apartmentsSize": 70,
+    "bedOptions": {
+      "1": {
+        "single": 1,
+        "double": 0
+      },
+      "2": {
+        "single": 2,
+        "double": 1
+      },
+      "3": {
+        "single": 1,
+        "double": 2
+      }
+    },
+    "photos": [
+      "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/60/77/607709244.jpeg",
+      "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/66/62/66628586.jpeg",
+      "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/35/10/351021548.jpeg"
+    ],
+    "video": "https://www.youtube.com/embed/kCt8K26yvgw",
+    "bookingNow": false
+  },
+  {
+    "_id": 2,
+    "name": "Royal Beach Hotel Tel Aviv by Isrotel Exclusive",
+    "city": "Tel Aviv",
+    "address": "Hayarkon 19, Тель-Авив, 68011, Израиль",
+    "price": 450,
+    "rating": 4.67,
+    "dateFrom": "17 авг. 2022",
+    "dateTo": "21 авг. 2022",
+    "timeCheckIn": "15:00",
+    "timeCheckOut": "12:00",
+    "apartmentsSize": 75,
+    "bedOptions": {
+      "1": {
+        "single": 0,
+        "double": 2
+      },
+      "2": { "hostel": true, "total": 10, "free": 5 }
+    },
+    "photos": [
+      "https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/49478610.jpg?k=6b4b808327afd1eb5ddbdcebe05140c9f0665a3105f04d2dec034591e12d0257&o=&hp=1",
+      "https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/177716614.jpg?k=26dde8dbdfe391cf825c7e679702ecb4dedb15c5479293312bd48eeae3938b27&o=&hp=1"
+    ],
+    "video": "https://www.youtube.com/embed/MnGItjIztFk",
+    "bookingNow": false
+  },
+  {
+    "_id": 3,
+    "name": "Hotel and Restaurant Complex Lubokray",
+    "city": "Pereyaslav-Khmelnitskiy",
+    "address": "Obezdnaya str. 4а, Переяслав-Хмельницкий, 08400, Украина ",
+    "price": 150,
+    "rating": 3.8,
+    "dateFrom": "17 авг. 2022",
+    "dateTo": "21 авг. 2022",
+    "timeCheckIn": "15:00",
+    "timeCheckOut": "12:00",
+    "apartmentsSize": 70,
+    "bedOptions": {
+      "1": {
+        "single": 1,
+        "double": 0
+      }
+    },
+    "photos": [
+      "https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/89922149.jpg?k=0d360739eb43475f7052d0f78284ce302a5bdf063c53a41b908284f2364a9cd7&o=&hp=1",
+      "https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/241490947.jpg?k=dd7beaf3dd542ec96e521532580f5260d013d1a87af13796e46da03187b6b22d&o=&hp=1"
+    ],
+    "video": "https://www.youtube.com/embed/tWlqzJhTkCw",
+    "bookingNow": false
+  },
+  {
+    "_id": 4,
+    "name": "Hostel Park",
+    "city": "Warszawa",
+    "address": "plac Zamkowy 4, 00-277 Warszawa, Польща",
+    "price": 75,
+    "rating": 3.7,
+    "dateFrom": "17 авг. 2022",
+    "dateTo": "21 авг. 2022",
+    "timeCheckIn": "15:00",
+    "timeCheckOut": "12:00",
+    "apartmentsSize": 83,
+    "bedOptions": {
+      "1": { "hostel": true, "total": 45, "free": 8 }
+    },
+    "photos": [
+      "https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/89922149.jpg?k=0d360739eb43475f7052d0f78284ce302a5bdf063c53a41b908284f2364a9cd7&o=&hp=1",
+      "https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/241490947.jpg?k=dd7beaf3dd542ec96e521532580f5260d013d1a87af13796e46da03187b6b22d&o=&hp=1"
+    ],
+    "video": "https://www.youtube.com/embed/tWlqzJhTkCw",
+    "bookingNow": true
+  }
+]

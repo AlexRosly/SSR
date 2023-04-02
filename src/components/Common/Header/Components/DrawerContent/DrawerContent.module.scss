@@ -1,0 +1,36 @@
+@import 'styles/common/variables';
+
+.drawerContentWide {
+  width: $mobile;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding-right: 21px;
+    padding-left: 48px;
+  }
+}
+
+.drawerContentSlim {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  height: fit-content;
+  min-height: 714px;
+  padding-top: 8px;
+  padding-bottom: 29px;
+
+  width: $mobile;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+}
+
+.drawerBodyAndFooter {
+  display: flex;
+  flex-direction: column;
+
+  gap: 27px;
+}

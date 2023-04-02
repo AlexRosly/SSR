@@ -1,0 +1,46 @@
+.container {
+  background: #e5e5e5;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 50px;
+  width: 1016px;
+}
+
+.content {
+  display: flex;
+
+  &__left {
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 50%;
+    padding-right: 9px;
+  }
+
+  &__rigth {
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 50%;
+    padding-left: 15px;
+  }
+}
+
+.bed_options {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.totalSq {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+  width: 176px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-bottom: 15px;
+
+  color: #4c4c4c;
+}

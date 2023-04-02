@@ -1,0 +1,136 @@
+@import './common/reset';
+// @import url(./common/_fonts.scss);
+@import './common/variables';
+@import './common/location';
+// @import '../pages/Hoteliers/header.scss';
+@import './common/body';
+@import './common/listLocation';
+@import './common/header';
+@import './common/preview';
+@import './common/visuallyHidden';
+
+// $zIndex: (
+//   '.send-btn-login': 0,
+//   '.send-btn-login1': 0,
+//   '.send-btn-code': 0,
+//   '.send-btn-code1': 0,
+//   '.send-btn-email': 0,
+//   '.send-btn-email1': 0,
+
+//   '.edit-btn-login': 1,
+//   '.edit-btn-login1': 1,
+//   '.overlayScore': 1,
+//   '.card__video .video__overlay': 1,
+//   '.menu__line': 1,
+//   '.container-account-active': 1,
+//   '.support-block2': 1,
+
+//   '.card__disabled': 2,
+//   '.modal__button_plus': 2,
+//   '.text-label-login': 2,
+//   '.text-label-email': 2,
+//   '.text-label-login1': 2,
+//   '.text-label-email1': 2,
+
+//   '.icon__overlay': 4,
+//   '.image__overlay': 4,
+//   '.doubleBed__overlay': 4,
+//   '.singleBed__overlay': 4,
+//   '.fourBedRooms__firstDoubleBedRoom__overlay': 4,
+//   '.fourBedRooms__firstSingleBed__overlay': 4,
+//   '.fourBedRooms__secondDoubleBedRoom__overlay': 4,
+//   '.fourBedRooms__secondSingleBed__overlay': 4,
+//   '.fourBedRooms__thirdDoubleBedRoom__overlay': 4,
+//   '.fourBedRooms__thirdSingleBed__overlay': 4,
+//   '.fourBedRooms__fourthDoubleBedRoom__overlay': 4,
+//   '.fourBedRooms__fourthSingleBed__overlay': 4,
+//   '.threeBedRooms__firstDoubleBedRoom__overlay': 4,
+//   '.threeBedRooms__secondDoubleBedRoom__overlay': 4,
+//   '.threeBedRooms__secondSingleBed__overlay': 4,
+//   '.threeBedRooms__thirdDoubleBedRoom__overlay': 4,
+//   '.threeBedRooms__thirdSingleBed__overlay': 4,
+//   '.twoBedRooms__firstDoubleBedRoom__overlay': 4,
+//   '.twoBedRooms__firstSingleBed__overlay': 4,
+//   '.twoBedRooms__secondDoubleBedRoom__overlay': 4,
+//   '.twoBedRooms__secondSingleBed__overlay': 4,
+//   'MainHotelier .overlay': 4,
+
+//   '.twoBedRooms__section': 5,
+//   '.threeBedRooms__section': 5,
+//   '.fourBedRooms__section': 5,
+//   '.bedroom__section': 5,
+//   '.gbvcss__section': 5,
+//   '.gbvcss__overlay': 5,
+//   '.arrowDown': 5,
+//   '.link': 5,
+
+//   '.lang-list': 6,
+//   '.parlourSetting-list': 6,
+//   '.userSetting-list': 6,
+//   '.agentSetting-list': 6,
+
+//   '%previewBtn': 10,
+
+//   '.lang-block': 7,
+//   '.parlourVector-img': 7,
+//   '.hotel-img-wrap': 7,
+//   '.userVector-img': 7,
+
+//   '.lang:hover': 8,
+//   '.langLog:hover': 8,
+//   '.cabinet-wrap': 8,
+
+//   '.active_line': 9,
+
+//   '.filter_wrap': 10,
+//   '.house__overlay': 10,
+//   '.popup': 10,
+//   '.ddl__block': 10,
+//   '.block_container_bookingKarma_open': 10,
+//   '.search_wrap': 10,
+//   '.lang-input': 10,
+//   '.table__deposit1-block': 10,
+//   '.table__deposit2-block': 10,
+//   '.table__expenditure1-block': 10,
+//   '.table__expenditure2-block': 10,
+//   '.block-rating-feedback::before': 10,
+
+//   '.search_object': 11,
+//   '.closeButton_wrap': 11,
+//   '.location-search-wrap': 11,
+//   '.location-input-object': 11,
+
+//   '.suggest__close': 15,
+//   '.popup_proposal_card': 15,
+//   '.rating_block': 15,
+
+//   '.modal__backdrop': 20,
+//   '.location__body': 20,
+//   '.block__suggest-modal': 20,
+//   '.block__checkbox': 20,
+//   '.detail__room_block3': 20,
+
+//   '.select__bedroom': 30,
+//   '.hotelier_roms__item_active': 30,
+
+//   '.karma__container_open': 50,
+//   '.block_container_bookingKarma_close': 50,
+
+//   '_header .overlay': 68,
+
+//   '.room_icon_title': 100,
+//   '.block_checkbox_animal_window': 100,
+
+//   '.houses_block': 110,
+
+//   '.user_card_button__small__add:hover ~ .user_card_notification': 120,
+//   '.detail__houses_btn:hover ~ .houses_block_close': 120,
+//   '.user_card_notification': 120,
+//   '.houses_block_open': 120,
+//   '.houses_block_close': 120,
+//   '.block_container_bookingTime_open': 120,
+//   '.container__booking_time': 120,
+
+//   '.backdrop': 1000,
+//   '.object__backdrop': 1000,
+// );

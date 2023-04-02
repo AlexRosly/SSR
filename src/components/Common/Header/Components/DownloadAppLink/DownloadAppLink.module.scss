@@ -1,0 +1,31 @@
+@import 'styles/common/variables';
+
+.downloadAppLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 96px;
+  height: 26px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: 1.36;
+  font-family: 'Segoe UI';
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: $colors-brand-accent;
+  border-radius: 20px;
+  appearance: none;
+
+  &:hover {
+    background-color: darken($colors-brand-accent, 2);
+  }
+
+  &:active {
+    background-color: lighten($colors-brand-accent, 2);
+  }
+}

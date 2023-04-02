@@ -1,0 +1,77 @@
+@import 'styles/common/variables';
+
+.cancelDeleteCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+
+  width: 300px;
+  min-height: 75px;
+
+  opacity: 1;
+
+  background: $colors-white;
+  border-radius: 3px;
+  box-shadow: $box-shadow-cancel-delete-card;
+
+  transition: $transition;
+  transition-property: visibility, opacity;
+}
+
+.cancelDeleteCardHidden {
+  @extend .cancelDeleteCard;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.deleteAccountWarning {
+  max-width: 146px;
+  padding: 2px 0 2px 8px;
+
+  @extend %text-small-bold;
+  color: $colors-city;
+}
+
+.countDown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+
+  @extend %text-countdown;
+  color: $colors-countdown;
+
+  background-color: $colors-white;
+  border: 1px solid $colors-city;
+  border-radius: 50%;
+}
+
+.cancelButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 8px;
+  width: 100px;
+  min-height: 75px;
+
+  @extend %text-mid-bold;
+  color: $colors-brand;
+  background: $colors-bg-button-cancel-delete;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+
+  &:hover {
+    background-color: $colors-bg-button-cancel-delete-hover;
+  }
+
+  &:active {
+    background-color: $colors-bg-button-cancel-delete-active;
+  }
+}

@@ -1,0 +1,185 @@
+.booking_block_content_wrap {
+  overflow: auto;
+  left: 0;
+  position: absolute;
+  z-index: 1000;
+  background: rgba(76, 76, 76, 0.28);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100%;
+  padding: 100px 0 150px 0;
+  top: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  .booking_block_content {
+    margin: 0 auto;
+    width: 320px;
+    background: #fff;
+    .booking_block_content_header {
+      display: flex;
+      justify-content: space-between;
+      .content_header_back {
+        margin: 2px 0 0 4px;
+        width: 52px;
+        height: 52px;
+        padding: 17px 12px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .content_header_back:hover {
+        background: #ededed;
+      }
+      .content_header_close {
+        margin: 2px 4px 0 0px;
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+        padding: 15px 15px;
+      }
+      .content_header_close:hover {
+        background: #ededed;
+      }
+      .content_header_close:active {
+        background: rgba(76, 76, 76, 0.33);
+      }
+    }
+  }
+}
+.content_main {
+  color: #787878;
+  .content_main_name {
+    font-weight: 700;
+    font-size: 17px;
+    margin: 10px 60px;
+    line-height: 23px;
+  }
+}
+.content_main_block {
+  width: 238px;
+  height: 233px;
+  margin: 30px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 150px/15px;
+  .content_main_block_name {
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  .content_main_block_bedrooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 196px;
+    height: 131px;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5.5001px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .content_main_block_bedrooms_false {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 196px;
+    height: 131px;
+    border: 1px solid rgba(0, 144, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5.5001px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+.block_bedrooms_bed {
+  display: flex;
+  justify-content: space-around;
+  .block_bedrooms_img_wrap {
+    position: relative;
+  }
+  .block_bedrooms_img_txt {
+    position: absolute;
+    display: flex;
+    z-index: 4;
+    align-items: center;
+    justify-content: center;
+    width: 167px;
+    height: 32px;
+    background: #000000;
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    top: -45px;
+    left: -60px;
+    padding: 0 10px;
+    cursor: default;
+    opacity: 0;
+    transition: opacity 0.5s;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+  }
+  .block_bedrooms_img:hover + .block_bedrooms_img_txt {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+
+  .block_bedrooms_bed--block {
+    display: flex;
+    justify-content: center;
+  }
+}
+.block_bedrooms_bed_counter {
+  display: flex;
+  align-items: center;
+  .bed_counter_minus {
+    background-image: url(../../img/minus.png);
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+  .bed_counter_minus_more {
+    background-image: url(../../img/minusOne.png);
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+  .bed_counter_minus_more:hover {
+    background-image: url(../../img/minusHover.png);
+  }
+  .bed_counter_minus_more:active {
+    background-image: url(../../img/minusActive.png);
+  }
+  .bed_counter_minus:hover {
+    background-image: url(../../img/minusHover.png);
+  }
+  .bed_counter_minus:active {
+    background-image: url(../../img/minusActive.png);
+  }
+  .bed_counter_plus {
+    background-image: url(../../img/plus.png);
+    margin-left: 10px;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+  }
+  .bed_counter_plus:hover {
+    background-image: url(../../img/plusHover.png);
+  }
+  .bed_counter_plus:active {
+    background-image: url(../../img/plusActive.png);
+  }
+}
+.content_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+.content_btn_arrow {
+  cursor: pointer;
+}

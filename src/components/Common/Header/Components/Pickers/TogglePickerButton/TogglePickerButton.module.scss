@@ -1,0 +1,32 @@
+@import 'styles/common/variables';
+@import './toggleButtonShared';
+
+.toggleButton {
+  @extend %button-reset;
+  @extend %toggle-button-shared;
+
+  &:hover {
+    border-color: $colors-brand;
+  }
+}
+
+.buttonText {
+  @extend %toggle-button-shared-text;
+}
+
+.arrow {
+  width: 9px;
+  height: 9px;
+
+  color: $colors-brand;
+  transform: rotate(180deg);
+
+  &.active,
+  .toggleButton:focus-within & {
+    transform: rotate(0);
+  }
+
+  &.dark {
+    color: $colors-white;
+  }
+}

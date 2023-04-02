@@ -1,0 +1,867 @@
+.header_wrap {
+  display: flex;
+  font-family: 'Segoe UI';
+}
+.header_btn_wrap {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  width: 50%;
+  height: 29px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #a5a5a5;
+  padding-top: 8px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  .btn_nb {
+    font-size: 11px;
+    color: rgb(0, 107, 190);
+    margin-left: 10px;
+  }
+  .btn_img_dot {
+    padding-left: 5px;
+  }
+}
+.header_btn_wrap:hover {
+  border-color: #626367;
+}
+.header_btn_wrap:active {
+  border-color: #000;
+}
+.header_btn_wrap_active {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  width: 50%;
+  height: 29px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #535252;
+  padding-top: 8px;
+  border: 1px solid #626367;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  .btn_nb {
+    font-size: 11px;
+    color: #006bbe;
+    margin-left: 10px;
+  }
+  .btn_img_dot {
+    padding-left: 5px;
+  }
+}
+.right_default_block {
+  width: 501px;
+  height: 110px;
+  background: #fff;
+  margin: 20px 0px 0px 50%;
+  padding-top: 20px;
+}
+.right_default_block_content {
+  width: 438px;
+  height: 69px;
+  border: 0.2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px 5px 35px;
+}
+.right_default_block_text {
+  color: #535252;
+  font-family: 'Segoe UI';
+  width: 280px;
+}
+.right_default_block_header {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.right_default_block_main {
+  font-weight: 350;
+  font-size: 11px;
+}
+// ===================left_default_block======================//
+.left_default_block {
+  padding-top: 45px;
+  padding-left: 227px;
+}
+.left_default_block_button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 57px;
+  font-family: 'Segoe UI';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: #0090ff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  border: none;
+  &::before {
+    display: inline-block;
+    content: '';
+    background-image: url('../../../assets/images/hoteliers/Plus.svg');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: right 11px bottom 11px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: -15px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+  }
+  &::after {
+    display: inline-block;
+    content: '';
+    background-image: url('../../../assets/images/hoteliers/WhiteHouse.svg');
+    background-repeat: no-repeat;
+    position: relative;
+    left: 7px;
+    right: 0px;
+    top: -3px;
+    bottom: 0px;
+    width: 27px;
+    height: 29px;
+  }
+  &:hover {
+    background: rgba(0, 144, 255, 0.5);
+  }
+  &:active {
+    background: rgba(0, 107, 190, 0.5);
+    outline: 1px solid #006bbe;
+  }
+}
+
+.btn__fetch {
+  display: flex;
+  margin-left: 61px;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  padding: 16px 14px 18px;
+  color: #616467;
+  box-shadow: inset 0 0 0 2px #616467;
+  background: transparent;
+  height: 48px;
+  &:hover {
+    color: #fff;
+    background: rgba(110, 110, 110, 0.7);
+  }
+  &:active {
+    color: #fff;
+    background: rgba(110, 110, 110, 0.9);
+  }
+}
+// ==================UserCardBooking=============================== //
+.user_card {
+  margin: 0 auto;
+  padding: 6px 54px 20px 54px;
+  background: #ffffff;
+  border-radius: 20px;
+  width: 1075px;
+}
+
+.user_card_button__add {
+  @extend .left_default_block_button;
+  font-size: 10px;
+  line-height: 13px;
+  background: rgba(0, 144, 255, 0.4);
+  padding: 3px 2px 3px 70px;
+  margin-bottom: 5px;
+  &::before {
+    display: inline-block;
+    content: '';
+    background-image: url('../../../assets/images/hoteliers/SmallPlus.svg');
+    background-position: right 5px bottom 6px;
+    left: -55px;
+    width: 19.5px;
+    height: 19.5px;
+  }
+  &::after {
+    display: inline-block;
+    content: '';
+    background-image: url('../../../assets/images/hoteliers/SmallHouse.svg');
+    left: -144px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 18px;
+    height: 19px;
+  }
+  &:hover {
+    background: rgba(0, 144, 255, 0.4);
+    outline: 0.5px solid #0090ff;
+  }
+  &:active {
+    background: rgba(0, 107, 190, 0.4);
+    outline: 0.5px solid #0090ff;
+  }
+}
+
+.user_card_item {
+  width: 970px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.user_card_box__img {
+  cursor: pointer;
+  width: 170px;
+  height: 170px;
+  border-radius: 5px 0px 0px 5px;
+  position: relative;
+  outline: 2px solid transparent;
+  transition: outline 10s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  &:hover {
+    outline: 2px solid rgb(54, 53, 53);
+  }
+}
+
+.user_card_box__img__active {
+  border-radius: 5px 0px 0px 5px;
+  overflow: hidden;
+  width: 170px;
+  height: 170px;
+}
+
+.user_card_img {
+  border-radius: 5px 0px 0px 5px;
+  width: 170px;
+  height: 170px;
+  transition: transform 10s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  &:hover,
+  &:focus {
+    transform: scale(1.3);
+  }
+}
+
+.user_card_name__hotel {
+  max-width: 100px;
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: center;
+  color: #ffffff;
+}
+
+.user_card_raiting__hotel {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0090ff;
+  border-radius: 5px;
+}
+
+.user_card_button__small__add {
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 8px;
+  right: 7px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url('../../../assets/images/hoteliers/Plus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 1px;
+    right: 0;
+    background: #ff6000;
+    border: 0.5px solid #ffffff;
+    border-radius: 50%;
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.76);
+  }
+  &:hover ~ .user_card_notification {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.5s;
+    z-index: 120;
+  }
+  &:active ~ .user_card_notification {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.user_card_notification {
+  opacity: 0;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  position: absolute;
+  right: -53px;
+  bottom: 60px;
+  z-index: 120;
+  width: 148px;
+  height: 66.07px;
+  background: #000000;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.user_card_box {
+  display: flex;
+  align-items: center;
+}
+
+.user_card_button__big__add {
+  position: relative;
+  margin-left: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #929394;
+  border-radius: 45px;
+  padding: 6px 38px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.33;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  &::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 14px;
+    left: 108px;
+    background: #ff6000;
+    border: 0.5px solid #ffffff;
+    border-radius: 50%;
+  }
+  &:hover {
+    background-color: rgba(146, 147, 148, 0.7);
+  }
+  &:hover .user_card_icon__plus {
+    fill: rgba(0, 144, 255, 0.7);
+  }
+  &:active {
+    background-color: rgba(146, 147, 148, 0.5);
+  }
+  &:active .user_card_icon__plus {
+    fill: rgba(0, 144, 255, 0.5);
+  }
+  p {
+    width: 298px;
+  }
+}
+.user_card_icon__box {
+  background-color: #ffffff;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.user_card_icon__plus {
+  fill: #0090ff;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+// =============================RoomsHotelier======================//
+
+.hotelier_roms__boxs_scroll {
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-left: 17px;
+  margin-right: 17px;
+  padding-left: 1px;
+  padding-right: 1px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    cursor: pointer;
+    max-width: 12px;
+    height: 17px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #aeafbc;
+    border-bottom: 7px solid #fff;
+    border-top: 7px solid #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #0090ff;
+    border-radius: 7px;
+    border-top: 7px solid #fff;
+    border-bottom: 7px solid #fff;
+  }
+}
+.hotelier_roms__list {
+  display: flex;
+  padding: 22px 2px 10px 4px;
+}
+
+.hotelier_roms__item {
+  min-width: 240px;
+  height: 120px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6.5625px rgba(0, 0, 0, 0.3);
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+}
+
+.hotelier_roms__item_active {
+  z-index: 30;
+  height: 82px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hotelier_roms__box_bed_img {
+  position: relative;
+  background: #d4ebfb;
+  height: 86.25px;
+}
+
+.hotelier_roms__box_number_room {
+  width: 46px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 3.45395px 0.69079px rgba(0, 0, 0, 0.3);
+  border-radius: 2.76316px;
+}
+
+.hotelier_roms__number_room {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #4c4c4c;
+}
+
+.hotelier_roms__button_change_room {
+  position: absolute;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 3.45395px 0.69079px rgba(0, 0, 0, 0.3);
+  border-radius: 2.76316px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover .hotelier_roms__icon_change_room {
+    fill: rgba(0, 144, 255, 0.7);
+  }
+  &:active .hotelier_roms__icon_change_room {
+    fill: rgba(0, 144, 255, 0.5);
+  }
+}
+
+.hotelier_roms__icon_change_room {
+  width: 10px;
+  height: 10px;
+  fill: #0090ff;
+}
+
+.hotelier_roms__quantity_room {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.31;
+  color: #787878;
+}
+
+.hotelier_roms__box_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 8px;
+  background: #ffffff;
+  box-shadow: 0px 0px 6.5625px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.hotelier_roms__box_price_hostel {
+  @extend .hotelier_roms__box_price;
+  padding-left: 109px;
+  min-height: 33.75px;
+}
+
+.hotelier_roms__button_change_price {
+  display: block;
+  cursor: pointer;
+  margin-right: 17px;
+  border: none;
+  background: rgba(0, 144, 255, 0.5);
+  box-shadow: 0px 0px 5.53488px rgba(0, 0, 0, 0.25);
+  border-radius: 4.42791px;
+  width: 84px;
+  height: 30px;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  color: #ffffff;
+  &:hover {
+    background: rgba(0, 144, 255, 0.4);
+  }
+  &:active {
+    background: rgba(0, 144, 255, 0.3);
+  }
+}
+
+.hotelier_roms__text_price {
+  margin-right: 6px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.3;
+  color: #535252;
+  width: 48px;
+}
+
+.hotelier_roms__price {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #535252;
+}
+
+.hotelier_options_rooms__list {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+.hotelier_options_rooms__item1 {
+  display: flex;
+  min-height: 86.25px;
+  align-items: center;
+  justify-content: space-around;
+  width: 240px;
+  height: 100%;
+  padding: 25px 25px 20px;
+  background: #d4ebfb;
+}
+
+.hotelier_options_rooms__item2 {
+  @extend .hotelier_options_rooms__item1;
+  flex-direction: column;
+  flex-basis: calc((100% - 8px) / 2);
+  padding: 6.25px 13px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.hotelier_options_rooms__item3 {
+  @extend .hotelier_options_rooms__item2;
+  flex-basis: calc((100% - 16px) / 3);
+  padding: 7.25px 7px 7.25px 7px;
+}
+
+.hotelier_options_rooms__item4 {
+  @extend .hotelier_options_rooms__item2;
+  flex-basis: calc((100% - 24px) / 4);
+  padding: 12px 0px 12px 1px;
+}
+
+.hotelier_roms__box_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// =====================TYPE_ICON_BED========================//
+
+.hotelier_roms__icon_single_bed_1_alone {
+  width: 39px;
+  height: 35px;
+  margin-right: 19px;
+}
+
+.hotelier_roms__icon_single_bed_1_both {
+  width: 39px;
+  height: 35px;
+  margin-right: 11px;
+}
+
+.hotelier_roms__icon_single_bed_2 {
+  width: 28px;
+  height: 25px;
+  margin-right: 14px;
+}
+
+.hotelier_roms__icon_single_bed_3 {
+  width: 28px;
+  height: 25px;
+  margin-right: 3px;
+}
+
+.hotelier_roms__icon_single_bed_4 {
+  width: 22px;
+  height: 19px;
+  margin-right: 1px;
+}
+
+.hotelier_roms__icon_double_bed_1_alone {
+  width: 52px;
+  height: 42px;
+  margin-right: 12px;
+}
+
+.hotelier_roms__icon_double_bed_1_both {
+  width: 52px;
+  height: 42px;
+  margin-right: 16px;
+}
+
+.hotelier_roms__icon_double_bed_2 {
+  width: 35px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.hotelier_roms__icon_double_bed_3 {
+  width: 27px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.hotelier_roms__icon_double_bed_4 {
+  width: 23px;
+  height: 19px;
+  margin-right: 2px;
+}
+
+// ======================================options_hostel_room========================
+.hotelier_options_hostel_room {
+  min-height: 86.25px;
+  width: 240px;
+  height: 100%;
+  padding: 7px 13px 0.25px;
+  background: #d4ebfb;
+}
+
+.hotelier_options_hostel_room__box_number {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  margin-left: 47px;
+}
+
+.hotelier_options_hostel_room__text {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #535252;
+}
+
+.hotelier_options_hostel_room__number {
+  margin-right: 12px;
+  margin-left: 4px;
+}
+
+.hotelier_options_rooms__icon_single_bed {
+  width: 21px;
+  height: 19px;
+  fill: #787878;
+}
+
+.hotelier_options_hostel_room__box_list_bed {
+  // max-width: 795px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    cursor: pointer;
+    max-width: 12px;
+    height: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #aeafbc;
+    border-bottom: 4px solid #d4ebfb;
+    border-top: 4px solid #d4ebfb;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #0090ff;
+    border-radius: 5px;
+    border-bottom: 4px solid #d4ebfb;
+    border-top: 4px solid #d4ebfb;
+  }
+}
+
+.hotelier_options_hostel_room__list {
+  display: flex;
+  padding-bottom: 1px;
+}
+
+.hotelier_options_hostel_room__item {
+  width: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+  &:hover .hotelier_options_rooms__icon_single_bed {
+    fill: #4c4c4c;
+  }
+  &:active .hotelier_options_rooms__icon_single_bed {
+    fill: #000;
+  }
+  &:hover .hotelier_options_hostel_room__text {
+    color: #4c4c4c;
+  }
+  &:active .hotelier_options_hostel_room__text {
+    color: #000;
+  }
+}
+
+.hotelier_options_hostel_room__item_active {
+  & .hotelier_options_rooms__icon_single_bed {
+    fill: #000;
+  }
+  & .hotelier_options_hostel_room__text {
+    color: #000000;
+  }
+}
+
+// ==============================Modal===================================
+.suggest__close {
+  display: block;
+  width: 104px;
+  height: 62px;
+  padding: 0px 0px 0px 25px;
+  position: absolute;
+  top: -15px;
+  right: -170px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background: transparent;
+  z-index: 15;
+  &::before {
+    content: '';
+    background-image: url(../../MainPage/Assents/icon/clouse.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 65px;
+    top: 22px;
+    width: 25px;
+    height: 25px;
+  }
+  &:hover {
+    width: 104px;
+    height: 62px;
+    background: rgba(76, 76, 76, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 44px;
+  }
+
+  &:active {
+    width: 104px;
+    height: 62px;
+    background: rgba(76, 76, 76, 0.22);
+    backdrop-filter: blur(15px);
+    border-radius: 44px;
+  }
+}
+
+.testHover {
+  &:hover {
+    outline: 1px solid #6aff79;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.activeCards {
+  outline: 2px solid #6aff79;
+  border-radius: 0 0 5px 5px;
+}

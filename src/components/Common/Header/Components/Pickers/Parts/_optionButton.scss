@@ -1,0 +1,47 @@
+@import 'styles/common/variables';
+
+%option-button {
+  @extend %button-reset;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+
+  min-width: 143px;
+  min-height: 31px;
+
+  padding: 5px 20px 6px;
+  overflow: hidden;
+
+  font-size: 15px;
+  line-height: 1.33;
+  font-family: $font-segoe;
+  color: $colors-brand;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  border-radius: 10px;
+
+  &:focus,
+  &:hover,
+  &.active {
+    background-color: $colors-bg-button-option;
+  }
+
+  &.active {
+    font-weight: 600;
+  }
+
+  &.dark {
+    color: $colors-white;
+  }
+
+  &.dark:focus,
+  &.dark:hover,
+  &.dark.active {
+    color: $colors-brand;
+    background-color: darken($colors-bg-drawer, 2);
+  }
+}

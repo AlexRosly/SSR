@@ -1,0 +1,19 @@
+{
+  "_id": "6311b959d786c73f23acb006",
+  "stateId": "630f94549e670fb64efb3dec", // leads to english version
+  "cityId": "630f97a69e670fb64efb3e13", // first to take city, take cityname Then from city take stateId and stateName, and from state -> countryId and country
+  "districtName": "центр міста",
+  "districtInternational": "City Centre",
+  "districtCode": "CITY ",
+  "districtPhotoURL": "https://admin2-alpha.vercel.app/country/:id",
+  "cityInternational": "Kyiv",
+  "langCode": "UA",
+  "dbLangCode": "UA",
+  "createdAt": "2022-09-02T08:05:45.565Z",
+  "updatedAt": "2022-09-02T08:11:53.614Z",
+  "districtPhotoAlt": "City Centre, Kyiv, Kyiv region, Ukraine",
+
+  "cityName": "Киев", // need to get by id for current language
+  "country": "Украина", // need to get by id for current language
+  "stateName": "Киевская область" // need to get by id for current language
+}

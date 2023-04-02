@@ -1,0 +1,46 @@
+@import 'styles/common/variables';
+
+.subheaderMainHotelier {
+  flex-grow: 1;
+}
+
+.mainUserLogBtn {
+  position: relative;
+  // right: 0;
+  // left: 5%;
+  top: 4px;
+  // top: 40%;
+  // margin: 0 auto;
+  border: none;
+  width: 147px;
+  height: 28px;
+  color: #656565;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  &:hover {
+    border: 1px solid #000000;
+    color: #000000;
+  }
+  &:active {
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+  }
+}
+
+.mainUserLogSvg {
+  margin-right: 5px;
+  width: 13px;
+  height: 14px;
+  fill: #656565;
+
+  .mainUserLogBtn:hover & {
+    fill: #000000;
+  }
+  .mainUserLogBtn:active & {
+    fill: #a5a5a5;
+  }
+}
